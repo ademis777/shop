@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="meta-title">Terms of Service | NestWell Finds</title>
+  <meta name="description" id="meta-description" content="Terms of Service for NestWell Finds. Read our terms before using the site, including our Amazon Associates affiliate disclosure." />
+  <link rel="canonical" href="https://shop.dmnt.pro/terms.html" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display:['Playfair Display','Georgia','serif'], body:['DM Sans','system-ui','sans-serif'] },
+          colors: { cream:'#FAF7F2', espresso:'#2C1810', terracotta:'#C4714A', sage:'#7A8C6E' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --cream:#FAF7F2; --espresso:#2C1810; --terracotta:#C4714A; --sage:#7A8C6E; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'DM Sans',system-ui,sans-serif; background-color:var(--cream); color:var(--espresso); -webkit-font-smoothing:antialiased; }
+    h1,h2,h3,.font-display { font-family:'Playfair Display',Georgia,serif; }
+    .disclosure-bar { background:#2C1810; color:#FAF7F2; font-size:0.72rem; letter-spacing:0.03em; text-align:center; padding:8px 16px; line-height:1.5; }
+    .nav-link { position:relative; font-size:0.85rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--espresso); transition:color 0.2s; text-decoration:none; }
+    .nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1.5px; background:var(--terracotta); transition:width 0.3s ease; }
+    .nav-link:hover { color:var(--terracotta); }
+    .nav-link:hover::after { width:100%; }
+    .lang-switcher { position:relative; display:inline-block; }
+    .lang-btn { display:flex; align-items:center; gap:5px; font-size:0.82rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; cursor:pointer; background:transparent; border:1.5px solid rgba(44,24,16,0.25); border-radius:4px; padding:5px 10px; color:var(--espresso); }
+    .lang-dropdown { display:none; position:absolute; right:0; top:calc(100% + 8px); background:#fff; border:1.5px solid #e8e0d6; border-radius:6px; min-width:130px; box-shadow:0 8px 24px rgba(44,24,16,0.10); z-index:1000; overflow:hidden; }
+    .lang-switcher:hover .lang-dropdown, .lang-switcher:focus-within .lang-dropdown { display:block; }
+    .lang-option { display:flex; align-items:center; gap:8px; padding:9px 14px; font-size:0.82rem; font-weight:500; cursor:pointer; transition:background 0.15s; text-transform:none; letter-spacing:0; color:var(--espresso); border:none; background:transparent; width:100%; text-align:left; }
+    .lang-option:hover { background:var(--cream); }
+    .lang-option.active { color:var(--terracotta); font-weight:600; }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    .footer-link { color:rgba(250,247,242,0.65); font-size:0.82rem; text-decoration:none; transition:color 0.2s; }
+    .footer-link:hover { color:var(--terracotta); }
+    .legal-content { max-width:760px; margin:0 auto; padding:48px 16px 80px; }
+    .legal-content h2 { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-top:40px; margin-bottom:14px; color:var(--espresso); padding-bottom:8px; border-bottom:2px solid #e8ddd4; }
+    .legal-content h3 { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; margin-top:24px; margin-bottom:10px; color:#4A3728; }
+    .legal-content p { font-size:0.92rem; line-height:1.85; color:#4A3728; margin-bottom:14px; }
+    .legal-content ul { list-style:disc; padding-left:22px; margin-bottom:14px; }
+    .legal-content li { font-size:0.92rem; line-height:1.75; color:#4A3728; margin-bottom:6px; }
+    .legal-content a { color:var(--terracotta); text-decoration:underline; }
+    .highlight-box { background:#fff; border-left:4px solid var(--terracotta); border-radius:0 8px 8px 0; padding:18px 20px; margin:20px 0; font-size:0.88rem; line-height:1.75; color:#4A3728; box-shadow:0 2px 8px rgba(44,24,16,0.06); }
+    .toc { background:#fff; border-radius:12px; padding:24px 28px; margin-bottom:40px; box-shadow:0 2px 12px rgba(44,24,16,0.07); }
+    .toc ul { list-style:none; padding:0; margin:0; }
+    .toc li { padding:4px 0; font-size:0.88rem; }
+    .toc a { color:var(--terracotta); text-decoration:none; font-weight:500; }
+    .toc a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+<div class="disclosure-bar" role="note">
+  <span data-i18n="disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.</span>
+</div>
+
+<header class="bg-white border-b border-stone-100 sticky top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/index.html" class="flex items-center gap-2" style="text-decoration:none;">
+        <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
+        <span class="font-display font-bold text-xl tracking-tight" style="color:var(--espresso);">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="/article-kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="/article-office.html" class="nav-link" data-i18n="nav_office">Home Office</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-label="Select language">
+            <span id="current-lang-flag">🇬🇧</span>
+            <span id="current-lang-code">EN</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="de" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+          </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2" aria-label="Toggle menu">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M1 1h20M1 8h20M1 15h20" stroke="#2C1810" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="flex-col bg-white border-t border-stone-100 px-4 pb-4 md:hidden">
+    <a href="/index.html" class="nav-link py-3 block" data-i18n="nav_home">Home</a>
+    <a href="/about.html" class="nav-link py-3 block" data-i18n="nav_about">About</a>
+    <a href="/contact.html" class="nav-link py-3 block" data-i18n="nav_contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <section style="background:linear-gradient(135deg,#2C1810,#3A2218);padding:56px 16px 64px;">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--terracotta);" data-i18n="terms_eyebrow">Legal</p>
+      <h1 class="font-display text-4xl font-bold mb-4" style="color:#FAF7F2;" data-i18n="terms_h1">Terms of Service</h1>
+      <p class="text-sm" style="color:rgba(250,247,242,0.6);" data-i18n="terms_updated">Last updated: 1 January 2025</p>
+    </div>
+  </section>
+
+  <div class="legal-content">
+
+    <div class="highlight-box">
+      <strong data-i18n="terms_intro_label">Please read carefully:</strong> <span data-i18n="terms_intro">By accessing or using the NestWell Finds website, you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site. NestWell Finds participates in the Amazon Associates affiliate program — this is disclosed prominently on every page.</span>
+    </div>
+
+    <div class="toc">
+      <p class="font-display font-bold text-base mb-4" data-i18n="terms_toc_title">Table of Contents</p>
+      <ul>
+        <li>1. <a href="#acceptance" data-i18n="terms_toc_1">Acceptance of Terms</a></li>
+        <li>2. <a href="#description" data-i18n="terms_toc_2">Description of Service</a></li>
+        <li>3. <a href="#affiliate-disclosure" data-i18n="terms_toc_3">Affiliate Disclosure (Amazon Associates)</a></li>
+        <li>4. <a href="#content" data-i18n="terms_toc_4">Content & Intellectual Property</a></li>
+        <li>5. <a href="#accuracy" data-i18n="terms_toc_5">Accuracy of Information</a></li>
+        <li>6. <a href="#external-links" data-i18n="terms_toc_6">External Links & Third-Party Sites</a></li>
+        <li>7. <a href="#disclaimer" data-i18n="terms_toc_7">Disclaimers & Limitation of Liability</a></li>
+        <li>8. <a href="#prohibited" data-i18n="terms_toc_8">Prohibited Uses</a></li>
+        <li>9. <a href="#changes" data-i18n="terms_toc_9">Changes to Terms</a></li>
+        <li>10. <a href="#governing-law" data-i18n="terms_toc_10">Governing Law</a></li>
+        <li>11. <a href="#contact-terms" data-i18n="terms_toc_11">Contact</a></li>
+      </ul>
+    </div>
+
+    <h2 id="acceptance" data-i18n="terms_s1_h">1. Acceptance of Terms</h2>
+    <p data-i18n="terms_s1_p1">These Terms of Service ("Terms") govern your access to and use of the website NestWell Finds ("Site"), available at https://shop.dmnt.pro, operated by NestWell Finds ("we", "us", "our"). By accessing the Site, browsing content, or clicking affiliate links, you accept and agree to be bound by these Terms and our <a href="/privacy.html">Privacy Policy</a>.</p>
+    <p data-i18n="terms_s1_p2">If you are under 18 years of age, please review these Terms with a parent or guardian before using the Site. These Terms apply to all visitors and users of the Site.</p>
+
+    <h2 id="description" data-i18n="terms_s2_h">2. Description of Service</h2>
+    <p data-i18n="terms_s2_p1">NestWell Finds is an editorial content platform that publishes independent reviews, buying guides, and curated product recommendations in the categories of kitchen gadgets and home office equipment. The Site generates revenue primarily through participation in affiliate programmes, including the Amazon Associates Program described below.</p>
+    <p data-i18n="terms_s2_p2">We do not operate as an e-commerce store, and we do not process payments, handle fulfilment, or provide warranties on any products featured on the Site. All purchases are made directly through third-party retailers (such as Amazon) and are subject to their terms and conditions.</p>
+
+    <h2 id="affiliate-disclosure" data-i18n="terms_s3_h">3. Affiliate Disclosure (Amazon Associates)</h2>
+    <div class="highlight-box">
+      <strong>Mandatory Affiliate Disclosure:</strong> <span data-i18n="terms_s3_disclosure">NestWell Finds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated Amazon sites. As an Amazon Associate, we earn from qualifying purchases. This means that when you click on an affiliate link and subsequently make a qualifying purchase, we may receive a commission at no additional cost to you.</span>
+    </div>
+    <p data-i18n="terms_s3_p1">Affiliate links on this Site are marked or disclosed as described above and throughout the Site. We do not mark every individual link inline, but our global disclosure at the top of every page satisfies the disclosure requirement.</p>
+    <p data-i18n="terms_s3_p2">Our editorial independence is maintained rigorously. Affiliate commission rates have no influence on our editorial recommendations. We do not guarantee that clicking any affiliate link will result in a commission being earned — this depends on whether a qualifying purchase is made within the applicable cookie window.</p>
+    <p data-i18n="terms_s3_p3">Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates. NestWell Finds is not affiliated with, endorsed by, or sponsored by Amazon other than through the Amazon Associates Program.</p>
+
+    <h2 id="content" data-i18n="terms_s4_h">4. Content &amp; Intellectual Property</h2>
+    <p data-i18n="terms_s4_p1">All original content published on NestWell Finds — including but not limited to articles, reviews, guides, editorial opinions, photographs, logos, and design elements — is the intellectual property of NestWell Finds and is protected by applicable copyright and trademark laws.</p>
+    <p data-i18n="terms_s4_p2">You may share links to our content freely. You may quote brief excerpts for commentary or educational purposes, provided you attribute NestWell Finds and link back to the original article. You may not reproduce, republish, sell, or create derivative works from our content without our prior written permission.</p>
+    <p data-i18n="terms_s4_p3">Product names, brand names, and trademarks mentioned on the Site belong to their respective owners. Their mention does not imply endorsement of NestWell Finds by those brands.</p>
+
+    <h2 id="accuracy" data-i18n="terms_s5_h">5. Accuracy of Information</h2>
+    <p data-i18n="terms_s5_p1">We make every reasonable effort to ensure the accuracy of the information published on this Site. However, product specifications, availability, and pricing change frequently. We do not display static prices on the Site — all pricing should be verified on the relevant retailer's product page before making any purchase decision.</p>
+    <p data-i18n="terms_s5_p2">Product reviews and recommendations represent the editorial opinion of NestWell Finds at the time of writing. Individual experiences may vary. We are not responsible for any dissatisfaction with purchases made based on our recommendations, and we encourage you to read multiple sources before making significant buying decisions.</p>
+
+    <h2 id="external-links" data-i18n="terms_s6_h">6. External Links &amp; Third-Party Sites</h2>
+    <p data-i18n="terms_s6_p1">The Site contains links to external websites, including Amazon and other retailers. These links are provided for your convenience. We have no control over the content, privacy practices, availability, or terms of third-party websites and accept no responsibility for them.</p>
+    <p data-i18n="terms_s6_p2">The inclusion of any external link does not imply our endorsement of that website's content or policies. We encourage you to review the privacy policy and terms of service of any external site you visit.</p>
+
+    <h2 id="disclaimer" data-i18n="terms_s7_h">7. Disclaimers &amp; Limitation of Liability</h2>
+    <p data-i18n="terms_s7_p1">THE SITE AND ALL CONTENT ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, NESTWELL FINDS DISCLAIMS ALL WARRANTIES INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+    <p data-i18n="terms_s7_p2">IN NO EVENT SHALL NESTWELL FINDS, ITS OPERATORS, CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF OR INABILITY TO USE THE SITE, OR ANY PRODUCTS PURCHASED BASED ON OUR RECOMMENDATIONS.</p>
+    <p data-i18n="terms_s7_p3">Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability, so the above limitations may not apply to you in their entirety.</p>
+
+    <h2 id="prohibited" data-i18n="terms_s8_h">8. Prohibited Uses</h2>
+    <p data-i18n="terms_s8_intro">You agree not to use the Site for any of the following:</p>
+    <ul>
+      <li data-i18n="terms_s8_li1">Any unlawful purpose or in violation of applicable laws or regulations</li>
+      <li data-i18n="terms_s8_li2">To scrape, crawl, or harvest content or data from the Site in bulk without written permission</li>
+      <li data-i18n="terms_s8_li3">To attempt to gain unauthorised access to any part of the Site or its servers</li>
+      <li data-i18n="terms_s8_li4">To transmit any unsolicited or unauthorised advertising, spam, or promotional material</li>
+      <li data-i18n="terms_s8_li5">To impersonate NestWell Finds or misrepresent your affiliation with us</li>
+      <li data-i18n="terms_s8_li6">To interfere with or disrupt the integrity or performance of the Site</li>
+    </ul>
+
+    <h2 id="changes" data-i18n="terms_s9_h">9. Changes to Terms</h2>
+    <p data-i18n="terms_s9_p">We reserve the right to modify these Terms at any time. Changes become effective immediately upon posting to the Site. We will update the "Last Updated" date at the top of this page when changes are made. Your continued use of the Site following any changes constitutes your acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+
+    <h2 id="governing-law" data-i18n="terms_s10_h">10. Governing Law</h2>
+    <p data-i18n="terms_s10_p">These Terms shall be governed by and construed in accordance with the laws of Austria and the European Union, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the Site shall be subject to the exclusive jurisdiction of the courts of Vienna, Austria, except where mandatory consumer protection laws in your jurisdiction provide otherwise.</p>
+
+    <h2 id="contact-terms" data-i18n="terms_s11_h">11. Contact</h2>
+    <p data-i18n="terms_s11_p">If you have questions about these Terms of Service, please contact us:</p>
+    <ul>
+      <li><strong data-i18n="terms_contact_email">Email:</strong> <a href="mailto:hello@shop.dmnt.pro">hello@shop.dmnt.pro</a></li>
+      <li><strong data-i18n="terms_contact_web">Website:</strong> <a href="https://shop.dmnt.pro/contact.html">shop.dmnt.pro/contact.html</a></li>
+    </ul>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer style="background:var(--espresso);color:#FAF7F2;padding:56px 16px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background:var(--terracotta);color:#fff;">N</div>
+          <span class="font-display font-bold text-xl">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:rgba(250,247,242,0.65);" data-i18n="footer_brand_desc">A passionate editorial team curating the best kitchen gadgets and home office gear.</p>
+        <p class="text-xs" style="color:rgba(250,247,242,0.45);" data-i18n="disclosure_footer">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_explore">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="/index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="/article-kitchen.html" class="footer-link" data-i18n="nav_kitchen">Kitchen</a></li>
+          <li><a href="/article-office.html" class="footer-link" data-i18n="nav_office">Home Office</a></li>
+          <li><a href="/about.html" class="footer-link" data-i18n="nav_about">About</a></li>
+          <li><a href="/contact.html" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_legal">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="footer-link" style="color:var(--terracotta);" data-i18n="footer_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t pt-6" style="border-color:rgba(250,247,242,0.12);text-align:center;">
+      <p class="text-xs" style="color:rgba(250,247,242,0.4);" data-i18n="footer_copy">© 2025 NestWell Finds. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  en: {
+    meta_title:"Terms of Service | NestWell Finds",
+    meta_description:"Terms of Service for NestWell Finds. Please read before using the site.",
+    disclosure:"As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.",
+    disclosure_footer:"As an Amazon Associate I earn from qualifying purchases.",
+    nav_home:"Home", nav_kitchen:"Kitchen", nav_office:"Home Office", nav_about:"About", nav_contact:"Contact",
+    footer_brand_desc:"A passionate editorial team curating the best kitchen gadgets and home office gear.",
+    footer_explore:"Explore", footer_legal:"Legal", footer_privacy:"Privacy Policy", footer_terms:"Terms of Service",
+    footer_copy:"© 2025 NestWell Finds. All rights reserved.",
+    terms_eyebrow:"Legal", terms_h1:"Terms of Service", terms_updated:"Last updated: 1 January 2025",
+    terms_intro_label:"Please read carefully:", terms_intro:"By accessing or using NestWell Finds, you agree to these Terms. NestWell Finds participates in the Amazon Associates affiliate program — disclosed on every page.",
+    terms_toc_title:"Table of Contents",
+    terms_toc_1:"Acceptance of Terms", terms_toc_2:"Description of Service", terms_toc_3:"Affiliate Disclosure (Amazon Associates)",
+    terms_toc_4:"Content & Intellectual Property", terms_toc_5:"Accuracy of Information", terms_toc_6:"External Links & Third-Party Sites",
+    terms_toc_7:"Disclaimers & Limitation of Liability", terms_toc_8:"Prohibited Uses", terms_toc_9:"Changes to Terms",
+    terms_toc_10:"Governing Law", terms_toc_11:"Contact",
+    terms_s1_h:"1. Acceptance of Terms",
+    terms_s1_p1:"These Terms govern your access to and use of https://shop.dmnt.pro. By accessing the Site, you accept these Terms and our Privacy Policy.",
+    terms_s1_p2:"If you are under 18, please review these Terms with a parent or guardian.",
+    terms_s2_h:"2. Description of Service",
+    terms_s2_p1:"NestWell Finds is an editorial platform publishing independent reviews and buying guides in kitchen gadgets and home office equipment. Revenue is generated primarily through the Amazon Associates affiliate program.",
+    terms_s2_p2:"We do not operate as an e-commerce store. All purchases are made directly through third-party retailers and are subject to their terms.",
+    terms_s3_h:"3. Affiliate Disclosure (Amazon Associates)",
+    terms_s3_disclosure:"NestWell Finds is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. When you click an affiliate link and make a qualifying purchase, we may receive a commission at no additional cost to you.",
+    terms_s3_p1:"We display a global disclosure at the top of every page as required by the Amazon Associates Operating Agreement.",
+    terms_s3_p2:"Our editorial independence is rigorously maintained. Affiliate commission rates never influence our recommendations.",
+    terms_s3_p3:"Amazon and the Amazon logo are trademarks of Amazon.com, Inc. NestWell Finds is not endorsed or sponsored by Amazon beyond the Associates Program.",
+    terms_s4_h:"4. Content & Intellectual Property",
+    terms_s4_p1:"All original content on NestWell Finds is protected by copyright law and belongs to NestWell Finds.",
+    terms_s4_p2:"You may share links freely and quote brief excerpts with attribution. You may not reproduce, republish, or sell our content without written permission.",
+    terms_s4_p3:"Product names and brand trademarks belong to their respective owners and do not imply endorsement.",
+    terms_s5_h:"5. Accuracy of Information",
+    terms_s5_p1:"We strive for accuracy but product details change frequently. We do not display static prices. Always verify pricing and availability on the retailer's page before purchasing.",
+    terms_s5_p2:"Reviews represent our editorial opinion at the time of writing. Individual experiences may vary. We encourage reading multiple sources before major purchases.",
+    terms_s6_h:"6. External Links & Third-Party Sites",
+    terms_s6_p1:"The Site contains links to external websites including Amazon. We have no control over third-party sites and accept no responsibility for their content or practices.",
+    terms_s6_p2:"We encourage you to review the privacy policy and terms of any external site you visit.",
+    terms_s7_h:"7. Disclaimers & Limitation of Liability",
+    terms_s7_p1:"THE SITE AND CONTENT ARE PROVIDED \"AS IS\" WITHOUT WARRANTIES OF ANY KIND. NESTWELL FINDS DISCLAIMS ALL WARRANTIES INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+    terms_s7_p2:"NESTWELL FINDS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OF THE SITE OR PURCHASES BASED ON OUR RECOMMENDATIONS.",
+    terms_s7_p3:"Some jurisdictions do not allow certain liability exclusions, so the above may not apply to you in full.",
+    terms_s8_h:"8. Prohibited Uses",
+    terms_s8_intro:"You agree not to use the Site for:",
+    terms_s8_li1:"Any unlawful purpose or in violation of applicable laws",
+    terms_s8_li2:"Bulk scraping or harvesting of content without written permission",
+    terms_s8_li3:"Attempting to gain unauthorised access to the Site or its servers",
+    terms_s8_li4:"Transmitting unsolicited advertising or spam",
+    terms_s8_li5:"Impersonating NestWell Finds or misrepresenting your affiliation",
+    terms_s8_li6:"Interfering with or disrupting the Site's operation",
+    terms_s9_h:"9. Changes to Terms",
+    terms_s9_p:"We may modify these Terms at any time. Changes are effective upon posting. Continued use of the Site constitutes acceptance of revised Terms.",
+    terms_s10_h:"10. Governing Law",
+    terms_s10_p:"These Terms are governed by Austrian law and EU regulations. Disputes shall be subject to the jurisdiction of courts in Vienna, Austria, except where local consumer protection law applies.",
+    terms_s11_h:"11. Contact",
+    terms_s11_p:"Questions about these Terms:",
+    terms_contact_email:"Email:", terms_contact_web:"Website:",
+  },
+  fr: {
+    meta_title:"Conditions d'utilisation | NestWell Finds",
+    meta_description:"Conditions d'utilisation de NestWell Finds. Veuillez lire avant d'utiliser le site.",
+    disclosure:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    disclosure_footer:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    nav_home:"Accueil", nav_kitchen:"Cuisine", nav_office:"Bureau", nav_about:"À propos", nav_contact:"Contact",
+    footer_brand_desc:"Une équipe éditoriale passionnée qui sélectionne les meilleurs gadgets cuisine et équipements bureau.",
+    footer_explore:"Explorer", footer_legal:"Mentions légales", footer_privacy:"Politique de confidentialité", footer_terms:"Conditions d'utilisation",
+    footer_copy:"© 2025 NestWell Finds. Tous droits réservés.",
+    terms_eyebrow:"Légal", terms_h1:"Conditions d'utilisation", terms_updated:"Dernière mise à jour : 1er janvier 2025",
+    terms_intro_label:"Merci de lire attentivement :", terms_intro:"En accédant à NestWell Finds, vous acceptez ces conditions. NestWell Finds participe au programme d'affiliation Amazon Associates — divulgué sur chaque page.",
+    terms_toc_title:"Sommaire",
+    terms_toc_1:"Acceptation des conditions", terms_toc_2:"Description du service", terms_toc_3:"Divulgation d'affiliation (Amazon Associates)",
+    terms_toc_4:"Contenu & propriété intellectuelle", terms_toc_5:"Exactitude des informations", terms_toc_6:"Liens externes & sites tiers",
+    terms_toc_7:"Avertissements & limitation de responsabilité", terms_toc_8:"Utilisations interdites", terms_toc_9:"Modifications des conditions",
+    terms_toc_10:"Droit applicable", terms_toc_11:"Contact",
+    terms_s1_h:"1. Acceptation des conditions",
+    terms_s1_p1:"Ces Conditions régissent votre accès à https://shop.dmnt.pro. En accédant au site, vous acceptez ces Conditions et notre Politique de confidentialité.",
+    terms_s1_p2:"Si vous avez moins de 18 ans, veuillez lire ces Conditions avec un parent ou tuteur.",
+    terms_s2_h:"2. Description du service",
+    terms_s2_p1:"NestWell Finds est une plateforme éditoriale publiant des avis et guides d'achat sur les gadgets cuisine et le matériel de bureau. Les revenus proviennent principalement du programme Amazon Associates.",
+    terms_s2_p2:"Nous ne gérons pas de boutique en ligne. Tous les achats s'effectuent directement chez des détaillants tiers.",
+    terms_s3_h:"3. Divulgation d'affiliation (Amazon Associates)",
+    terms_s3_disclosure:"NestWell Finds participe au Programme Partenaires d'Amazon. En tant qu'associé Amazon, nous gagnons des commissions sur les achats qualifiés effectués via nos liens, sans frais supplémentaires pour vous.",
+    terms_s3_p1:"Nous affichons une divulgation globale en haut de chaque page, conformément aux exigences du Programme Partenaires Amazon.",
+    terms_s3_p2:"Notre indépendance éditoriale est maintenue rigoureusement. Les taux de commission n'influencent jamais nos recommandations.",
+    terms_s3_p3:"Amazon et le logo Amazon sont des marques déposées d'Amazon.com, Inc. NestWell Finds n'est pas parrainé par Amazon en dehors du programme Partenaires.",
+    terms_s4_h:"4. Contenu & propriété intellectuelle",
+    terms_s4_p1:"Tout le contenu original de NestWell Finds est protégé par le droit d'auteur.",
+    terms_s4_p2:"Vous pouvez partager des liens librement et citer de courts extraits avec attribution. La reproduction ou la revente sans permission écrite est interdite.",
+    terms_s4_p3:"Les noms de produits et marques appartiennent à leurs propriétaires respectifs.",
+    terms_s5_h:"5. Exactitude des informations",
+    terms_s5_p1:"Nous nous efforçons d'être exacts, mais les détails produits changent fréquemment. Vérifiez toujours les prix et disponibilités sur la page du détaillant.",
+    terms_s5_p2:"Les avis représentent notre opinion éditoriale au moment de la rédaction. Les expériences individuelles peuvent varier.",
+    terms_s6_h:"6. Liens externes & sites tiers",
+    terms_s6_p1:"Le site contient des liens vers des sites externes dont nous ne contrôlons pas le contenu.",
+    terms_s6_p2:"Nous vous encourageons à consulter les politiques de confidentialité de tout site externe que vous visitez.",
+    terms_s7_h:"7. Avertissements & Limitation de responsabilité",
+    terms_s7_p1:"LE SITE ET SON CONTENU SONT FOURNIS \"EN L'ÉTAT\" SANS GARANTIE D'AUCUNE SORTE. NESTWELL FINDS DÉCLINE TOUTE GARANTIE IMPLICITE OU EXPLICITE.",
+    terms_s7_p2:"NESTWELL FINDS NE SAURAIT ÊTRE TENU RESPONSABLE DE DOMMAGES DIRECTS, INDIRECTS OU CONSÉCUTIFS RÉSULTANT DE L'UTILISATION DU SITE.",
+    terms_s7_p3:"Certaines juridictions n'autorisent pas certaines exclusions de responsabilité.",
+    terms_s8_h:"8. Utilisations interdites",
+    terms_s8_intro:"Vous acceptez de ne pas utiliser le site pour :",
+    terms_s8_li1:"Toute fin illégale", terms_s8_li2:"Extraction massive de contenu sans autorisation",
+    terms_s8_li3:"Tentative d'accès non autorisé au site", terms_s8_li4:"Envoi de publicités non sollicitées",
+    terms_s8_li5:"Se faire passer pour NestWell Finds", terms_s8_li6:"Perturber le fonctionnement du site",
+    terms_s9_h:"9. Modifications des conditions",
+    terms_s9_p:"Nous pouvons modifier ces Conditions à tout moment. Les modifications prennent effet à leur publication. L'utilisation continue du site vaut acceptation.",
+    terms_s10_h:"10. Droit applicable",
+    terms_s10_p:"Ces Conditions sont régies par le droit autrichien et la réglementation européenne. Les litiges relèvent de la compétence des tribunaux de Vienne, Autriche.",
+    terms_s11_h:"11. Contact",
+    terms_s11_p:"Pour toute question sur ces Conditions :",
+    terms_contact_email:"E-mail :", terms_contact_web:"Site web :",
+  },
+  de: {
+    meta_title:"Nutzungsbedingungen | NestWell Finds",
+    meta_description:"Nutzungsbedingungen von NestWell Finds. Bitte vor der Nutzung lesen.",
+    disclosure:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    disclosure_footer:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    nav_home:"Startseite", nav_kitchen:"Küche", nav_office:"Homeoffice", nav_about:"Über uns", nav_contact:"Kontakt",
+    footer_brand_desc:"Ein leidenschaftliches Redaktionsteam, das die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert.",
+    footer_explore:"Entdecken", footer_legal:"Rechtliches", footer_privacy:"Datenschutzrichtlinie", footer_terms:"Nutzungsbedingungen",
+    footer_copy:"© 2025 NestWell Finds. Alle Rechte vorbehalten.",
+    terms_eyebrow:"Rechtliches", terms_h1:"Nutzungsbedingungen", terms_updated:"Zuletzt aktualisiert: 1. Januar 2025",
+    terms_intro_label:"Bitte sorgfältig lesen:", terms_intro:"Mit dem Zugriff auf NestWell Finds stimmen Sie diesen Bedingungen zu. NestWell Finds nimmt am Amazon-Partnerprogramm teil — auf jeder Seite offengelegt.",
+    terms_toc_title:"Inhaltsverzeichnis",
+    terms_toc_1:"Annahme der Bedingungen", terms_toc_2:"Leistungsbeschreibung", terms_toc_3:"Affiliate-Offenlegung (Amazon)",
+    terms_toc_4:"Inhalt & geistiges Eigentum", terms_toc_5:"Informationsgenauigkeit", terms_toc_6:"Externe Links",
+    terms_toc_7:"Haftungsausschluss", terms_toc_8:"Verbotene Nutzung", terms_toc_9:"Änderungen",
+    terms_toc_10:"Anwendbares Recht", terms_toc_11:"Kontakt",
+    terms_s1_h:"1. Annahme der Bedingungen",
+    terms_s1_p1:"Diese Bedingungen regeln Ihren Zugang zu https://shop.dmnt.pro. Mit dem Zugriff akzeptieren Sie diese Bedingungen und unsere Datenschutzrichtlinie.",
+    terms_s1_p2:"Personen unter 18 Jahren sollten diese Bedingungen mit einem Elternteil oder Vormund durchlesen.",
+    terms_s2_h:"2. Leistungsbeschreibung",
+    terms_s2_p1:"NestWell Finds ist eine Redaktionsplattform für unabhängige Bewertungen und Kaufberater. Einnahmen werden hauptsächlich über das Amazon-Partnerprogramm generiert.",
+    terms_s2_p2:"Wir betreiben keinen E-Commerce-Shop. Alle Käufe erfolgen direkt bei Drittanbietern.",
+    terms_s3_h:"3. Affiliate-Offenlegung (Amazon-Partnerprogramm)",
+    terms_s3_disclosure:"NestWell Finds nimmt am Amazon Services LLC-Partnerprogramm teil. Als Amazon-Partner verdienen wir an qualifizierten Einkäufen — ohne Mehrkosten für Sie.",
+    terms_s3_p1:"Wir zeigen auf jeder Seite eine globale Offenlegung gemäß den Anforderungen des Amazon-Partnerprogramms.",
+    terms_s3_p2:"Unsere redaktionelle Unabhängigkeit wird strikt gewahrt. Provisionsraten beeinflussen unsere Empfehlungen nie.",
+    terms_s3_p3:"Amazon und das Amazon-Logo sind Marken von Amazon.com, Inc. NestWell Finds wird von Amazon nur durch das Partnerprogramm unterstützt.",
+    terms_s4_h:"4. Inhalt & Geistiges Eigentum",
+    terms_s4_p1:"Alle Originalinhalte von NestWell Finds sind urheberrechtlich geschützt.",
+    terms_s4_p2:"Sie dürfen Links frei teilen und kurze Auszüge mit Quellenangabe zitieren. Vervielfältigung ohne schriftliche Genehmigung ist untersagt.",
+    terms_s4_p3:"Produktnamen und Marken gehören ihren jeweiligen Eigentümern.",
+    terms_s5_h:"5. Informationsgenauigkeit",
+    terms_s5_p1:"Wir bemühen uns um Genauigkeit, aber Produktdaten ändern sich häufig. Überprüfen Sie Preise und Verfügbarkeit stets beim Händler.",
+    terms_s5_p2:"Bewertungen geben unsere redaktionelle Meinung zum Zeitpunkt des Schreibens wieder. Individuelle Erfahrungen können variieren.",
+    terms_s6_h:"6. Externe Links & Drittanbieter-Websites",
+    terms_s6_p1:"Die Website enthält Links zu externen Websites, über deren Inhalte wir keine Kontrolle haben.",
+    terms_s6_p2:"Wir empfehlen, die Datenschutzrichtlinien externer Websites zu lesen.",
+    terms_s7_h:"7. Haftungsausschluss",
+    terms_s7_p1:"DIE WEBSITE UND INHALTE WERDEN OHNE MÄNGELGEWÄHR BEREITGESTELLT. NESTWELL FINDS SCHLIESST ALLE AUSDRÜCKLICHEN UND STILLSCHWEIGENDEN GEWÄHRLEISTUNGEN AUS.",
+    terms_s7_p2:"NESTWELL FINDS HAFTET NICHT FÜR DIREKTE, INDIREKTE ODER FOLGESCHÄDEN AUS DER NUTZUNG DER WEBSITE.",
+    terms_s7_p3:"Einige Rechtsordnungen lassen bestimmte Haftungsausschlüsse nicht zu.",
+    terms_s8_h:"8. Verbotene Nutzung",
+    terms_s8_intro:"Sie stimmen zu, die Website nicht zu nutzen für:",
+    terms_s8_li1:"Rechtswidrige Zwecke", terms_s8_li2:"Massenhafte Datenextraktion ohne schriftliche Genehmigung",
+    terms_s8_li3:"Versuche unbefugten Zugriffs", terms_s8_li4:"Unerwünschte Werbung oder Spam",
+    terms_s8_li5:"Identitätsvortäuschung als NestWell Finds", terms_s8_li6:"Störung des Website-Betriebs",
+    terms_s9_h:"9. Änderungen der Bedingungen",
+    terms_s9_p:"Wir können diese Bedingungen jederzeit ändern. Änderungen werden sofort wirksam. Die weitere Nutzung gilt als Zustimmung.",
+    terms_s10_h:"10. Anwendbares Recht",
+    terms_s10_p:"Diese Bedingungen unterliegen österreichischem Recht und EU-Recht. Streitigkeiten unterliegen der Zuständigkeit der Gerichte in Wien, Österreich.",
+    terms_s11_h:"11. Kontakt",
+    terms_s11_p:"Bei Fragen zu diesen Bedingungen:",
+    terms_contact_email:"E-Mail:", terms_contact_web:"Website:",
+  },
+  es: {
+    meta_title:"Términos de Servicio | NestWell Finds",
+    meta_description:"Términos de Servicio de NestWell Finds. Por favor lee antes de usar el sitio.",
+    disclosure:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    disclosure_footer:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    nav_home:"Inicio", nav_kitchen:"Cocina", nav_office:"Oficina en Casa", nav_about:"Sobre Nosotros", nav_contact:"Contacto",
+    footer_brand_desc:"Un apasionado equipo editorial que cura los mejores gadgets de cocina y equipamiento de oficina.",
+    footer_explore:"Explorar", footer_legal:"Legal", footer_privacy:"Política de privacidad", footer_terms:"Términos de servicio",
+    footer_copy:"© 2025 NestWell Finds. Todos los derechos reservados.",
+    terms_eyebrow:"Legal", terms_h1:"Términos de Servicio", terms_updated:"Última actualización: 1 de enero de 2025",
+    terms_intro_label:"Por favor lee atentamente:", terms_intro:"Al acceder a NestWell Finds, aceptas estos Términos. NestWell Finds participa en el programa de afiliados Amazon Associates — divulgado en cada página.",
+    terms_toc_title:"Índice",
+    terms_toc_1:"Aceptación de los términos", terms_toc_2:"Descripción del servicio", terms_toc_3:"Divulgación de afiliados (Amazon Associates)",
+    terms_toc_4:"Contenido y propiedad intelectual", terms_toc_5:"Exactitud de la información", terms_toc_6:"Enlaces externos y sitios terceros",
+    terms_toc_7:"Descargos de responsabilidad", terms_toc_8:"Usos prohibidos", terms_toc_9:"Cambios en los términos",
+    terms_toc_10:"Ley aplicable", terms_toc_11:"Contacto",
+    terms_s1_h:"1. Aceptación de los Términos",
+    terms_s1_p1:"Estos Términos rigen tu acceso a https://shop.dmnt.pro. Al acceder al sitio, aceptas estos Términos y nuestra Política de Privacidad.",
+    terms_s1_p2:"Si tienes menos de 18 años, por favor revisa estos Términos con un padre o tutor.",
+    terms_s2_h:"2. Descripción del Servicio",
+    terms_s2_p1:"NestWell Finds es una plataforma editorial que publica reseñas y guías de compra independientes. Los ingresos provienen principalmente del programa Amazon Associates.",
+    terms_s2_p2:"No operamos como tienda de comercio electrónico. Todas las compras se realizan directamente con minoristas terceros.",
+    terms_s3_h:"3. Divulgación de Afiliados (Amazon Associates)",
+    terms_s3_disclosure:"NestWell Finds participa en el Programa de Asociados de Amazon. Como Asociado de Amazon, ganamos comisiones por las compras calificadas realizadas a través de nuestros enlaces, sin coste adicional para ti.",
+    terms_s3_p1:"Mostramos una divulgación global en la parte superior de cada página según los requisitos del Acuerdo operativo de Amazon Associates.",
+    terms_s3_p2:"Nuestra independencia editorial se mantiene rigurosamente. Las tasas de comisión nunca influyen en nuestras recomendaciones.",
+    terms_s3_p3:"Amazon y el logotipo de Amazon son marcas registradas de Amazon.com, Inc. NestWell Finds no está respaldado por Amazon más allá del programa Associates.",
+    terms_s4_h:"4. Contenido y Propiedad Intelectual",
+    terms_s4_p1:"Todo el contenido original de NestWell Finds está protegido por derechos de autor.",
+    terms_s4_p2:"Puedes compartir enlaces libremente y citar breves extractos con atribución. La reproducción sin permiso escrito está prohibida.",
+    terms_s4_p3:"Los nombres de productos y marcas pertenecen a sus respectivos propietarios.",
+    terms_s5_h:"5. Exactitud de la Información",
+    terms_s5_p1:"Nos esforzamos por ser exactos, pero los detalles del producto cambian con frecuencia. Verifica siempre los precios y disponibilidad en la página del minorista.",
+    terms_s5_p2:"Las reseñas representan nuestra opinión editorial en el momento de la redacción. Las experiencias individuales pueden variar.",
+    terms_s6_h:"6. Enlaces Externos y Sitios Terceros",
+    terms_s6_p1:"El sitio contiene enlaces a sitios externos sobre cuyo contenido no tenemos control.",
+    terms_s6_p2:"Te recomendamos revisar las políticas de privacidad de cualquier sitio externo que visites.",
+    terms_s7_h:"7. Descargos de Responsabilidad",
+    terms_s7_p1:"EL SITIO Y EL CONTENIDO SE PROPORCIONAN \"TAL CUAL\" SIN GARANTÍAS DE NINGÚN TIPO. NESTWELL FINDS RENUNCIA A TODAS LAS GARANTÍAS IMPLÍCITAS O EXPRESAS.",
+    terms_s7_p2:"NESTWELL FINDS NO SERÁ RESPONSABLE DE DAÑOS DIRECTOS, INDIRECTOS O CONSECUENTES DERIVADOS DEL USO DEL SITIO.",
+    terms_s7_p3:"Algunas jurisdicciones no permiten ciertas exclusiones de responsabilidad.",
+    terms_s8_h:"8. Usos Prohibidos",
+    terms_s8_intro:"Aceptas no usar el sitio para:",
+    terms_s8_li1:"Cualquier fin ilegal", terms_s8_li2:"Extracción masiva de contenido sin permiso escrito",
+    terms_s8_li3:"Intentos de acceso no autorizado", terms_s8_li4:"Envío de publicidad no solicitada",
+    terms_s8_li5:"Hacerse pasar por NestWell Finds", terms_s8_li6:"Interferir con el funcionamiento del sitio",
+    terms_s9_h:"9. Cambios en los Términos",
+    terms_s9_p:"Podemos modificar estos Términos en cualquier momento. El uso continuado del sitio constituye aceptación de los Términos actualizados.",
+    terms_s10_h:"10. Ley Aplicable",
+    terms_s10_p:"Estos Términos se rigen por la legislación austriaca y de la UE. Las disputas se someterán a la jurisdicción de los tribunales de Viena, Austria.",
+    terms_s11_h:"11. Contacto",
+    terms_s11_p:"Para preguntas sobre estos Términos:",
+    terms_contact_email:"Email:", terms_contact_web:"Sitio web:",
+  }
+};
+
+const langMeta = { en:{flag:'🇬🇧',code:'EN'}, fr:{flag:'🇫🇷',code:'FR'}, de:{flag:'🇩🇪',code:'DE'}, es:{flag:'🇪🇸',code:'ES'} };
+
+function setLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+  localStorage.setItem('nw_lang', lang);
+  document.documentElement.lang = lang;
+  document.getElementById('meta-title').textContent = t.meta_title;
+  document.getElementById('meta-description').setAttribute('content', t.meta_description);
+  document.title = t.meta_title;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.getElementById('current-lang-flag').textContent = langMeta[lang].flag;
+  document.getElementById('current-lang-code').textContent = langMeta[lang].code;
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('nw_lang');
+  const browserLang = (navigator.language || 'en').slice(0,2).toLowerCase();
+  const supported = ['en','fr','de','es'];
+  const lang = supported.includes(saved) ? saved : supported.includes(browserLang) ? browserLang : 'en';
+  setLanguage(lang);
+});
+</script>
+</body>
+</html>

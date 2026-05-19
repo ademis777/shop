@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="meta-title">Privacy Policy | NestWell Finds</title>
+  <meta name="description" id="meta-description" content="Privacy Policy for NestWell Finds — how we collect, use, and protect your data, including Amazon Associates affiliate disclosures and cookie usage." />
+  <link rel="canonical" href="https://shop.dmnt.pro/privacy.html" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display:['Playfair Display','Georgia','serif'], body:['DM Sans','system-ui','sans-serif'] },
+          colors: { cream:'#FAF7F2', espresso:'#2C1810', terracotta:'#C4714A', sage:'#7A8C6E' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --cream:#FAF7F2; --espresso:#2C1810; --terracotta:#C4714A; --sage:#7A8C6E; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'DM Sans',system-ui,sans-serif; background-color:var(--cream); color:var(--espresso); -webkit-font-smoothing:antialiased; }
+    h1,h2,h3,.font-display { font-family:'Playfair Display',Georgia,serif; }
+    .disclosure-bar { background:#2C1810; color:#FAF7F2; font-size:0.72rem; letter-spacing:0.03em; text-align:center; padding:8px 16px; line-height:1.5; }
+    .nav-link { position:relative; font-size:0.85rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--espresso); transition:color 0.2s; text-decoration:none; }
+    .nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1.5px; background:var(--terracotta); transition:width 0.3s ease; }
+    .nav-link:hover { color:var(--terracotta); }
+    .nav-link:hover::after { width:100%; }
+    .lang-switcher { position:relative; display:inline-block; }
+    .lang-btn { display:flex; align-items:center; gap:5px; font-size:0.82rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; cursor:pointer; background:transparent; border:1.5px solid rgba(44,24,16,0.25); border-radius:4px; padding:5px 10px; color:var(--espresso); transition:border-color 0.2s,background 0.2s; }
+    .lang-btn:hover { border-color:var(--terracotta); }
+    .lang-dropdown { display:none; position:absolute; right:0; top:calc(100% + 8px); background:#fff; border:1.5px solid #e8e0d6; border-radius:6px; min-width:130px; box-shadow:0 8px 24px rgba(44,24,16,0.10); z-index:1000; overflow:hidden; }
+    .lang-switcher:hover .lang-dropdown, .lang-switcher:focus-within .lang-dropdown { display:block; }
+    .lang-option { display:flex; align-items:center; gap:8px; padding:9px 14px; font-size:0.82rem; font-weight:500; cursor:pointer; transition:background 0.15s; text-transform:none; letter-spacing:0; color:var(--espresso); border:none; background:transparent; width:100%; text-align:left; }
+    .lang-option:hover { background:var(--cream); }
+    .lang-option.active { color:var(--terracotta); font-weight:600; }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    .footer-link { color:rgba(250,247,242,0.65); font-size:0.82rem; text-decoration:none; transition:color 0.2s; }
+    .footer-link:hover { color:var(--terracotta); }
+
+    /* Legal page styles */
+    .legal-content { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+    .legal-content h2 { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-top:40px; margin-bottom:14px; color:var(--espresso); padding-bottom:8px; border-bottom:2px solid #e8ddd4; }
+    .legal-content h3 { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; margin-top:24px; margin-bottom:10px; color:#4A3728; }
+    .legal-content p { font-size:0.92rem; line-height:1.85; color:#4A3728; margin-bottom:14px; }
+    .legal-content ul { list-style:disc; padding-left:22px; margin-bottom:14px; }
+    .legal-content li { font-size:0.92rem; line-height:1.75; color:#4A3728; margin-bottom:6px; }
+    .legal-content a { color:var(--terracotta); text-decoration:underline; }
+    .legal-content a:hover { color:#a85c3a; }
+    .highlight-box { background:#fff; border-left:4px solid var(--terracotta); border-radius:0 8px 8px 0; padding:18px 20px; margin:20px 0; font-size:0.88rem; line-height:1.75; color:#4A3728; box-shadow:0 2px 8px rgba(44,24,16,0.06); }
+    .toc { background:#fff; border-radius:12px; padding:24px 28px; margin-bottom:40px; box-shadow:0 2px 12px rgba(44,24,16,0.07); }
+    .toc ul { list-style:none; padding:0; margin:0; }
+    .toc li { padding:4px 0; font-size:0.88rem; }
+    .toc a { color:var(--terracotta); text-decoration:none; font-weight:500; }
+    .toc a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+<div class="disclosure-bar" role="note">
+  <span data-i18n="disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.</span>
+</div>
+
+<header class="bg-white border-b border-stone-100 sticky top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/index.html" class="flex items-center gap-2" style="text-decoration:none;">
+        <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
+        <span class="font-display font-bold text-xl tracking-tight" style="color:var(--espresso);">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="/article-kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="/article-office.html" class="nav-link" data-i18n="nav_office">Home Office</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-haspopup="listbox" aria-label="Select language">
+            <span id="current-lang-flag">🇬🇧</span>
+            <span id="current-lang-code">EN</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="de" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+          </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2" aria-label="Toggle menu">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M1 1h20M1 8h20M1 15h20" stroke="#2C1810" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="flex-col bg-white border-t border-stone-100 px-4 pb-4 md:hidden">
+    <a href="/index.html" class="nav-link py-3 block" data-i18n="nav_home">Home</a>
+    <a href="/about.html" class="nav-link py-3 block" data-i18n="nav_about">About</a>
+    <a href="/contact.html" class="nav-link py-3 block" data-i18n="nav_contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#2C1810,#3A2218);padding:56px 16px 64px;">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--terracotta);" data-i18n="privacy_eyebrow">Legal</p>
+      <h1 class="font-display text-4xl font-bold mb-4" style="color:#FAF7F2;" data-i18n="privacy_h1">Privacy Policy</h1>
+      <p class="text-sm" style="color:rgba(250,247,242,0.6);" data-i18n="privacy_updated">Last updated: 1 January 2025</p>
+    </div>
+  </section>
+
+  <div class="legal-content">
+
+    <div class="highlight-box">
+      <strong data-i18n="privacy_summary_label">Summary:</strong> <span data-i18n="privacy_summary">NestWell Finds respects your privacy. We collect minimal data, use standard analytics cookies, participate in the Amazon Associates affiliate program which uses cookies to track purchases, and never sell your personal information to third parties. This policy explains everything in detail.</span>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+      <p class="font-display font-bold text-base mb-4" data-i18n="privacy_toc_title">Table of Contents</p>
+      <ul>
+        <li>1. <a href="#who-we-are" data-i18n="toc_1">Who We Are</a></li>
+        <li>2. <a href="#data-collected" data-i18n="toc_2">Information We Collect</a></li>
+        <li>3. <a href="#cookies" data-i18n="toc_3">Cookies & Tracking Technologies</a></li>
+        <li>4. <a href="#amazon-associates" data-i18n="toc_4">Amazon Associates Program</a></li>
+        <li>5. <a href="#how-we-use" data-i18n="toc_5">How We Use Your Information</a></li>
+        <li>6. <a href="#data-sharing" data-i18n="toc_6">Data Sharing & Third Parties</a></li>
+        <li>7. <a href="#your-rights" data-i18n="toc_7">Your Rights (GDPR / CCPA)</a></li>
+        <li>8. <a href="#data-retention" data-i18n="toc_8">Data Retention</a></li>
+        <li>9. <a href="#security" data-i18n="toc_9">Security</a></li>
+        <li>10. <a href="#contact" data-i18n="toc_10">Contact & Complaints</a></li>
+      </ul>
+    </div>
+
+    <h2 id="who-we-are" data-i18n="priv_s1_h">1. Who We Are</h2>
+    <p data-i18n="priv_s1_p1">NestWell Finds ("we", "us", or "our") operates the website located at <strong>https://shop.dmnt.pro</strong> (the "Site"). We are an independent editorial platform publishing product reviews and buying guides focused on kitchen gadgets and home office equipment.</p>
+    <p data-i18n="priv_s1_p2">For any privacy-related inquiries, you may contact us at: <a href="mailto:hello@shop.dmnt.pro">hello@shop.dmnt.pro</a></p>
+
+    <h2 id="data-collected" data-i18n="priv_s2_h">2. Information We Collect</h2>
+    <p data-i18n="priv_s2_intro">We collect only the minimum data necessary to operate the Site. This includes:</p>
+    <h3 data-i18n="priv_s2_h_auto">2.1 Automatically Collected Data</h3>
+    <ul>
+      <li data-i18n="priv_s2_li1">IP address (anonymised where possible)</li>
+      <li data-i18n="priv_s2_li2">Browser type and version</li>
+      <li data-i18n="priv_s2_li3">Pages visited and time spent on each page</li>
+      <li data-i18n="priv_s2_li4">Referring URL (the page you came from)</li>
+      <li data-i18n="priv_s2_li5">Device type (mobile, tablet, desktop)</li>
+    </ul>
+    <h3 data-i18n="priv_s2_h_contact">2.2 Data You Provide Voluntarily</h3>
+    <ul>
+      <li data-i18n="priv_s2_li6">Name and email address if you submit our contact form</li>
+      <li data-i18n="priv_s2_li7">Email address if you subscribe to our newsletter</li>
+    </ul>
+    <p data-i18n="priv_s2_note">We do not collect payment information, government IDs, or any sensitive personal data. We never require you to create an account to use this Site.</p>
+
+    <h2 id="cookies" data-i18n="priv_s3_h">3. Cookies &amp; Tracking Technologies</h2>
+    <p data-i18n="priv_s3_p1">We use cookies and similar tracking technologies on this Site. A cookie is a small text file stored on your device. By continuing to use this Site, you consent to the use of cookies as described in this section.</p>
+
+    <h3 data-i18n="priv_s3_h_essential">3.1 Essential Cookies</h3>
+    <p data-i18n="priv_s3_p_essential">These are strictly necessary for the Site to function. They include the language preference cookie (<code>nw_lang</code>) which stores your chosen display language. These cookies cannot be disabled without breaking the Site.</p>
+
+    <h3 data-i18n="priv_s3_h_analytics">3.2 Analytics Cookies</h3>
+    <p data-i18n="priv_s3_p_analytics">We may use Google Analytics (or a privacy-friendly alternative) to understand how visitors use our Site. Analytics cookies collect aggregated, anonymised data. They do not identify you personally. You may opt out of analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+    <h3 data-i18n="priv_s3_h_affiliate">3.3 Affiliate &amp; Advertising Cookies (Amazon)</h3>
+    <p data-i18n="priv_s3_p_affiliate">When you click a product link on this Site that directs to an external retailer (including Amazon), that retailer may place cookies on your device to track whether a qualifying purchase is made. This allows us to receive a commission. We have no direct control over these third-party cookies. Please refer to the relevant retailer's privacy policy:</p>
+    <ul>
+      <li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" target="_blank" rel="noopener">Amazon Privacy Notice</a></li>
+    </ul>
+
+    <h3 data-i18n="priv_s3_h_manage">3.4 Managing Cookies</h3>
+    <p data-i18n="priv_s3_p_manage">You can control and delete cookies through your browser settings. Please be aware that disabling cookies may affect the functionality of this Site and other websites. For more information on managing cookies, visit <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">allaboutcookies.org</a>.</p>
+
+    <h2 id="amazon-associates" data-i18n="priv_s4_h">4. Amazon Associates Program</h2>
+    <div class="highlight-box">
+      <strong>Affiliate Disclosure:</strong> <span data-i18n="priv_s4_disclosure">NestWell Finds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon. As an Amazon Associate, we earn from qualifying purchases. This means that when you click on a link to an Amazon product and make a purchase, we may receive a commission — at no additional cost to you.</span>
+    </div>
+    <p data-i18n="priv_s4_p1">Amazon uses cookies and tracking technologies to attribute purchases to affiliate websites. When you click an affiliate link on our Site, a tracking cookie is set on your device by Amazon. This cookie may persist for up to 24 hours (or until you make a purchase). After a qualifying purchase, the cookie is replaced with a purchase-confirmation cookie.</p>
+    <p data-i18n="priv_s4_p2">Our editorial content is never influenced by affiliate relationships. We only recommend products we believe in based on independent research. We never disclose which specific products have higher commission rates, as this has no bearing on our recommendations.</p>
+    <p data-i18n="priv_s4_p3">For more information on how Amazon uses data, please see Amazon's Privacy Notice. We do not share your personal data with Amazon; any data collected through Amazon's cookies is governed entirely by Amazon's own privacy policy.</p>
+
+    <h2 id="how-we-use" data-i18n="priv_s5_h">5. How We Use Your Information</h2>
+    <p data-i18n="priv_s5_intro">We use the data we collect for the following purposes:</p>
+    <ul>
+      <li data-i18n="priv_s5_li1">To operate, maintain, and improve the Site</li>
+      <li data-i18n="priv_s5_li2">To respond to contact form submissions and email inquiries</li>
+      <li data-i18n="priv_s5_li3">To send editorial newsletters (only if you have explicitly subscribed)</li>
+      <li data-i18n="priv_s5_li4">To analyse Site usage patterns and improve content</li>
+      <li data-i18n="priv_s5_li5">To earn affiliate commissions that fund our editorial operation</li>
+      <li data-i18n="priv_s5_li6">To comply with applicable laws and regulations</li>
+    </ul>
+    <p data-i18n="priv_s5_legal_basis">The legal basis for processing your personal data (under GDPR) is: legitimate interest (analytics, Site improvement), contract performance (responding to contact form), and consent (newsletter subscription).</p>
+
+    <h2 id="data-sharing" data-i18n="priv_s6_h">6. Data Sharing &amp; Third Parties</h2>
+    <p data-i18n="priv_s6_p1">We do not sell, rent, or trade your personal information to third parties. We may share limited data with the following categories of service providers, who are contractually bound to process it only as instructed and in compliance with applicable data protection law:</p>
+    <ul>
+      <li data-i18n="priv_s6_li1"><strong>Analytics providers</strong> (e.g. Google Analytics) — anonymised traffic data</li>
+      <li data-i18n="priv_s6_li2"><strong>Email service providers</strong> — for sending newsletter emails to confirmed subscribers</li>
+      <li data-i18n="priv_s6_li3"><strong>Hosting providers</strong> — for Site infrastructure and security</li>
+      <li data-i18n="priv_s6_li4"><strong>Affiliate networks</strong> (Amazon Associates) — via cookie tracking on product links as described above</li>
+    </ul>
+    <p data-i18n="priv_s6_p2">We may also disclose personal data if required to do so by law, or in the good-faith belief that such action is necessary to comply with a legal obligation or protect the rights and safety of our users or the public.</p>
+
+    <h2 id="your-rights" data-i18n="priv_s7_h">7. Your Rights (GDPR / CCPA)</h2>
+    <p data-i18n="priv_s7_p1">Depending on your location, you may have the following rights regarding your personal data:</p>
+    <ul>
+      <li data-i18n="priv_s7_li1"><strong>Right of access</strong> — You may request a copy of the personal data we hold about you.</li>
+      <li data-i18n="priv_s7_li2"><strong>Right to rectification</strong> — You may request correction of inaccurate personal data.</li>
+      <li data-i18n="priv_s7_li3"><strong>Right to erasure</strong> — You may request deletion of your personal data ("right to be forgotten").</li>
+      <li data-i18n="priv_s7_li4"><strong>Right to data portability</strong> — You may request a machine-readable copy of your data.</li>
+      <li data-i18n="priv_s7_li5"><strong>Right to object</strong> — You may object to processing of your data for direct marketing or legitimate interest purposes.</li>
+      <li data-i18n="priv_s7_li6"><strong>Right to withdraw consent</strong> — Where processing is based on consent, you may withdraw it at any time.</li>
+      <li data-i18n="priv_s7_li7"><strong>CCPA (California residents)</strong> — You have the right to know what personal information is collected, to request deletion, and to opt out of the sale of personal information (we do not sell personal information).</li>
+    </ul>
+    <p data-i18n="priv_s7_p2">To exercise any of these rights, please contact us at <a href="mailto:hello@shop.dmnt.pro">hello@shop.dmnt.pro</a>. We will respond within 30 days. If you are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.</p>
+
+    <h2 id="data-retention" data-i18n="priv_s8_h">8. Data Retention</h2>
+    <p data-i18n="priv_s8_p">We retain personal data only for as long as necessary for the purposes described in this policy. Contact form data is retained for up to 12 months. Newsletter subscriber data is retained until you unsubscribe. Analytics data is retained in anonymised, aggregated form. You may request deletion at any time as described above.</p>
+
+    <h2 id="security" data-i18n="priv_s9_h">9. Security</h2>
+    <p data-i18n="priv_s9_p">We take reasonable technical and organisational measures to protect your personal data against unauthorised access, loss, or misuse. Our Site is served over HTTPS. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+    <h2 id="contact" data-i18n="priv_s10_h">10. Contact &amp; Complaints</h2>
+    <p data-i18n="priv_s10_p1">If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us:</p>
+    <ul>
+      <li><strong data-i18n="priv_contact_email_label">Email:</strong> <a href="mailto:hello@shop.dmnt.pro">hello@shop.dmnt.pro</a></li>
+      <li><strong data-i18n="priv_contact_web_label">Website:</strong> <a href="https://shop.dmnt.pro/contact.html">shop.dmnt.pro/contact.html</a></li>
+    </ul>
+    <p data-i18n="priv_s10_p2">We reserve the right to update this Privacy Policy at any time. Material changes will be communicated by updating the "Last Updated" date at the top of this page. Continued use of the Site after changes constitutes your acceptance of the updated policy.</p>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer style="background:var(--espresso);color:#FAF7F2;padding:56px 16px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background:var(--terracotta);color:#fff;">N</div>
+          <span class="font-display font-bold text-xl">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:rgba(250,247,242,0.65);" data-i18n="footer_brand_desc">A passionate editorial team curating the best kitchen gadgets and home office gear.</p>
+        <p class="text-xs" style="color:rgba(250,247,242,0.45);" data-i18n="disclosure_footer">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_explore">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="/index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="/article-kitchen.html" class="footer-link" data-i18n="nav_kitchen">Kitchen</a></li>
+          <li><a href="/article-office.html" class="footer-link" data-i18n="nav_office">Home Office</a></li>
+          <li><a href="/about.html" class="footer-link" data-i18n="nav_about">About</a></li>
+          <li><a href="/contact.html" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_legal">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/privacy.html" class="footer-link" style="color:var(--terracotta);" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="footer-link" data-i18n="footer_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t pt-6" style="border-color:rgba(250,247,242,0.12);text-align:center;">
+      <p class="text-xs" style="color:rgba(250,247,242,0.4);" data-i18n="footer_copy">© 2025 NestWell Finds. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  en: {
+    meta_title:"Privacy Policy | NestWell Finds",
+    meta_description:"Privacy Policy for NestWell Finds — how we collect, use, and protect your data, including Amazon Associates affiliate disclosures and cookie usage.",
+    disclosure:"As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.",
+    disclosure_footer:"As an Amazon Associate I earn from qualifying purchases.",
+    nav_home:"Home", nav_kitchen:"Kitchen", nav_office:"Home Office", nav_about:"About", nav_contact:"Contact",
+    footer_brand_desc:"A passionate editorial team curating the best kitchen gadgets and home office gear.",
+    footer_explore:"Explore", footer_legal:"Legal", footer_privacy:"Privacy Policy", footer_terms:"Terms of Service",
+    footer_copy:"© 2025 NestWell Finds. All rights reserved.",
+    privacy_eyebrow:"Legal", privacy_h1:"Privacy Policy", privacy_updated:"Last updated: 1 January 2025",
+    privacy_summary_label:"Summary:", privacy_summary:"NestWell Finds respects your privacy. We collect minimal data, use standard analytics cookies, participate in the Amazon Associates affiliate program which uses cookies to track purchases, and never sell your personal information to third parties.",
+    privacy_toc_title:"Table of Contents",
+    toc_1:"Who We Are", toc_2:"Information We Collect", toc_3:"Cookies & Tracking Technologies",
+    toc_4:"Amazon Associates Program", toc_5:"How We Use Your Information", toc_6:"Data Sharing & Third Parties",
+    toc_7:"Your Rights (GDPR / CCPA)", toc_8:"Data Retention", toc_9:"Security", toc_10:"Contact & Complaints",
+    priv_s1_h:"1. Who We Are",
+    priv_s1_p1:"NestWell Finds (\"we\", \"us\", or \"our\") operates the website located at https://shop.dmnt.pro (the \"Site\"). We are an independent editorial platform publishing product reviews and buying guides focused on kitchen gadgets and home office equipment.",
+    priv_s1_p2:"For any privacy-related inquiries, you may contact us at: hello@shop.dmnt.pro",
+    priv_s2_h:"2. Information We Collect",
+    priv_s2_intro:"We collect only the minimum data necessary to operate the Site. This includes:",
+    priv_s2_h_auto:"2.1 Automatically Collected Data",
+    priv_s2_li1:"IP address (anonymised where possible)", priv_s2_li2:"Browser type and version",
+    priv_s2_li3:"Pages visited and time spent on each page", priv_s2_li4:"Referring URL (the page you came from)",
+    priv_s2_li5:"Device type (mobile, tablet, desktop)",
+    priv_s2_h_contact:"2.2 Data You Provide Voluntarily",
+    priv_s2_li6:"Name and email address if you submit our contact form",
+    priv_s2_li7:"Email address if you subscribe to our newsletter",
+    priv_s2_note:"We do not collect payment information, government IDs, or any sensitive personal data.",
+    priv_s3_h:"3. Cookies & Tracking Technologies",
+    priv_s3_p1:"We use cookies and similar tracking technologies on this Site. By continuing to use this Site, you consent to the use of cookies as described in this section.",
+    priv_s3_h_essential:"3.1 Essential Cookies", priv_s3_p_essential:"These are strictly necessary for the Site to function. They include the language preference cookie (nw_lang) which stores your chosen display language.",
+    priv_s3_h_analytics:"3.2 Analytics Cookies", priv_s3_p_analytics:"We may use Google Analytics to understand how visitors use our Site. Analytics cookies collect aggregated, anonymised data and do not identify you personally.",
+    priv_s3_h_affiliate:"3.3 Affiliate & Advertising Cookies (Amazon)",
+    priv_s3_p_affiliate:"When you click a product link on this Site that directs to an external retailer (including Amazon), that retailer may place cookies on your device to track whether a qualifying purchase is made.",
+    priv_s3_h_manage:"3.4 Managing Cookies",
+    priv_s3_p_manage:"You can control and delete cookies through your browser settings. Disabling cookies may affect Site functionality.",
+    priv_s4_h:"4. Amazon Associates Program",
+    priv_s4_disclosure:"NestWell Finds is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. When you click on a link to an Amazon product and make a purchase, we may receive a commission — at no additional cost to you.",
+    priv_s4_p1:"Amazon uses cookies to attribute purchases to affiliate websites. When you click an affiliate link, a tracking cookie is set by Amazon on your device, which may persist for up to 24 hours.",
+    priv_s4_p2:"Our editorial content is never influenced by affiliate relationships. We only recommend products based on independent research.",
+    priv_s4_p3:"We do not share your personal data with Amazon. Data collected through Amazon's cookies is governed by Amazon's own privacy policy.",
+    priv_s5_h:"5. How We Use Your Information",
+    priv_s5_intro:"We use the data we collect for the following purposes:",
+    priv_s5_li1:"To operate, maintain, and improve the Site", priv_s5_li2:"To respond to contact form submissions and inquiries",
+    priv_s5_li3:"To send editorial newsletters (only if you have explicitly subscribed)",
+    priv_s5_li4:"To analyse Site usage patterns and improve content",
+    priv_s5_li5:"To earn affiliate commissions that fund our editorial operation",
+    priv_s5_li6:"To comply with applicable laws and regulations",
+    priv_s5_legal_basis:"The legal basis for processing your personal data (under GDPR) is: legitimate interest (analytics), contract performance (contact form), and consent (newsletter).",
+    priv_s6_h:"6. Data Sharing & Third Parties",
+    priv_s6_p1:"We do not sell, rent, or trade your personal information. We may share limited data with service providers bound by data protection obligations:",
+    priv_s6_li1:"Analytics providers (e.g. Google Analytics) — anonymised traffic data",
+    priv_s6_li2:"Email service providers — for newsletter delivery",
+    priv_s6_li3:"Hosting providers — for Site infrastructure",
+    priv_s6_li4:"Affiliate networks (Amazon Associates) — via cookie tracking on product links",
+    priv_s6_p2:"We may disclose data if required by law or to protect user safety.",
+    priv_s7_h:"7. Your Rights (GDPR / CCPA)",
+    priv_s7_p1:"Depending on your location, you may have the following rights:",
+    priv_s7_li1:"Right of access — request a copy of your personal data",
+    priv_s7_li2:"Right to rectification — request correction of inaccurate data",
+    priv_s7_li3:"Right to erasure — request deletion of your personal data",
+    priv_s7_li4:"Right to data portability — request a machine-readable copy",
+    priv_s7_li5:"Right to object — object to processing for direct marketing",
+    priv_s7_li6:"Right to withdraw consent — where processing is based on consent",
+    priv_s7_li7:"CCPA (California) — right to know, delete, and opt out of sale of personal information",
+    priv_s7_p2:"To exercise these rights, contact us at hello@shop.dmnt.pro. We respond within 30 days.",
+    priv_s8_h:"8. Data Retention",
+    priv_s8_p:"We retain data only as long as necessary. Contact form data: up to 12 months. Newsletter data: until unsubscription. Analytics data: anonymised and aggregated.",
+    priv_s9_h:"9. Security",
+    priv_s9_p:"We take reasonable technical and organisational measures to protect your data. The Site is served over HTTPS. No method of internet transmission is 100% secure.",
+    priv_s10_h:"10. Contact & Complaints",
+    priv_s10_p1:"If you have questions or wish to exercise your rights, please contact us:",
+    priv_contact_email_label:"Email:", priv_contact_web_label:"Website:",
+    priv_s10_p2:"We may update this Privacy Policy at any time. Material changes will be communicated by updating the date above.",
+  },
+  fr: {
+    meta_title:"Politique de confidentialité | NestWell Finds",
+    meta_description:"Politique de confidentialité de NestWell Finds — comment nous collectons, utilisons et protégeons vos données, y compris les divulgations d'affiliés Amazon.",
+    disclosure:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    disclosure_footer:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    nav_home:"Accueil", nav_kitchen:"Cuisine", nav_office:"Bureau", nav_about:"À propos", nav_contact:"Contact",
+    footer_brand_desc:"Une équipe éditoriale passionnée qui sélectionne les meilleurs gadgets cuisine et équipements bureau.",
+    footer_explore:"Explorer", footer_legal:"Mentions légales", footer_privacy:"Politique de confidentialité", footer_terms:"Conditions d'utilisation",
+    footer_copy:"© 2025 NestWell Finds. Tous droits réservés.",
+    privacy_eyebrow:"Légal", privacy_h1:"Politique de confidentialité", privacy_updated:"Dernière mise à jour : 1er janvier 2025",
+    privacy_summary_label:"Résumé :", privacy_summary:"NestWell Finds respecte votre vie privée. Nous collectons un minimum de données, utilisons des cookies analytiques standard, participons au programme d'affiliation Amazon Associates et ne vendons jamais vos informations personnelles à des tiers.",
+    privacy_toc_title:"Sommaire",
+    toc_1:"Qui sommes-nous", toc_2:"Informations collectées", toc_3:"Cookies & technologies de suivi",
+    toc_4:"Programme Amazon Associates", toc_5:"Utilisation de vos données", toc_6:"Partage des données",
+    toc_7:"Vos droits (RGPD)", toc_8:"Conservation des données", toc_9:"Sécurité", toc_10:"Contact & réclamations",
+    priv_s1_h:"1. Qui sommes-nous",
+    priv_s1_p1:"NestWell Finds exploite le site web situé à https://shop.dmnt.pro. Nous sommes une plateforme éditoriale indépendante publiant des avis et guides d'achat sur les gadgets cuisine et le matériel de bureau.",
+    priv_s1_p2:"Pour toute question relative à la confidentialité : hello@shop.dmnt.pro",
+    priv_s2_h:"2. Informations que nous collectons",
+    priv_s2_intro:"Nous collectons uniquement les données minimales nécessaires au fonctionnement du site.",
+    priv_s2_h_auto:"2.1 Données collectées automatiquement",
+    priv_s2_li1:"Adresse IP (anonymisée autant que possible)", priv_s2_li2:"Type et version du navigateur",
+    priv_s2_li3:"Pages consultées et temps passé", priv_s2_li4:"URL de référence", priv_s2_li5:"Type d'appareil",
+    priv_s2_h_contact:"2.2 Données fournies volontairement",
+    priv_s2_li6:"Nom et email si vous soumettez le formulaire de contact",
+    priv_s2_li7:"Email si vous vous abonnez à la newsletter",
+    priv_s2_note:"Nous ne collectons pas d'informations de paiement ni de données personnelles sensibles.",
+    priv_s3_h:"3. Cookies & technologies de suivi",
+    priv_s3_p1:"Nous utilisons des cookies sur ce site. En continuant à l'utiliser, vous consentez à l'utilisation des cookies décrits dans cette section.",
+    priv_s3_h_essential:"3.1 Cookies essentiels", priv_s3_p_essential:"Strictement nécessaires au fonctionnement du site, notamment le cookie de préférence de langue (nw_lang).",
+    priv_s3_h_analytics:"3.2 Cookies analytiques", priv_s3_p_analytics:"Nous pouvons utiliser Google Analytics pour comprendre l'utilisation du site. Ces cookies collectent des données agrégées et anonymisées.",
+    priv_s3_h_affiliate:"3.3 Cookies d'affiliation (Amazon)",
+    priv_s3_p_affiliate:"Lorsque vous cliquez sur un lien produit redirigeant vers Amazon, ce dernier peut déposer des cookies pour suivre les achats qualifiés.",
+    priv_s3_h_manage:"3.4 Gestion des cookies",
+    priv_s3_p_manage:"Vous pouvez contrôler et supprimer les cookies via les paramètres de votre navigateur.",
+    priv_s4_h:"4. Programme Amazon Associates",
+    priv_s4_disclosure:"NestWell Finds participe au Programme Partenaires d'Amazon. En tant qu'associé Amazon, nous gagnons des commissions sur les achats qualifiés effectués via nos liens — sans frais supplémentaires pour vous.",
+    priv_s4_p1:"Amazon utilise des cookies pour attribuer les achats aux sites affiliés. Lorsque vous cliquez sur un lien affilié, un cookie de suivi est déposé par Amazon sur votre appareil.",
+    priv_s4_p2:"Notre contenu éditorial n'est jamais influencé par les relations d'affiliation.",
+    priv_s4_p3:"Nous ne partageons pas vos données personnelles avec Amazon. Les données collectées via les cookies Amazon sont régies par la politique de confidentialité d'Amazon.",
+    priv_s5_h:"5. Utilisation de vos informations",
+    priv_s5_intro:"Nous utilisons les données collectées aux fins suivantes :",
+    priv_s5_li1:"Exploiter, maintenir et améliorer le site", priv_s5_li2:"Répondre aux formulaires de contact",
+    priv_s5_li3:"Envoyer des newsletters (uniquement si vous y avez souscrit)",
+    priv_s5_li4:"Analyser l'utilisation du site", priv_s5_li5:"Percevoir des commissions d'affiliation",
+    priv_s5_li6:"Respecter les obligations légales",
+    priv_s5_legal_basis:"Base légale (RGPD) : intérêt légitime (analytique), exécution du contrat (formulaire), consentement (newsletter).",
+    priv_s6_h:"6. Partage des données",
+    priv_s6_p1:"Nous ne vendons pas vos données. Nous pouvons les partager avec des prestataires liés par des obligations de protection des données :",
+    priv_s6_li1:"Prestataires analytiques (ex. Google Analytics)", priv_s6_li2:"Prestataires d'email",
+    priv_s6_li3:"Hébergeurs", priv_s6_li4:"Réseaux d'affiliation (Amazon Associates)",
+    priv_s6_p2:"Nous pouvons divulguer des données si la loi l'exige.",
+    priv_s7_h:"7. Vos droits (RGPD)",
+    priv_s7_p1:"Selon votre localisation, vous disposez des droits suivants :",
+    priv_s7_li1:"Droit d'accès", priv_s7_li2:"Droit de rectification", priv_s7_li3:"Droit à l'effacement",
+    priv_s7_li4:"Droit à la portabilité", priv_s7_li5:"Droit d'opposition",
+    priv_s7_li6:"Droit de retrait du consentement", priv_s7_li7:"Droits CCPA (Californie)",
+    priv_s7_p2:"Pour exercer ces droits, contactez-nous : hello@shop.dmnt.pro. Délai de réponse : 30 jours.",
+    priv_s8_h:"8. Conservation des données",
+    priv_s8_p:"Formulaire de contact : 12 mois maximum. Abonnés newsletter : jusqu'à désinscription. Données analytiques : anonymisées.",
+    priv_s9_h:"9. Sécurité",
+    priv_s9_p:"Nous appliquons des mesures techniques et organisationnelles raisonnables. Le site est servi en HTTPS.",
+    priv_s10_h:"10. Contact & Réclamations",
+    priv_s10_p1:"Pour toute question, contactez-nous :",
+    priv_contact_email_label:"Email :", priv_contact_web_label:"Site web :",
+    priv_s10_p2:"Nous pouvons mettre à jour cette politique à tout moment. Les modifications importantes seront signalées par la mise à jour de la date ci-dessus.",
+  },
+  de: {
+    meta_title:"Datenschutzrichtlinie | NestWell Finds",
+    meta_description:"Datenschutzrichtlinie von NestWell Finds — wie wir Ihre Daten erfassen, verwenden und schützen, einschließlich Amazon Associates Offenlegung und Cookie-Nutzung.",
+    disclosure:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    disclosure_footer:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    nav_home:"Startseite", nav_kitchen:"Küche", nav_office:"Homeoffice", nav_about:"Über uns", nav_contact:"Kontakt",
+    footer_brand_desc:"Ein leidenschaftliches Redaktionsteam, das die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert.",
+    footer_explore:"Entdecken", footer_legal:"Rechtliches", footer_privacy:"Datenschutzrichtlinie", footer_terms:"Nutzungsbedingungen",
+    footer_copy:"© 2025 NestWell Finds. Alle Rechte vorbehalten.",
+    privacy_eyebrow:"Rechtliches", privacy_h1:"Datenschutzrichtlinie", privacy_updated:"Zuletzt aktualisiert: 1. Januar 2025",
+    privacy_summary_label:"Zusammenfassung:", privacy_summary:"NestWell Finds respektiert Ihre Privatsphäre. Wir erheben minimale Daten, verwenden Standard-Analytics-Cookies, nehmen am Amazon-Partnerprogramm teil und verkaufen Ihre persönlichen Daten niemals an Dritte.",
+    privacy_toc_title:"Inhaltsverzeichnis",
+    toc_1:"Wer wir sind", toc_2:"Erhobene Informationen", toc_3:"Cookies & Tracking-Technologien",
+    toc_4:"Amazon-Partnerprogramm", toc_5:"Verwendung Ihrer Daten", toc_6:"Datenweitergabe",
+    toc_7:"Ihre Rechte (DSGVO)", toc_8:"Datenspeicherung", toc_9:"Sicherheit", toc_10:"Kontakt & Beschwerden",
+    priv_s1_h:"1. Wer wir sind",
+    priv_s1_p1:"NestWell Finds betreibt die Website unter https://shop.dmnt.pro. Wir sind eine unabhängige Redaktionsplattform für Produktbewertungen zu Küchengadgets und Homeoffice-Ausstattung.",
+    priv_s1_p2:"Datenschutzanfragen: hello@shop.dmnt.pro",
+    priv_s2_h:"2. Erhobene Informationen",
+    priv_s2_intro:"Wir erheben nur die minimal notwendigen Daten.",
+    priv_s2_h_auto:"2.1 Automatisch erhobene Daten",
+    priv_s2_li1:"IP-Adresse (soweit möglich anonymisiert)", priv_s2_li2:"Browser-Typ und -Version",
+    priv_s2_li3:"Besuchte Seiten und Verweildauer", priv_s2_li4:"Verweisende URL", priv_s2_li5:"Gerätetyp",
+    priv_s2_h_contact:"2.2 Freiwillig bereitgestellte Daten",
+    priv_s2_li6:"Name und E-Mail bei Kontaktformular-Nutzung",
+    priv_s2_li7:"E-Mail bei Newsletter-Anmeldung",
+    priv_s2_note:"Wir erheben keine Zahlungsinformationen oder sensiblen personenbezogenen Daten.",
+    priv_s3_h:"3. Cookies & Tracking-Technologien",
+    priv_s3_p1:"Wir verwenden Cookies auf dieser Website. Mit der weiteren Nutzung stimmen Sie deren Einsatz zu.",
+    priv_s3_h_essential:"3.1 Notwendige Cookies", priv_s3_p_essential:"Für den Betrieb der Website unbedingt erforderlich, z.B. der Sprachpräferenz-Cookie (nw_lang).",
+    priv_s3_h_analytics:"3.2 Analyse-Cookies", priv_s3_p_analytics:"Wir können Google Analytics verwenden. Diese Cookies erfassen aggregierte, anonymisierte Daten.",
+    priv_s3_h_affiliate:"3.3 Affiliate- & Werbe-Cookies (Amazon)",
+    priv_s3_p_affiliate:"Wenn Sie auf einen Produktlink zu Amazon klicken, kann Amazon Cookies auf Ihrem Gerät setzen, um qualifizierte Käufe zu verfolgen.",
+    priv_s3_h_manage:"3.4 Cookie-Verwaltung",
+    priv_s3_p_manage:"Sie können Cookies über Ihre Browsereinstellungen verwalten und löschen.",
+    priv_s4_h:"4. Amazon-Partnerprogramm",
+    priv_s4_disclosure:"NestWell Finds nimmt am Amazon Services LLC-Partnerprogramm teil. Als Amazon-Partner verdienen wir an qualifizierten Einkäufen — ohne Mehrkosten für Sie.",
+    priv_s4_p1:"Amazon setzt Cookies zur Zuordnung von Käufen zu Partner-Websites. Beim Klick auf einen Affiliate-Link wird ein Tracking-Cookie von Amazon gesetzt.",
+    priv_s4_p2:"Unsere Redaktionsinhalte werden niemals durch Affiliate-Beziehungen beeinflusst.",
+    priv_s4_p3:"Wir geben Ihre persönlichen Daten nicht an Amazon weiter.",
+    priv_s5_h:"5. Verwendung Ihrer Informationen",
+    priv_s5_intro:"Wir verwenden die erhobenen Daten für folgende Zwecke:",
+    priv_s5_li1:"Betrieb, Wartung und Verbesserung der Website", priv_s5_li2:"Beantwortung von Kontaktanfragen",
+    priv_s5_li3:"Versand von Newslettern (nur bei ausdrücklicher Anmeldung)",
+    priv_s5_li4:"Analyse der Website-Nutzung", priv_s5_li5:"Erzielung von Affiliate-Provisionen",
+    priv_s5_li6:"Einhaltung gesetzlicher Vorschriften",
+    priv_s5_legal_basis:"Rechtsgrundlage (DSGVO): berechtigtes Interesse (Analyse), Vertragserfüllung (Kontaktformular), Einwilligung (Newsletter).",
+    priv_s6_h:"6. Datenweitergabe",
+    priv_s6_p1:"Wir verkaufen Ihre Daten nicht. Wir können Daten mit vertraglich gebundenen Dienstleistern teilen:",
+    priv_s6_li1:"Analyse-Dienstleister (z.B. Google Analytics)", priv_s6_li2:"E-Mail-Dienstleister",
+    priv_s6_li3:"Hosting-Anbieter", priv_s6_li4:"Affiliate-Netzwerke (Amazon Associates)",
+    priv_s6_p2:"Eine Datenweitergabe erfolgt auch bei gesetzlicher Verpflichtung.",
+    priv_s7_h:"7. Ihre Rechte (DSGVO)",
+    priv_s7_p1:"Je nach Ihrem Standort haben Sie folgende Rechte:",
+    priv_s7_li1:"Auskunftsrecht", priv_s7_li2:"Recht auf Berichtigung",
+    priv_s7_li3:"Recht auf Löschung (\"Vergessenwerden\")", priv_s7_li4:"Recht auf Datenübertragbarkeit",
+    priv_s7_li5:"Widerspruchsrecht", priv_s7_li6:"Recht auf Widerruf der Einwilligung",
+    priv_s7_li7:"CCPA-Rechte (Kalifornien)",
+    priv_s7_p2:"Zur Ausübung dieser Rechte: hello@shop.dmnt.pro. Antwortfrist: 30 Tage.",
+    priv_s8_h:"8. Datenspeicherung",
+    priv_s8_p:"Kontaktformulardaten: bis zu 12 Monate. Newsletter-Daten: bis zur Abmeldung. Analysedaten: anonymisiert.",
+    priv_s9_h:"9. Sicherheit",
+    priv_s9_p:"Wir treffen angemessene technische und organisatorische Maßnahmen. Die Website wird über HTTPS bereitgestellt.",
+    priv_s10_h:"10. Kontakt & Beschwerden",
+    priv_s10_p1:"Für Fragen oder zur Ausübung Ihrer Rechte:",
+    priv_contact_email_label:"E-Mail:", priv_contact_web_label:"Website:",
+    priv_s10_p2:"Wir können diese Datenschutzrichtlinie jederzeit aktualisieren. Wesentliche Änderungen werden durch Aktualisierung des Datums kenntlich gemacht.",
+  },
+  es: {
+    meta_title:"Política de Privacidad | NestWell Finds",
+    meta_description:"Política de privacidad de NestWell Finds — cómo recopilamos, usamos y protegemos tus datos, incluidas las divulgaciones de afiliados de Amazon.",
+    disclosure:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    disclosure_footer:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    nav_home:"Inicio", nav_kitchen:"Cocina", nav_office:"Oficina en Casa", nav_about:"Sobre Nosotros", nav_contact:"Contacto",
+    footer_brand_desc:"Un apasionado equipo editorial que cura los mejores gadgets de cocina y equipamiento de oficina.",
+    footer_explore:"Explorar", footer_legal:"Legal", footer_privacy:"Política de privacidad", footer_terms:"Términos de servicio",
+    footer_copy:"© 2025 NestWell Finds. Todos los derechos reservados.",
+    privacy_eyebrow:"Legal", privacy_h1:"Política de Privacidad", privacy_updated:"Última actualización: 1 de enero de 2025",
+    privacy_summary_label:"Resumen:", privacy_summary:"NestWell Finds respeta tu privacidad. Recopilamos datos mínimos, usamos cookies analíticas estándar, participamos en el programa Amazon Associates y nunca vendemos tu información personal.",
+    privacy_toc_title:"Índice",
+    toc_1:"Quiénes somos", toc_2:"Información que recopilamos", toc_3:"Cookies y tecnologías de seguimiento",
+    toc_4:"Programa Amazon Associates", toc_5:"Cómo usamos tu información", toc_6:"Compartición de datos",
+    toc_7:"Tus derechos (RGPD / CCPA)", toc_8:"Conservación de datos", toc_9:"Seguridad", toc_10:"Contacto y reclamaciones",
+    priv_s1_h:"1. Quiénes somos",
+    priv_s1_p1:"NestWell Finds opera el sitio web en https://shop.dmnt.pro. Somos una plataforma editorial independiente que publica reseñas y guías de compra sobre gadgets de cocina y equipamiento de oficina.",
+    priv_s1_p2:"Para consultas sobre privacidad: hello@shop.dmnt.pro",
+    priv_s2_h:"2. Información que recopilamos",
+    priv_s2_intro:"Recopilamos únicamente los datos mínimos necesarios para operar el sitio.",
+    priv_s2_h_auto:"2.1 Datos recopilados automáticamente",
+    priv_s2_li1:"Dirección IP (anonimizada siempre que sea posible)", priv_s2_li2:"Tipo y versión del navegador",
+    priv_s2_li3:"Páginas visitadas y tiempo de permanencia", priv_s2_li4:"URL de referencia", priv_s2_li5:"Tipo de dispositivo",
+    priv_s2_h_contact:"2.2 Datos proporcionados voluntariamente",
+    priv_s2_li6:"Nombre y email si envías el formulario de contacto",
+    priv_s2_li7:"Email si te suscribes al boletín",
+    priv_s2_note:"No recopilamos información de pago ni datos personales sensibles.",
+    priv_s3_h:"3. Cookies y tecnologías de seguimiento",
+    priv_s3_p1:"Usamos cookies en este sitio. Al continuar usando el sitio, consientes el uso de cookies según se describe aquí.",
+    priv_s3_h_essential:"3.1 Cookies esenciales", priv_s3_p_essential:"Estrictamente necesarias para el funcionamiento del sitio, incluyendo la cookie de preferencia de idioma (nw_lang).",
+    priv_s3_h_analytics:"3.2 Cookies analíticas", priv_s3_p_analytics:"Podemos usar Google Analytics para entender cómo se usa el sitio. Estas cookies recopilan datos agregados y anonimizados.",
+    priv_s3_h_affiliate:"3.3 Cookies de afiliados (Amazon)",
+    priv_s3_p_affiliate:"Al hacer clic en un enlace de producto que dirija a Amazon, este puede colocar cookies en tu dispositivo para rastrear las compras calificadas.",
+    priv_s3_h_manage:"3.4 Gestión de cookies",
+    priv_s3_p_manage:"Puedes controlar y eliminar cookies a través de la configuración de tu navegador.",
+    priv_s4_h:"4. Programa Amazon Associates",
+    priv_s4_disclosure:"NestWell Finds participa en el Programa de Asociados de Amazon. Como Asociado de Amazon, ganamos comisiones por las compras calificadas — sin coste adicional para ti.",
+    priv_s4_p1:"Amazon usa cookies para atribuir compras a sitios afiliados. Al hacer clic en un enlace de afiliado, Amazon establece una cookie de seguimiento en tu dispositivo.",
+    priv_s4_p2:"Nuestro contenido editorial nunca se ve influenciado por las relaciones de afiliados.",
+    priv_s4_p3:"No compartimos tus datos personales con Amazon.",
+    priv_s5_h:"5. Cómo usamos tu información",
+    priv_s5_intro:"Usamos los datos recopilados para los siguientes fines:",
+    priv_s5_li1:"Operar, mantener y mejorar el sitio", priv_s5_li2:"Responder a consultas y formularios de contacto",
+    priv_s5_li3:"Enviar boletines (solo si te has suscrito explícitamente)",
+    priv_s5_li4:"Analizar el uso del sitio", priv_s5_li5:"Obtener comisiones de afiliados",
+    priv_s5_li6:"Cumplir con las leyes aplicables",
+    priv_s5_legal_basis:"Base legal (RGPD): interés legítimo (analítica), ejecución de contrato (formulario), consentimiento (boletín).",
+    priv_s6_h:"6. Compartición de datos",
+    priv_s6_p1:"No vendemos tu información personal. Podemos compartir datos limitados con proveedores de servicios vinculados por obligaciones de protección de datos:",
+    priv_s6_li1:"Proveedores de analítica (ej. Google Analytics)", priv_s6_li2:"Proveedores de email",
+    priv_s6_li3:"Proveedores de hosting", priv_s6_li4:"Redes de afiliados (Amazon Associates)",
+    priv_s6_p2:"Podemos divulgar datos si la ley lo requiere.",
+    priv_s7_h:"7. Tus derechos (RGPD / CCPA)",
+    priv_s7_p1:"Dependiendo de tu ubicación, puedes tener los siguientes derechos:",
+    priv_s7_li1:"Derecho de acceso", priv_s7_li2:"Derecho de rectificación",
+    priv_s7_li3:"Derecho de supresión (\"derecho al olvido\")", priv_s7_li4:"Derecho a la portabilidad",
+    priv_s7_li5:"Derecho de oposición", priv_s7_li6:"Derecho a retirar el consentimiento",
+    priv_s7_li7:"Derechos CCPA (California)",
+    priv_s7_p2:"Para ejercer estos derechos: hello@shop.dmnt.pro. Plazo de respuesta: 30 días.",
+    priv_s8_h:"8. Conservación de datos",
+    priv_s8_p:"Formulario de contacto: hasta 12 meses. Suscriptores del boletín: hasta la baja. Datos analíticos: anonimizados.",
+    priv_s9_h:"9. Seguridad",
+    priv_s9_p:"Aplicamos medidas técnicas y organizativas razonables. El sitio se sirve a través de HTTPS.",
+    priv_s10_h:"10. Contacto y reclamaciones",
+    priv_s10_p1:"Para cualquier consulta o ejercicio de derechos:",
+    priv_contact_email_label:"Email:", priv_contact_web_label:"Sitio web:",
+    priv_s10_p2:"Podemos actualizar esta política en cualquier momento. Los cambios sustanciales se comunicarán actualizando la fecha indicada.",
+  }
+};
+
+const langMeta = { en:{flag:'🇬🇧',code:'EN'}, fr:{flag:'🇫🇷',code:'FR'}, de:{flag:'🇩🇪',code:'DE'}, es:{flag:'🇪🇸',code:'ES'} };
+
+function setLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+  localStorage.setItem('nw_lang', lang);
+  document.documentElement.lang = lang;
+  document.getElementById('meta-title').textContent = t.meta_title;
+  document.getElementById('meta-description').setAttribute('content', t.meta_description);
+  document.title = t.meta_title;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.getElementById('current-lang-flag').textContent = langMeta[lang].flag;
+  document.getElementById('current-lang-code').textContent = langMeta[lang].code;
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('nw_lang');
+  const browserLang = (navigator.language || 'en').slice(0,2).toLowerCase();
+  const supported = ['en','fr','de','es'];
+  const lang = supported.includes(saved) ? saved : supported.includes(browserLang) ? browserLang : 'en';
+  setLanguage(lang);
+});
+</script>
+</body>
+</html>

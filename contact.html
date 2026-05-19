@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="meta-title">Contact Us | NestWell Finds</title>
+  <meta name="description" id="meta-description" content="Get in touch with the NestWell Finds editorial team. We'd love to hear from you." />
+  <link rel="canonical" href="https://shop.dmnt.pro/contact.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Playfair Display','Georgia','serif'], body: ['DM Sans','system-ui','sans-serif'] },
+          colors: { cream:'#FAF7F2', espresso:'#2C1810', terracotta:'#C4714A', sage:'#7A8C6E' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --cream:#FAF7F2; --espresso:#2C1810; --terracotta:#C4714A; --sage:#7A8C6E; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family:'DM Sans',system-ui,sans-serif; background-color:var(--cream); color:var(--espresso); -webkit-font-smoothing:antialiased; }
+    h1,h2,h3,.font-display { font-family:'Playfair Display',Georgia,serif; }
+
+    .disclosure-bar { background:#2C1810; color:#FAF7F2; font-size:0.72rem; letter-spacing:0.03em; text-align:center; padding:8px 16px; line-height:1.5; }
+    .nav-link { position:relative; font-size:0.85rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--espresso); transition:color 0.2s; text-decoration:none; }
+    .nav-link::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1.5px; background:var(--terracotta); transition:width 0.3s ease; }
+    .nav-link:hover { color:var(--terracotta); }
+    .nav-link:hover::after { width:100%; }
+    .lang-switcher { position:relative; display:inline-block; }
+    .lang-btn { display:flex; align-items:center; gap:5px; font-size:0.82rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; cursor:pointer; background:transparent; border:1.5px solid rgba(44,24,16,0.25); border-radius:4px; padding:5px 10px; color:var(--espresso); transition:border-color 0.2s,background 0.2s; }
+    .lang-btn:hover { border-color:var(--terracotta); background:rgba(196,113,74,0.06); }
+    .lang-dropdown { display:none; position:absolute; right:0; top:calc(100% + 8px); background:#fff; border:1.5px solid #e8e0d6; border-radius:6px; min-width:130px; box-shadow:0 8px 24px rgba(44,24,16,0.10); z-index:1000; overflow:hidden; }
+    .lang-switcher:hover .lang-dropdown, .lang-switcher:focus-within .lang-dropdown { display:block; }
+    .lang-option { display:flex; align-items:center; gap:8px; padding:9px 14px; font-size:0.82rem; font-weight:500; cursor:pointer; transition:background 0.15s; text-transform:none; letter-spacing:0; color:var(--espresso); border:none; background:transparent; width:100%; text-align:left; }
+    .lang-option:hover { background:var(--cream); }
+    .lang-option.active { color:var(--terracotta); font-weight:600; }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    .footer-link { color:rgba(250,247,242,0.65); font-size:0.82rem; text-decoration:none; transition:color 0.2s; }
+    .footer-link:hover { color:var(--terracotta); }
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease,transform 0.6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    .contact-card { background:#fff; border-radius:14px; padding:32px; box-shadow:0 2px 16px rgba(44,24,16,0.08); }
+    .form-label { display:block; font-size:0.82rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--espresso); margin-bottom:6px; }
+    .form-input { width:100%; border:1.5px solid #e8ddd4; border-radius:8px; padding:12px 14px; font-family:'DM Sans',sans-serif; font-size:0.92rem; color:var(--espresso); background:#fff; transition:border-color 0.2s,box-shadow 0.2s; outline:none; resize:none; }
+    .form-input:focus { border-color:var(--terracotta); box-shadow:0 0 0 3px rgba(196,113,74,0.12); }
+    .form-input::placeholder { color:#b8a898; }
+    .btn-primary { display:inline-flex; align-items:center; gap:8px; background:var(--terracotta); color:#fff; font-weight:600; font-size:0.85rem; letter-spacing:0.04em; text-transform:uppercase; padding:14px 28px; border-radius:6px; border:none; cursor:pointer; transition:background 0.2s,transform 0.15s; }
+    .btn-primary:hover { background:#a85c3a; transform:translateY(-1px); }
+    .info-item { display:flex; align-items:flex-start; gap:14px; padding:18px 0; border-bottom:1px solid #ede8e2; }
+    .info-item:last-child { border-bottom:none; }
+    .info-icon { width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+    .social-link { display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; font-weight:600; text-decoration:none; padding:10px 16px; border-radius:8px; transition:all 0.2s; }
+  </style>
+</head>
+<body>
+
+<div class="disclosure-bar" role="note" aria-label="Affiliate Disclosure">
+  <span data-i18n="disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.</span>
+</div>
+
+<header class="bg-white border-b border-stone-100 sticky top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/index.html" class="flex items-center gap-2" style="text-decoration:none;">
+        <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
+        <span class="font-display font-bold text-xl tracking-tight" style="color:var(--espresso);">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="/kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="/office.html" class="nav-link" data-i18n="nav_office">Home Office</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="/contact.html" class="nav-link" style="color:var(--terracotta);" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-haspopup="listbox" aria-label="Select language">
+            <span id="current-lang-flag">🇬🇧</span>
+            <span id="current-lang-code">EN</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <button class="lang-option active" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="de" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+          </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-md" aria-label="Toggle menu">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M1 1h20M1 8h20M1 15h20" stroke="#2C1810" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="flex-col bg-white border-t border-stone-100 px-4 pb-4 md:hidden">
+    <a href="/index.html" class="nav-link py-3 block" data-i18n="nav_home">Home</a>
+    <a href="/kitchen.html" class="nav-link py-3 block" data-i18n="nav_kitchen">Kitchen</a>
+    <a href="/office.html" class="nav-link py-3 block" data-i18n="nav_office">Home Office</a>
+    <a href="/about.html" class="nav-link py-3 block" data-i18n="nav_about">About</a>
+    <a href="/contact.html" class="nav-link py-3 block" style="color:var(--terracotta);" data-i18n="nav_contact">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section style="background:linear-gradient(135deg,#2C1810 0%,#3A2218 100%); padding:64px 16px 72px;">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="contact_eyebrow">Get In Touch</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-5" style="color:#FAF7F2;" data-i18n="contact_h1">We'd love to hear from you.</h1>
+      <p class="text-base leading-relaxed" style="color:rgba(250,247,242,0.72);" data-i18n="contact_hero_sub">Questions, feedback, press inquiries, or just want to say hello — drop us a line and we'll get back to you within 2 business days.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+
+        <!-- FORM (wider column) -->
+        <div class="lg:col-span-3 reveal">
+          <div class="contact-card">
+            <h2 class="font-display text-2xl font-bold mb-2" data-i18n="contact_form_h2">Send us a message</h2>
+            <p class="text-sm mb-8" style="color:#7a6050;" data-i18n="contact_form_sub">Fill in the form and we'll respond to your email address.</p>
+
+            <form id="contact-form" onsubmit="handleContactForm(event)" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+                <div>
+                  <label class="form-label" data-i18n="form_name_label">Your Name</label>
+                  <input type="text" class="form-input" data-i18n-placeholder="form_name_ph" placeholder="Clara Hoffman" required />
+                </div>
+                <div>
+                  <label class="form-label" data-i18n="form_email_label">Email Address</label>
+                  <input type="email" class="form-input" data-i18n-placeholder="form_email_ph" placeholder="hello@youremail.com" required />
+                </div>
+              </div>
+
+              <div class="mb-5">
+                <label class="form-label" data-i18n="form_subject_label">Subject</label>
+                <select class="form-input" style="cursor:pointer;" required>
+                  <option value="" disabled selected data-i18n="form_subject_default">Select a topic…</option>
+                  <option data-i18n="form_subject_question">Product question</option>
+                  <option data-i18n="form_subject_collab">Collaboration / Press</option>
+                  <option data-i18n="form_subject_feedback">Site feedback</option>
+                  <option data-i18n="form_subject_other">Other</option>
+                </select>
+              </div>
+
+              <div class="mb-7">
+                <label class="form-label" data-i18n="form_message_label">Your Message</label>
+                <textarea class="form-input" rows="6" data-i18n-placeholder="form_message_ph" placeholder="Tell us what's on your mind…" required></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <button type="submit" class="btn-primary" data-i18n="form_submit_btn">Send Message →</button>
+                <p class="text-xs" style="color:#9a8070;" data-i18n="form_privacy_note">We respect your privacy. Your information is never shared.</p>
+              </div>
+
+              <!-- Success message -->
+              <div id="form-success" class="hidden mt-6 p-4 rounded-lg text-sm font-medium" style="background:rgba(122,140,110,0.12);color:#3a6a2e;border:1px solid rgba(122,140,110,0.3);">
+                <span data-i18n="form_success_msg">✅ Message sent! We'll be in touch within 2 business days.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO (narrower column) -->
+        <div class="lg:col-span-2 reveal">
+          <div class="contact-card mb-6">
+            <h2 class="font-display text-xl font-bold mb-6" data-i18n="contact_info_h2">Contact details</h2>
+
+            <div class="info-item">
+              <div class="info-icon" style="background:rgba(196,113,74,0.1);">📧</div>
+              <div>
+                <p class="font-semibold text-sm mb-1" data-i18n="contact_email_label">Email</p>
+                <a href="mailto:hello@shop.dmnt.pro" class="text-sm" style="color:var(--terracotta);text-decoration:none;">hello@shop.dmnt.pro</a>
+                <p class="text-xs mt-1" style="color:#9a8070;" data-i18n="contact_response_note">Response within 2 business days</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" style="background:rgba(122,140,110,0.1);">🕐</div>
+              <div>
+                <p class="font-semibold text-sm mb-1" data-i18n="contact_hours_label">Editorial Hours</p>
+                <p class="text-sm" data-i18n="contact_hours_val">Monday – Friday, 9am – 6pm CET</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" style="background:rgba(184,134,11,0.10);">📍</div>
+              <div>
+                <p class="font-semibold text-sm mb-1" data-i18n="contact_location_label">Based in</p>
+                <p class="text-sm" data-i18n="contact_location_val">Vienna, Austria 🇦🇹</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-card">
+            <h3 class="font-semibold text-base mb-5" data-i18n="contact_social_h3">Follow us</h3>
+            <div class="space-y-3">
+              <a href="https://pinterest.com/nestwellfinds" target="_blank" rel="noopener noreferrer" class="social-link" style="background:#fdf0ee;color:#E60023;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#E60023"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                Pinterest
+              </a>
+              <a href="https://instagram.com/nestwellfinds" target="_blank" rel="noopener noreferrer" class="social-link" style="background:#fdf0f8;color:#C13584;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C13584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ STRIP -->
+  <section style="background:#fff;" class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <div style="width:48px;height:2px;background:var(--terracotta);margin:0 auto 16px;"></div>
+        <h2 class="font-display text-2xl font-bold" data-i18n="faq_h2">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4 reveal">
+
+        <details class="group" style="background:var(--cream);border-radius:10px;overflow:hidden;">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-semibold text-sm list-none" style="letter-spacing:0.01em;">
+            <span data-i18n="faq_q1">Do you accept products for review?</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed" style="color:#5a4030;" data-i18n="faq_a1">We do not accept free products in exchange for reviews. All products featured on NestWell Finds are either purchased independently or thoroughly researched using publicly available information and verified customer reviews.</p>
+        </details>
+
+        <details class="group" style="background:var(--cream);border-radius:10px;overflow:hidden;">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-semibold text-sm list-none">
+            <span data-i18n="faq_q2">How do affiliate links work?</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed" style="color:#5a4030;" data-i18n="faq_a2">When you click a product link and make a purchase, we earn a small commission — at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. This helps us keep the site independent and free of advertising.</p>
+        </details>
+
+        <details class="group" style="background:var(--cream);border-radius:10px;overflow:hidden;">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-semibold text-sm list-none">
+            <span data-i18n="faq_q3">Can I suggest a product for you to review?</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed" style="color:#5a4030;" data-i18n="faq_a3">Absolutely! We love reader suggestions. Use the contact form above and select "Product question" as the subject. If it fits our niches and meets our quality bar, we'll consider featuring it in a future article.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:var(--espresso);color:#FAF7F2;padding:56px 16px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background:var(--terracotta);color:#fff;">N</div>
+          <span class="font-display font-bold text-xl">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:rgba(250,247,242,0.65);" data-i18n="footer_brand_desc">A passionate editorial team curating the best kitchen gadgets and home office gear.</p>
+        <p class="text-xs" style="color:rgba(250,247,242,0.45);" data-i18n="disclosure_footer">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_explore">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="/index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="/article-kitchen.html" class="footer-link" data-i18n="nav_kitchen">Kitchen</a></li>
+          <li><a href="/article-office.html" class="footer-link" data-i18n="nav_office">Home Office</a></li>
+          <li><a href="/about.html" class="footer-link" data-i18n="nav_about">About</a></li>
+          <li><a href="/contact.html" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_legal">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="footer-link" data-i18n="footer_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t pt-6" style="border-color:rgba(250,247,242,0.12);text-align:center;">
+      <p class="text-xs" style="color:rgba(250,247,242,0.4);" data-i18n="footer_copy">© 2025 NestWell Finds. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  en: {
+    meta_title: "Contact Us | NestWell Finds",
+    meta_description: "Get in touch with the NestWell Finds editorial team. We'd love to hear from you.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.",
+    disclosure_footer: "As an Amazon Associate I earn from qualifying purchases.",
+    nav_home:"Home", nav_kitchen:"Kitchen", nav_office:"Home Office", nav_about:"About", nav_contact:"Contact",
+    footer_brand_desc: "A passionate editorial team curating the best kitchen gadgets and home office gear.",
+    footer_explore:"Explore", footer_legal:"Legal", footer_privacy:"Privacy Policy", footer_terms:"Terms of Service",
+    footer_copy:"© 2025 NestWell Finds. All rights reserved.",
+    contact_eyebrow:"Get In Touch", contact_h1:"We'd love to hear from you.",
+    contact_hero_sub:"Questions, feedback, press inquiries, or just want to say hello — drop us a line and we'll get back to you within 2 business days.",
+    contact_form_h2:"Send us a message", contact_form_sub:"Fill in the form and we'll respond to your email address.",
+    form_name_label:"Your Name", form_name_ph:"Clara Hoffman",
+    form_email_label:"Email Address", form_email_ph:"hello@youremail.com",
+    form_subject_label:"Subject", form_subject_default:"Select a topic…",
+    form_subject_question:"Product question", form_subject_collab:"Collaboration / Press",
+    form_subject_feedback:"Site feedback", form_subject_other:"Other",
+    form_message_label:"Your Message", form_message_ph:"Tell us what's on your mind…",
+    form_submit_btn:"Send Message →", form_privacy_note:"We respect your privacy. Your information is never shared.",
+    form_success_msg:"✅ Message sent! We'll be in touch within 2 business days.",
+    contact_info_h2:"Contact details", contact_email_label:"Email",
+    contact_response_note:"Response within 2 business days",
+    contact_hours_label:"Editorial Hours", contact_hours_val:"Monday – Friday, 9am – 6pm CET",
+    contact_location_label:"Based in", contact_location_val:"Vienna, Austria 🇦🇹",
+    contact_social_h3:"Follow us",
+    faq_h2:"Frequently Asked Questions",
+    faq_q1:"Do you accept products for review?",
+    faq_a1:"We do not accept free products in exchange for reviews. All products featured on NestWell Finds are either purchased independently or thoroughly researched using publicly available information and verified customer reviews.",
+    faq_q2:"How do affiliate links work?",
+    faq_a2:"When you click a product link and make a purchase, we earn a small commission — at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. This helps us keep the site independent and free of advertising.",
+    faq_q3:"Can I suggest a product for you to review?",
+    faq_a3:"Absolutely! We love reader suggestions. Use the contact form above and select \"Product question\" as the subject. If it fits our niches and meets our quality bar, we'll consider featuring it in a future article.",
+  },
+  fr: {
+    meta_title:"Nous Contacter | NestWell Finds",
+    meta_description:"Contactez l'équipe éditoriale de NestWell Finds. Nous adorons avoir de vos nouvelles.",
+    disclosure:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    disclosure_footer:"En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    nav_home:"Accueil", nav_kitchen:"Cuisine", nav_office:"Bureau", nav_about:"À propos", nav_contact:"Contact",
+    footer_brand_desc:"Une équipe éditoriale passionnée qui sélectionne les meilleurs gadgets cuisine et équipements bureau.",
+    footer_explore:"Explorer", footer_legal:"Mentions légales", footer_privacy:"Politique de confidentialité", footer_terms:"Conditions d'utilisation",
+    footer_copy:"© 2025 NestWell Finds. Tous droits réservés.",
+    contact_eyebrow:"Nous contacter", contact_h1:"Nous serions ravis d'avoir de vos nouvelles.",
+    contact_hero_sub:"Questions, retours, demandes presse ou simplement bonjour — envoyez-nous un message et nous répondrons sous 2 jours ouvrables.",
+    contact_form_h2:"Envoyez-nous un message", contact_form_sub:"Remplissez le formulaire et nous répondrons à votre adresse e-mail.",
+    form_name_label:"Votre nom", form_name_ph:"Clara Hoffman",
+    form_email_label:"Adresse e-mail", form_email_ph:"bonjour@votremail.com",
+    form_subject_label:"Sujet", form_subject_default:"Choisissez un sujet…",
+    form_subject_question:"Question produit", form_subject_collab:"Collaboration / Presse",
+    form_subject_feedback:"Retour sur le site", form_subject_other:"Autre",
+    form_message_label:"Votre message", form_message_ph:"Dites-nous ce qui vous passe par la tête…",
+    form_submit_btn:"Envoyer le message →", form_privacy_note:"Nous respectons votre vie privée. Vos données ne sont jamais partagées.",
+    form_success_msg:"✅ Message envoyé ! Nous vous répondrons sous 2 jours ouvrables.",
+    contact_info_h2:"Coordonnées", contact_email_label:"E-mail",
+    contact_response_note:"Réponse sous 2 jours ouvrables",
+    contact_hours_label:"Heures éditoriales", contact_hours_val:"Lundi – Vendredi, 9h – 18h CET",
+    contact_location_label:"Basé à", contact_location_val:"Vienne, Autriche 🇦🇹",
+    contact_social_h3:"Suivez-nous",
+    faq_h2:"Questions fréquentes",
+    faq_q1:"Acceptez-vous des produits pour avis ?",
+    faq_a1:"Nous n'acceptons pas de produits gratuits en échange d'avis. Tous les produits présentés sont soit achetés indépendamment, soit soigneusement étudiés.",
+    faq_q2:"Comment fonctionnent les liens affiliés ?",
+    faq_a2:"Lorsque vous cliquez sur un lien produit et effectuez un achat, nous gagnons une petite commission — sans frais supplémentaires pour vous. En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    faq_q3:"Puis-je suggérer un produit à évaluer ?",
+    faq_a3:"Absolument ! Utilisez le formulaire ci-dessus et choisissez \"Question produit\". Si cela correspond à nos niches et à nos critères de qualité, nous envisagerons de le présenter.",
+  },
+  de: {
+    meta_title:"Kontakt | NestWell Finds",
+    meta_description:"Nehmen Sie Kontakt mit dem Redaktionsteam von NestWell Finds auf.",
+    disclosure:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    disclosure_footer:"Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    nav_home:"Startseite", nav_kitchen:"Küche", nav_office:"Homeoffice", nav_about:"Über uns", nav_contact:"Kontakt",
+    footer_brand_desc:"Ein leidenschaftliches Redaktionsteam, das die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert.",
+    footer_explore:"Entdecken", footer_legal:"Rechtliches", footer_privacy:"Datenschutzrichtlinie", footer_terms:"Nutzungsbedingungen",
+    footer_copy:"© 2025 NestWell Finds. Alle Rechte vorbehalten.",
+    contact_eyebrow:"Kontakt aufnehmen", contact_h1:"Wir freuen uns, von Ihnen zu hören.",
+    contact_hero_sub:"Fragen, Feedback, Presseanfragen oder einfach Hallo sagen — schreiben Sie uns und wir antworten innerhalb von 2 Werktagen.",
+    contact_form_h2:"Schreiben Sie uns", contact_form_sub:"Füllen Sie das Formular aus und wir antworten an Ihre E-Mail-Adresse.",
+    form_name_label:"Ihr Name", form_name_ph:"Clara Hoffman",
+    form_email_label:"E-Mail-Adresse", form_email_ph:"hallo@ihremail.de",
+    form_subject_label:"Betreff", form_subject_default:"Thema auswählen…",
+    form_subject_question:"Produktfrage", form_subject_collab:"Kooperation / Presse",
+    form_subject_feedback:"Website-Feedback", form_subject_other:"Sonstiges",
+    form_message_label:"Ihre Nachricht", form_message_ph:"Was liegt Ihnen auf dem Herzen?",
+    form_submit_btn:"Nachricht senden →", form_privacy_note:"Wir respektieren Ihre Privatsphäre. Ihre Daten werden niemals weitergegeben.",
+    form_success_msg:"✅ Nachricht gesendet! Wir melden uns innerhalb von 2 Werktagen.",
+    contact_info_h2:"Kontaktdaten", contact_email_label:"E-Mail",
+    contact_response_note:"Antwort innerhalb von 2 Werktagen",
+    contact_hours_label:"Redaktionszeiten", contact_hours_val:"Montag – Freitag, 9 – 18 Uhr MEZ",
+    contact_location_label:"Standort", contact_location_val:"Wien, Österreich 🇦🇹",
+    contact_social_h3:"Folgen Sie uns",
+    faq_h2:"Häufig gestellte Fragen",
+    faq_q1:"Akzeptieren Sie Produkte zur Bewertung?",
+    faq_a1:"Wir akzeptieren keine kostenlosen Produkte im Austausch für Bewertungen. Alle vorgestellten Produkte werden unabhängig gekauft oder sorgfältig recherchiert.",
+    faq_q2:"Wie funktionieren Affiliate-Links?",
+    faq_a2:"Wenn Sie auf einen Produktlink klicken und einen Kauf tätigen, verdienen wir eine kleine Provision — ohne Mehrkosten für Sie. Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    faq_q3:"Kann ich ein Produkt zur Bewertung vorschlagen?",
+    faq_a3:"Absolut! Verwenden Sie das obige Kontaktformular und wählen Sie \"Produktfrage\". Wenn es zu unseren Themen passt, ziehen wir es für einen zukünftigen Artikel in Betracht.",
+  },
+  es: {
+    meta_title:"Contacto | NestWell Finds",
+    meta_description:"Ponte en contacto con el equipo editorial de NestWell Finds. Nos encanta saber de ti.",
+    disclosure:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    disclosure_footer:"Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    nav_home:"Inicio", nav_kitchen:"Cocina", nav_office:"Oficina en Casa", nav_about:"Sobre Nosotros", nav_contact:"Contacto",
+    footer_brand_desc:"Un apasionado equipo editorial que cura los mejores gadgets de cocina y equipamiento de oficina.",
+    footer_explore:"Explorar", footer_legal:"Legal", footer_privacy:"Política de privacidad", footer_terms:"Términos de servicio",
+    footer_copy:"© 2025 NestWell Finds. Todos los derechos reservados.",
+    contact_eyebrow:"Ponte en contacto", contact_h1:"Nos encantaría saber de ti.",
+    contact_hero_sub:"Preguntas, comentarios, consultas de prensa o simplemente un saludo — escríbenos y te responderemos en 2 días hábiles.",
+    contact_form_h2:"Envíanos un mensaje", contact_form_sub:"Rellena el formulario y te responderemos a tu dirección de correo.",
+    form_name_label:"Tu nombre", form_name_ph:"Clara Hoffman",
+    form_email_label:"Dirección de email", form_email_ph:"hola@tuemail.com",
+    form_subject_label:"Asunto", form_subject_default:"Selecciona un tema…",
+    form_subject_question:"Pregunta sobre producto", form_subject_collab:"Colaboración / Prensa",
+    form_subject_feedback:"Comentarios sobre el sitio", form_subject_other:"Otro",
+    form_message_label:"Tu mensaje", form_message_ph:"Cuéntanos qué tienes en mente…",
+    form_submit_btn:"Enviar mensaje →", form_privacy_note:"Respetamos tu privacidad. Tu información nunca se comparte.",
+    form_success_msg:"✅ ¡Mensaje enviado! Te responderemos en 2 días hábiles.",
+    contact_info_h2:"Datos de contacto", contact_email_label:"Email",
+    contact_response_note:"Respuesta en 2 días hábiles",
+    contact_hours_label:"Horario editorial", contact_hours_val:"Lunes – Viernes, 9am – 6pm CET",
+    contact_location_label:"Ubicación", contact_location_val:"Viena, Austria 🇦🇹",
+    contact_social_h3:"Síguenos",
+    faq_h2:"Preguntas frecuentes",
+    faq_q1:"¿Aceptáis productos para reseñar?",
+    faq_a1:"No aceptamos productos gratuitos a cambio de reseñas. Todos los productos presentados en NestWell Finds se compran de forma independiente o se investigan exhaustivamente.",
+    faq_q2:"¿Cómo funcionan los enlaces de afiliados?",
+    faq_a2:"Cuando haces clic en un enlace de producto y realizas una compra, ganamos una pequeña comisión — sin coste adicional para ti. Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    faq_q3:"¿Puedo sugerir un producto para que lo reseñéis?",
+    faq_a3:"¡Por supuesto! Usa el formulario de contacto y selecciona \"Pregunta sobre producto\". Si encaja en nuestros nichos y cumple nuestros estándares, lo consideraremos para un artículo futuro.",
+  }
+};
+
+const langMeta = { en:{flag:'🇬🇧',code:'EN'}, fr:{flag:'🇫🇷',code:'FR'}, de:{flag:'🇩🇪',code:'DE'}, es:{flag:'🇪🇸',code:'ES'} };
+
+function setLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+  localStorage.setItem('nw_lang', lang);
+  document.documentElement.lang = lang;
+  document.getElementById('meta-title').textContent = t.meta_title;
+  document.getElementById('meta-description').setAttribute('content', t.meta_description);
+  document.title = t.meta_title;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+  document.getElementById('current-lang-flag').textContent = langMeta[lang].flag;
+  document.getElementById('current-lang-code').textContent = langMeta[lang].code;
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+
+function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+
+function handleContactForm(e) {
+  e.preventDefault();
+  document.getElementById('form-success').classList.remove('hidden');
+  e.target.reset();
+}
+
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('nw_lang');
+  const browserLang = (navigator.language || 'en').slice(0,2).toLowerCase();
+  const supported = ['en','fr','de','es'];
+  const lang = supported.includes(saved) ? saved : supported.includes(browserLang) ? browserLang : 'en';
+  setLanguage(lang);
+  initReveal();
+});
+</script>
+</body>
+</html>

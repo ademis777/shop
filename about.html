@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="meta-title">About Us | NestWell Finds — Our Story & Mission</title>
+  <meta name="description" id="meta-description" content="Learn about the people behind NestWell Finds — an editorial team passionate about cozy kitchen gadgets and minimalist home office gear." />
+  <link rel="canonical" href="https://shop.dmnt.pro/about.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shop.dmnt.pro/about.html" />
+  <meta property="og:title" content="About NestWell Finds — Our Story" />
+  <meta property="og:description" content="We test, curate, and review the best kitchen gadgets and home office essentials — so you don't have to." />
+  <meta property="og:image" content="https://shop.dmnt.pro/assets/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['DM Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            cream: '#FAF7F2',
+            espresso: '#2C1810',
+            terracotta: '#C4714A',
+            sage: '#7A8C6E',
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    :root {
+      --cream: #FAF7F2;
+      --espresso: #2C1810;
+      --terracotta: #C4714A;
+      --sage: #7A8C6E;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background-color: var(--cream);
+      color: var(--espresso);
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-display { font-family: 'Playfair Display', Georgia, serif; }
+
+    .disclosure-bar {
+      background: #2C1810; color: #FAF7F2;
+      font-size: 0.72rem; letter-spacing: 0.03em;
+      text-align: center; padding: 8px 16px; line-height: 1.5;
+    }
+    .nav-link {
+      position: relative; font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--espresso); transition: color 0.2s; text-decoration: none;
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -3px; left: 0;
+      width: 0; height: 1.5px; background: var(--terracotta);
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover { color: var(--terracotta); }
+    .nav-link:hover::after { width: 100%; }
+
+    .lang-switcher { position: relative; display: inline-block; }
+    .lang-btn {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; cursor: pointer; background: transparent;
+      border: 1.5px solid rgba(44,24,16,0.25); border-radius: 4px;
+      padding: 5px 10px; color: var(--espresso); transition: border-color 0.2s, background 0.2s;
+    }
+    .lang-btn:hover { border-color: var(--terracotta); background: rgba(196,113,74,0.06); }
+    .lang-dropdown {
+      display: none; position: absolute; right: 0; top: calc(100% + 8px);
+      background: #fff; border: 1.5px solid #e8e0d6; border-radius: 6px;
+      min-width: 130px; box-shadow: 0 8px 24px rgba(44,24,16,0.10);
+      z-index: 1000; overflow: hidden;
+    }
+    .lang-switcher:hover .lang-dropdown,
+    .lang-switcher:focus-within .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex; align-items: center; gap: 8px; padding: 9px 14px;
+      font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: background 0.15s;
+      text-transform: none; letter-spacing: 0; color: var(--espresso);
+      border: none; background: transparent; width: 100%; text-align: left;
+    }
+    .lang-option:hover { background: var(--cream); }
+    .lang-option.active { color: var(--terracotta); font-weight: 600; }
+
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+
+    .footer-link {
+      color: rgba(250,247,242,0.65); font-size: 0.82rem;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-link:hover { color: var(--terracotta); }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .value-card {
+      background: #fff; border-radius: 12px; padding: 32px;
+      box-shadow: 0 2px 12px rgba(44,24,16,0.07);
+      border-top: 3px solid var(--terracotta);
+    }
+    .team-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--terracotta), var(--sage));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; color: #fff; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- MANDATORY AFFILIATE DISCLOSURE -->
+<div class="disclosure-bar" role="note" aria-label="Affiliate Disclosure">
+  <span data-i18n="disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.</span>
+</div>
+
+<!-- HEADER -->
+<header class="bg-white border-b border-stone-100 sticky top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/index.html" class="flex items-center gap-2 no-underline" style="text-decoration:none;">
+        <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
+        <span class="font-display font-bold text-xl tracking-tight" style="color:var(--espresso);">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="/kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="/office.html" class="nav-link" data-i18n="nav_office">Home Office</a>
+        <a href="/about.html" class="nav-link" style="color:var(--terracotta);" data-i18n="nav_about">About</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="lang-switcher" role="navigation" aria-label="Language selection">
+          <button class="lang-btn" aria-haspopup="listbox" aria-label="Select language">
+            <span id="current-lang-flag">🇬🇧</span>
+            <span id="current-lang-code">EN</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <button class="lang-option active" data-lang="en" onclick="setLanguage('en')" role="option">🇬🇧 English</button>
+            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')" role="option">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="de" onclick="setLanguage('de')" role="option">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="es" onclick="setLanguage('es')" role="option">🇪🇸 Español</button>
+          </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-md" aria-label="Toggle menu">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M1 1h20M1 8h20M1 15h20" stroke="#2C1810" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="flex-col bg-white border-t border-stone-100 px-4 pb-4 md:hidden">
+    <a href="/index.html" class="nav-link py-3 block" data-i18n="nav_home">Home</a>
+    <a href="/kitchen.html" class="nav-link py-3 block" data-i18n="nav_kitchen">Kitchen</a>
+    <a href="/office.html" class="nav-link py-3 block" data-i18n="nav_office">Home Office</a>
+    <a href="/about.html" class="nav-link py-3 block" style="color:var(--terracotta);" data-i18n="nav_about">About</a>
+    <a href="/contact.html" class="nav-link py-3 block" data-i18n="nav_contact">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section style="background: linear-gradient(135deg, #2C1810 0%, #3A2218 100%); padding: 72px 16px 80px;">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color: var(--terracotta);" data-i18n="about_eyebrow">Our Story</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight" style="color:#FAF7F2;" data-i18n="about_h1">We believe a better home<br/>starts with better tools.</h1>
+      <p class="text-lg leading-relaxed" style="color:rgba(250,247,242,0.75);" data-i18n="about_hero_sub">NestWell Finds is an independent editorial platform curating the best kitchen gadgets and home office gear — tested by real people, for real life.</p>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="reveal mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <div style="width:48px;height:2px;background:var(--terracotta);"></div>
+          <p class="text-xs font-semibold uppercase tracking-widest" style="color:var(--terracotta);" data-i18n="about_story_label">How It Started</p>
+        </div>
+        <h2 class="font-display text-3xl font-bold mb-6" data-i18n="about_story_h2">A kitchen drawer, an overcrowded desk, and one question.</h2>
+        <div class="prose space-y-5 text-base leading-relaxed" style="color:#4A3728; line-height:1.85;">
+          <p data-i18n="about_p1">It started the way most things do — with frustration. Our founder, Clara, had spent years buying kitchen gadgets that looked great in ads but broke within months, and home office chairs that promised ergonomics but delivered backaches. After one particularly disastrous impulse buy — a "smart" kitchen scale that required three apps and a firmware update just to weigh flour — she decided enough was enough.</p>
+          <p data-i18n="about_p2">NestWell Finds was born from a simple idea: what if someone actually tested this stuff, compared it honestly, and wrote about it without the noise of sponsored placements and inflated star ratings? In 2023, Clara teamed up with Marcus, a former product designer with a passion for minimalist workspaces, and together they began spending weekends testing, photographing, and writing about the tools they genuinely loved.</p>
+          <p data-i18n="about_p3">Today, NestWell Finds reaches readers across Europe and North America who share the same conviction: that a well-chosen tool — whether it's a cast iron skillet or a mechanical keyboard — can fundamentally improve your daily life. We are not a marketplace, we are not sponsored by manufacturers, and we never accept payment to feature a product. Our recommendations are earned, not bought.</p>
+          <p data-i18n="about_p4">We are a participant in the Amazon Associates program, which means we may earn a small commission when you purchase through our links — at no additional cost to you. This is how we keep the lights on, maintain editorial independence, and continue testing products so you don't have to.</p>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="reveal mb-16">
+        <h2 class="font-display text-2xl font-bold mb-8" data-i18n="about_team_h2">The people behind the picks</h2>
+        <div class="space-y-6">
+
+          <div class="flex items-start gap-5 bg-white rounded-xl p-6" style="box-shadow:0 2px 12px rgba(44,24,16,0.07);">
+            <div class="team-avatar">👩‍🍳</div>
+            <div>
+              <p class="font-semibold text-lg mb-1">Clara Hoffman</p>
+              <p class="text-xs uppercase tracking-widest font-medium mb-3" style="color:var(--terracotta);" data-i18n="team_role_editor">Co-Founder & Kitchen Editor</p>
+              <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="team_clara_bio">Former food writer and self-confessed kitchen-gadget addict. Clara has tested over 200 kitchen tools in the past three years. If it makes cooking faster, easier, or more joyful, she wants to know about it.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-5 bg-white rounded-xl p-6" style="box-shadow:0 2px 12px rgba(44,24,16,0.07);">
+            <div class="team-avatar" style="background:linear-gradient(135deg,var(--sage),#4a6a3e);">💻</div>
+            <div>
+              <p class="font-semibold text-lg mb-1">Marcus Levi</p>
+              <p class="text-xs uppercase tracking-widest font-medium mb-3" style="color:var(--sage);" data-i18n="team_role_office">Co-Founder & Office Gear Editor</p>
+              <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="team_marcus_bio">Ex-UX designer who spent a decade building software products. Marcus evaluates home office gear through a design lens: does it solve a real problem, and does it do so elegantly? His home office has been rebuilt six times in pursuit of the perfect setup.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section style="background:#fff;" class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <div style="width:48px;height:2px;background:var(--terracotta);margin:0 auto 16px;"></div>
+        <h2 class="font-display text-3xl font-bold mb-4" data-i18n="about_values_h2">What we stand for</h2>
+        <p class="text-base" style="color:#7a6050;" data-i18n="about_values_sub">Three principles that guide every recommendation we make.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="value-card reveal">
+          <div class="text-3xl mb-4">🔬</div>
+          <h3 class="font-display text-xl font-bold mb-3" data-i18n="val1_title">Research-first</h3>
+          <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="val1_desc">Every product we feature has been thoroughly researched: we read thousands of user reviews, consult expert opinions, and wherever possible, test products hands-on before recommending them.</p>
+        </div>
+        <div class="value-card reveal" style="border-top-color:var(--sage);">
+          <div class="text-3xl mb-4">🤝</div>
+          <h3 class="font-display text-xl font-bold mb-3" data-i18n="val2_title">Radical transparency</h3>
+          <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="val2_desc">We always disclose when we use affiliate links. We never accept free products in exchange for positive coverage. If something has a flaw, we say so clearly — even if it's otherwise a great product.</p>
+        </div>
+        <div class="value-card reveal" style="border-top-color:#B8860B;">
+          <div class="text-3xl mb-4">⏳</div>
+          <h3 class="font-display text-xl font-bold mb-3" data-i18n="val3_title">Built to last</h3>
+          <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="val3_desc">We deliberately favour products with long lifespans, quality materials, and reputable brands. We'd rather recommend one excellent skillet than ten mediocre ones. Thoughtful consumption over constant upgrades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFFILIATE TRANSPARENCY NOTE -->
+  <section class="py-14 px-4" style="background:var(--cream);">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <div style="width:48px;height:2px;background:var(--terracotta);margin:0 auto 20px;"></div>
+      <h2 class="font-display text-2xl font-bold mb-4" data-i18n="about_affiliate_h2">A note on affiliate links</h2>
+      <p class="text-sm leading-relaxed" style="color:#5a4030;" data-i18n="about_affiliate_text">NestWell Finds is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by linking to Amazon. When you click on a product link and make a purchase, we may earn a small commission — at absolutely no extra cost to you. This income supports our independent editorial work and allows us to keep this site free of banner ads and sponsored content. Our editorial opinions are never influenced by affiliate relationships.</p>
+      <p class="text-xs mt-4 font-semibold" style="color:var(--terracotta);" data-i18n="about_affiliate_cta">As an Amazon Associate I earn from qualifying purchases.</p>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section style="background:linear-gradient(135deg,#7A8C6E,#5a7a4e); padding: 56px 16px;">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="font-display text-3xl font-bold text-white mb-4" data-i18n="about_cta_h2">Ready to find your next favourite thing?</h2>
+      <p class="text-white mb-8 opacity-80" data-i18n="about_cta_sub">Browse our curated collections — no noise, no filler, just thoughtfully chosen picks.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/article-kitchen.html" style="background:#FAF7F2;color:var(--espresso);font-weight:700;font-size:0.85rem;letter-spacing:0.04em;text-transform:uppercase;padding:14px 28px;border-radius:6px;text-decoration:none;transition:opacity 0.2s;" data-i18n="about_cta_kitchen">Kitchen Guide →</a>
+        <a href="/article-office.html" style="background:transparent;color:#fff;font-weight:700;font-size:0.85rem;letter-spacing:0.04em;text-transform:uppercase;padding:14px 28px;border-radius:6px;border:1.5px solid rgba(255,255,255,0.5);text-decoration:none;transition:background 0.2s;" data-i18n="about_cta_office">Office Guide →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:var(--espresso); color:#FAF7F2; padding: 56px 16px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style="background:var(--terracotta);color:#fff;">N</div>
+          <span class="font-display font-bold text-xl">NestWell <span style="color:var(--terracotta);">Finds</span></span>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:rgba(250,247,242,0.65);" data-i18n="footer_brand_desc">A passionate editorial team curating the best kitchen gadgets and home office gear. We believe every home can be better.</p>
+        <p class="text-xs" style="color:rgba(250,247,242,0.45);" data-i18n="disclosure_footer">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_explore">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="/index.html" class="footer-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="/article-kitchen.html" class="footer-link" data-i18n="nav_kitchen">Kitchen</a></li>
+          <li><a href="/article-office.html" class="footer-link" data-i18n="nav_office">Home Office</a></li>
+          <li><a href="/about.html" class="footer-link" data-i18n="nav_about">About</a></li>
+          <li><a href="/contact.html" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--terracotta);" data-i18n="footer_legal">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="footer-link" data-i18n="footer_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t pt-6" style="border-color:rgba(250,247,242,0.12); text-align:center;">
+      <p class="text-xs" style="color:rgba(250,247,242,0.4);" data-i18n="footer_copy">© 2025 NestWell Finds. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  en: {
+    meta_title: "About Us | NestWell Finds — Our Story & Mission",
+    meta_description: "Learn about the people behind NestWell Finds — an editorial team passionate about cozy kitchen gadgets and minimalist home office gear.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change.",
+    disclosure_footer: "As an Amazon Associate I earn from qualifying purchases.",
+    nav_home: "Home", nav_kitchen: "Kitchen", nav_office: "Home Office", nav_about: "About", nav_contact: "Contact",
+    footer_brand_desc: "A passionate editorial team curating the best kitchen gadgets and home office gear. We believe every home can be better.",
+    footer_explore: "Explore", footer_legal: "Legal", footer_privacy: "Privacy Policy", footer_terms: "Terms of Service",
+    footer_copy: "© 2025 NestWell Finds. All rights reserved.",
+
+    about_eyebrow: "Our Story",
+    about_h1: "We believe a better home<br/>starts with better tools.",
+    about_hero_sub: "NestWell Finds is an independent editorial platform curating the best kitchen gadgets and home office gear — tested by real people, for real life.",
+    about_story_label: "How It Started",
+    about_story_h2: "A kitchen drawer, an overcrowded desk, and one question.",
+    about_p1: "It started the way most things do — with frustration. Our founder, Clara, had spent years buying kitchen gadgets that looked great in ads but broke within months, and home office chairs that promised ergonomics but delivered backaches. After one particularly disastrous impulse buy — a \"smart\" kitchen scale that required three apps and a firmware update just to weigh flour — she decided enough was enough.",
+    about_p2: "NestWell Finds was born from a simple idea: what if someone actually tested this stuff, compared it honestly, and wrote about it without the noise of sponsored placements and inflated star ratings? In 2023, Clara teamed up with Marcus, a former product designer with a passion for minimalist workspaces, and together they began spending weekends testing, photographing, and writing about the tools they genuinely loved.",
+    about_p3: "Today, NestWell Finds reaches readers across Europe and North America who share the same conviction: that a well-chosen tool — whether it's a cast iron skillet or a mechanical keyboard — can fundamentally improve your daily life. We are not a marketplace, we are not sponsored by manufacturers, and we never accept payment to feature a product. Our recommendations are earned, not bought.",
+    about_p4: "We are a participant in the Amazon Associates program, which means we may earn a small commission when you purchase through our links — at no additional cost to you. This is how we keep the lights on, maintain editorial independence, and continue testing products so you don't have to.",
+    about_team_h2: "The people behind the picks",
+    team_role_editor: "Co-Founder & Kitchen Editor",
+    team_clara_bio: "Former food writer and self-confessed kitchen-gadget addict. Clara has tested over 200 kitchen tools in the past three years. If it makes cooking faster, easier, or more joyful, she wants to know about it.",
+    team_role_office: "Co-Founder & Office Gear Editor",
+    team_marcus_bio: "Ex-UX designer who spent a decade building software products. Marcus evaluates home office gear through a design lens: does it solve a real problem, and does it do so elegantly? His home office has been rebuilt six times in pursuit of the perfect setup.",
+    about_values_h2: "What we stand for",
+    about_values_sub: "Three principles that guide every recommendation we make.",
+    val1_title: "Research-first",
+    val1_desc: "Every product we feature has been thoroughly researched: we read thousands of user reviews, consult expert opinions, and wherever possible, test products hands-on before recommending them.",
+    val2_title: "Radical transparency",
+    val2_desc: "We always disclose when we use affiliate links. We never accept free products in exchange for positive coverage. If something has a flaw, we say so clearly — even if it's otherwise a great product.",
+    val3_title: "Built to last",
+    val3_desc: "We deliberately favour products with long lifespans, quality materials, and reputable brands. We'd rather recommend one excellent skillet than ten mediocre ones. Thoughtful consumption over constant upgrades.",
+    about_affiliate_h2: "A note on affiliate links",
+    about_affiliate_text: "NestWell Finds is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by linking to Amazon. When you click on a product link and make a purchase, we may earn a small commission — at absolutely no extra cost to you. This income supports our independent editorial work and allows us to keep this site free of banner ads and sponsored content. Our editorial opinions are never influenced by affiliate relationships.",
+    about_affiliate_cta: "As an Amazon Associate I earn from qualifying purchases.",
+    about_cta_h2: "Ready to find your next favourite thing?",
+    about_cta_sub: "Browse our curated collections — no noise, no filler, just thoughtfully chosen picks.",
+    about_cta_kitchen: "Kitchen Guide →",
+    about_cta_office: "Office Guide →",
+  },
+  fr: {
+    meta_title: "À Propos | NestWell Finds — Notre Histoire & Mission",
+    meta_description: "Découvrez l'équipe derrière NestWell Finds — des passionnés de gadgets cuisine et d'équipement bureau minimaliste.",
+    disclosure: "En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés. Les prix et la disponibilité peuvent varier.",
+    disclosure_footer: "En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    nav_home: "Accueil", nav_kitchen: "Cuisine", nav_office: "Bureau", nav_about: "À propos", nav_contact: "Contact",
+    footer_brand_desc: "Une équipe éditoriale passionnée qui sélectionne les meilleurs gadgets cuisine et équipements bureau. Chaque foyer peut être meilleur.",
+    footer_explore: "Explorer", footer_legal: "Mentions légales", footer_privacy: "Politique de confidentialité", footer_terms: "Conditions d'utilisation",
+    footer_copy: "© 2025 NestWell Finds. Tous droits réservés.",
+    about_eyebrow: "Notre histoire",
+    about_h1: "Un meilleur foyer commence<br/>par de meilleurs outils.",
+    about_hero_sub: "NestWell Finds est une plateforme éditoriale indépendante qui sélectionne les meilleurs gadgets cuisine et équipements bureau — testés par de vraies personnes, pour la vie réelle.",
+    about_story_label: "Les débuts",
+    about_story_h2: "Un tiroir de cuisine, un bureau encombré, et une question.",
+    about_p1: "Tout a commencé comme souvent — par la frustration. Notre fondatrice, Clara, avait passé des années à acheter des gadgets de cuisine qui paraissaient formidables dans les publicités mais se cassaient en quelques mois. Après un achat compulsif particulièrement catastrophique, elle a décidé d'en avoir assez.",
+    about_p2: "NestWell Finds est né d'une idée simple : et si quelqu'un testait vraiment ces produits, les comparait honnêtement et en parlait sans le bruit des placements sponsorisés ? En 2023, Clara s'est associée à Marcus, un ancien designer produit passionné par les espaces de travail minimalistes.",
+    about_p3: "Aujourd'hui, NestWell Finds touche des lecteurs en Europe et en Amérique du Nord qui partagent la même conviction : un outil bien choisi peut fondamentalement améliorer votre quotidien. Nous ne sommes pas un marché, nous ne sommes pas sponsorisés par des fabricants.",
+    about_p4: "Nous participons au programme Amazon Associates, ce qui signifie que nous pouvons gagner une petite commission lorsque vous achetez via nos liens — sans coût supplémentaire pour vous.",
+    about_team_h2: "Les personnes derrière les sélections",
+    team_role_editor: "Co-fondatrice & Rédactrice cuisine",
+    team_clara_bio: "Ancienne journaliste culinaire et addicte aux gadgets de cuisine. Clara a testé plus de 200 ustensiles de cuisine au cours des trois dernières années.",
+    team_role_office: "Co-fondateur & Rédacteur équipement bureau",
+    team_marcus_bio: "Ex-designer UX ayant passé une décennie à créer des produits logiciels. Marcus évalue l'équipement de bureau avec un regard design : est-ce que ça résout un vrai problème, et de façon élégante ?",
+    about_values_h2: "Nos valeurs",
+    about_values_sub: "Trois principes qui guident chacune de nos recommandations.",
+    val1_title: "La recherche avant tout",
+    val1_desc: "Chaque produit que nous présentons a été soigneusement étudié : nous lisons des milliers d'avis, consultons des experts et testons les produits en main propre autant que possible.",
+    val2_title: "Transparence radicale",
+    val2_desc: "Nous divulguons toujours l'utilisation de liens affiliés. Nous n'acceptons jamais de produits gratuits en échange d'une couverture positive.",
+    val3_title: "Conçu pour durer",
+    val3_desc: "Nous privilégions délibérément les produits ayant une longue durée de vie, des matériaux de qualité et des marques réputées.",
+    about_affiliate_h2: "Une note sur les liens affiliés",
+    about_affiliate_text: "NestWell Finds participe au Programme Partenaires d'Amazon. Lorsque vous cliquez sur un lien produit et effectuez un achat, nous pouvons gagner une petite commission — sans frais supplémentaires pour vous. Ces revenus soutiennent notre travail éditorial indépendant.",
+    about_affiliate_cta: "En tant qu'associé Amazon, je gagne des commissions sur les achats qualifiés.",
+    about_cta_h2: "Prêt à trouver votre prochain coup de cœur ?",
+    about_cta_sub: "Parcourez nos collections — sans bruit, sans remplissage, juste des sélections réfléchies.",
+    about_cta_kitchen: "Guide cuisine →",
+    about_cta_office: "Guide bureau →",
+  },
+  de: {
+    meta_title: "Über Uns | NestWell Finds — Unsere Geschichte & Mission",
+    meta_description: "Lernen Sie das Team hinter NestWell Finds kennen — Redakteure mit Leidenschaft für Küchengadgets und minimalistisches Homeoffice-Equipment.",
+    disclosure: "Als Amazon-Partner verdiene ich an qualifizierten Einkäufen. Preise und Verfügbarkeit können sich ändern.",
+    disclosure_footer: "Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    nav_home: "Startseite", nav_kitchen: "Küche", nav_office: "Homeoffice", nav_about: "Über uns", nav_contact: "Kontakt",
+    footer_brand_desc: "Ein leidenschaftliches Redaktionsteam, das die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert.",
+    footer_explore: "Entdecken", footer_legal: "Rechtliches", footer_privacy: "Datenschutzrichtlinie", footer_terms: "Nutzungsbedingungen",
+    footer_copy: "© 2025 NestWell Finds. Alle Rechte vorbehalten.",
+    about_eyebrow: "Unsere Geschichte",
+    about_h1: "Ein besseres Zuhause beginnt<br/>mit besseren Werkzeugen.",
+    about_hero_sub: "NestWell Finds ist eine unabhängige Redaktionsplattform, die die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert — getestet von echten Menschen für das echte Leben.",
+    about_story_label: "Die Anfänge",
+    about_story_h2: "Eine Küchenschublade, ein überfüllter Schreibtisch und eine Frage.",
+    about_p1: "Es begann, wie so vieles — mit Frustration. Unsere Gründerin Clara hatte jahrelang Küchengadgets gekauft, die in der Werbung toll aussahen, aber innerhalb von Monaten kaputt gingen. Nach einem besonders katastrophalen Impulskauf beschloss sie: genug ist genug.",
+    about_p2: "NestWell Finds entstand aus einer einfachen Idee: Was wäre, wenn jemand diese Dinge wirklich testen, ehrlich vergleichen und darüber schreiben würde — ohne gesponserte Platzierungen? 2023 tat Clara sich mit Marcus zusammen, einem ehemaligen Produktdesigner mit einer Leidenschaft für minimalistische Arbeitsbereiche.",
+    about_p3: "Heute erreicht NestWell Finds Leser in ganz Europa und Nordamerika, die dieselbe Überzeugung teilen: Ein gut gewähltes Werkzeug kann das tägliche Leben grundlegend verbessern. Wir sind kein Marktplatz und werden nicht von Herstellern gesponsert.",
+    about_p4: "Wir nehmen am Amazon-Partnerprogramm teil, was bedeutet, dass wir eine kleine Provision verdienen können, wenn Sie über unsere Links einkaufen — ohne Mehrkosten für Sie.",
+    about_team_h2: "Die Menschen hinter den Empfehlungen",
+    team_role_editor: "Mitgründerin & Küchenredakteurin",
+    team_clara_bio: "Ehemalige Foodjournalistin und selbsternannte Küchengadget-Enthusiastin. Clara hat in den letzten drei Jahren über 200 Küchengeräte getestet.",
+    team_role_office: "Mitgründer & Homeoffice-Redakteur",
+    team_marcus_bio: "Ehemaliger UX-Designer mit einem Jahrzehnt Erfahrung in der Softwareentwicklung. Marcus bewertet Homeoffice-Ausstattungen durch eine Design-Linse.",
+    about_values_h2: "Unsere Werte",
+    about_values_sub: "Drei Grundsätze, die jede unserer Empfehlungen leiten.",
+    val1_title: "Recherche zuerst",
+    val1_desc: "Jedes Produkt, das wir vorstellen, wurde gründlich recherchiert: Tausende von Nutzerbewertungen, Expertenmeinungen und wo möglich praktische Tests.",
+    val2_title: "Radikale Transparenz",
+    val2_desc: "Wir legen immer offen, wenn wir Affiliate-Links verwenden. Wir akzeptieren niemals kostenlose Produkte im Austausch für positive Berichterstattung.",
+    val3_title: "Gebaut um zu halten",
+    val3_desc: "Wir bevorzugen bewusst Produkte mit langer Lebensdauer, hochwertigen Materialien und renommierten Marken.",
+    about_affiliate_h2: "Ein Hinweis zu Affiliate-Links",
+    about_affiliate_text: "NestWell Finds nimmt am Amazon-Partnerprogramm teil. Wenn Sie auf einen Produktlink klicken und einen Kauf tätigen, können wir eine kleine Provision verdienen — ohne zusätzliche Kosten für Sie. Diese Einnahmen unterstützen unsere unabhängige redaktionelle Arbeit.",
+    about_affiliate_cta: "Als Amazon-Partner verdiene ich an qualifizierten Einkäufen.",
+    about_cta_h2: "Bereit, Ihren nächsten Liebling zu finden?",
+    about_cta_sub: "Stöbern Sie durch unsere kuratierten Kollektionen — kein Lärm, kein Füllmaterial, nur durchdachte Empfehlungen.",
+    about_cta_kitchen: "Küchenguide →",
+    about_cta_office: "Homeoffice-Guide →",
+  },
+  es: {
+    meta_title: "Sobre Nosotros | NestWell Finds — Nuestra Historia & Misión",
+    meta_description: "Conoce al equipo detrás de NestWell Finds — editores apasionados por los gadgets de cocina y el equipamiento de oficina minimalista.",
+    disclosure: "Como Asociado de Amazon, gano comisiones de las compras calificadas. Los precios y disponibilidad están sujetos a cambios.",
+    disclosure_footer: "Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    nav_home: "Inicio", nav_kitchen: "Cocina", nav_office: "Oficina en Casa", nav_about: "Sobre Nosotros", nav_contact: "Contacto",
+    footer_brand_desc: "Un apasionado equipo editorial que cura los mejores gadgets de cocina y equipamiento de oficina.",
+    footer_explore: "Explorar", footer_legal: "Legal", footer_privacy: "Política de privacidad", footer_terms: "Términos de servicio",
+    footer_copy: "© 2025 NestWell Finds. Todos los derechos reservados.",
+    about_eyebrow: "Nuestra historia",
+    about_h1: "Un mejor hogar empieza<br/>con mejores herramientas.",
+    about_hero_sub: "NestWell Finds es una plataforma editorial independiente que cura los mejores gadgets de cocina y equipamiento de oficina — probados por personas reales, para la vida real.",
+    about_story_label: "Cómo empezó",
+    about_story_h2: "Un cajón de cocina, un escritorio abarrotado y una pregunta.",
+    about_p1: "Empezó como suelen empezar las cosas — con frustración. Nuestra fundadora, Clara, había pasado años comprando gadgets de cocina que parecían geniales en los anuncios pero se rompían en meses. Tras una compra impulsiva particularmente desastrosa, decidió que ya era suficiente.",
+    about_p2: "NestWell Finds nació de una idea simple: ¿y si alguien realmente probara estas cosas, las comparara honestamente y escribiera sobre ellas sin el ruido de los patrocinios? En 2023, Clara se asoció con Marcus, un ex-diseñador de producto apasionado por los espacios de trabajo minimalistas.",
+    about_p3: "Hoy, NestWell Finds llega a lectores en Europa y Norteamérica que comparten la misma convicción: una herramienta bien elegida puede mejorar fundamentalmente tu vida diaria. No somos un marketplace ni estamos patrocinados por fabricantes.",
+    about_p4: "Participamos en el programa Amazon Associates, lo que significa que podemos ganar una pequeña comisión cuando compras a través de nuestros enlaces — sin coste adicional para ti.",
+    about_team_h2: "Las personas detrás de las selecciones",
+    team_role_editor: "Co-fundadora & Editora de cocina",
+    team_clara_bio: "Ex-periodista gastronómica y adicta confesa a los gadgets de cocina. Clara ha probado más de 200 utensilios de cocina en los últimos tres años.",
+    team_role_office: "Co-fundador & Editor de equipamiento de oficina",
+    team_marcus_bio: "Ex-diseñador UX que pasó una década creando productos de software. Marcus evalúa el equipamiento de oficina con una perspectiva de diseño.",
+    about_values_h2: "Lo que defendemos",
+    about_values_sub: "Tres principios que guían cada recomendación que hacemos.",
+    val1_title: "Investigación primero",
+    val1_desc: "Cada producto que presentamos ha sido investigado exhaustivamente: leemos miles de reseñas, consultamos expertos y probamos los productos de primera mano siempre que es posible.",
+    val2_title: "Transparencia radical",
+    val2_desc: "Siempre divulgamos cuando usamos enlaces de afiliados. Nunca aceptamos productos gratuitos a cambio de cobertura positiva.",
+    val3_title: "Construido para durar",
+    val3_desc: "Favorecemos deliberadamente productos con larga vida útil, materiales de calidad y marcas reputadas.",
+    about_affiliate_h2: "Una nota sobre los enlaces de afiliados",
+    about_affiliate_text: "NestWell Finds participa en el Programa de Asociados de Amazon. Cuando haces clic en un enlace de producto y realizas una compra, podemos ganar una pequeña comisión — sin coste adicional para ti. Estos ingresos apoyan nuestro trabajo editorial independiente.",
+    about_affiliate_cta: "Como Asociado de Amazon, gano comisiones de las compras calificadas.",
+    about_cta_h2: "¿Listo para encontrar tu próximo favorito?",
+    about_cta_sub: "Explora nuestras colecciones — sin ruido, sin relleno, solo selecciones bien pensadas.",
+    about_cta_kitchen: "Guía de cocina →",
+    about_cta_office: "Guía de oficina →",
+  }
+};
+
+const langMeta = { en:{flag:'🇬🇧',code:'EN'}, fr:{flag:'🇫🇷',code:'FR'}, de:{flag:'🇩🇪',code:'DE'}, es:{flag:'🇪🇸',code:'ES'} };
+
+function setLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+  localStorage.setItem('nw_lang', lang);
+  document.documentElement.lang = lang;
+  document.getElementById('meta-title').textContent = t.meta_title;
+  document.getElementById('meta-description').setAttribute('content', t.meta_description);
+  document.title = t.meta_title;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.getElementById('current-lang-flag').textContent = langMeta[lang].flag;
+  document.getElementById('current-lang-code').textContent = langMeta[lang].code;
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('nw_lang');
+  const browserLang = (navigator.language || 'en').slice(0,2).toLowerCase();
+  const supported = ['en','fr','de','es'];
+  const lang = supported.includes(saved) ? saved : supported.includes(browserLang) ? browserLang : 'en';
+  setLanguage(lang);
+  initReveal();
+});
+</script>
+
+</body>
+</html>
