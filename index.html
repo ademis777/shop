@@ -1,1007 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO: English (default) -->
-  <title id="meta-title">NestWell Finds | Cozy Kitchen Gadgets & Minimalist Home Office Gear</title>
-  <meta name="description" id="meta-description" content="Discover editor-curated kitchen gadgets and minimalist home office gear. Honest reviews, smart picks, and thoughtful guides for a better-designed life." />
-  <meta name="keywords" content="cozy kitchen gadgets, minimalist home office, home office setup, kitchen tools, best kitchen gadgets 2025" />
-  <link rel="canonical" href="https://shop.dmnt.pro/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://shop.dmnt.pro/" />
-  <meta property="og:title" content="NestWell Finds | Cozy Kitchen & Minimalist Home Office" />
-  <meta property="og:description" content="Editor-curated picks for a more intentional home. Kitchen gadgets, home office essentials, and honest reviews." />
-  <meta property="og:image" content="https://shop.dmnt.pro/assets/og-cover.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="NestWell Finds" />
-  <meta name="twitter:description" content="Curated kitchen & home office picks for the design-conscious." />
-
-  <!-- Structured Data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "NestWell Finds",
-    "url": "https://shop.dmnt.pro",
-    "description": "Editor-curated kitchen gadgets and minimalist home office gear reviews and buying guides.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://shop.dmnt.pro/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <!-- Structured Data: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "NestWell Finds",
-    "url": "https://shop.dmnt.pro",
-    "logo": "https://shop.dmnt.pro/assets/logo.png",
-    "sameAs": [
-      "https://pinterest.com/nestwellfinds",
-      "https://instagram.com/nestwellfinds"
-    ]
-  }
-  </script>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Playfair Display', 'Georgia', 'serif'],
-            body: ['DM Sans', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            cream: '#FAF7F2',
-            espresso: '#2C1810',
-            terracotta: '#C4714A',
-            sage: '#7A8C6E',
-            slate: '#4A5568',
-            gold: '#B8860B',
-          },
-        },
-      },
-    }
-  </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title_index">CozyAffiliate - Premium Curated Affiliate Selection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --cream: #FAF7F2;
-      --espresso: #2C1810;
-      --terracotta: #C4714A;
+    /* ── Дизайн-система (Цвета и переменные) ── */
+    :root { 
+      --cream: #FAF7F2; 
+      --espresso: #2C1810; 
+      --terracotta: #C4714A; 
       --sage: #7A8C6E;
-      --gold: #B8860B;
     }
 
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', system-ui, sans-serif;
-      background-color: var(--cream);
-      color: var(--espresso);
-      -webkit-font-smoothing: antialiased;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body { 
+      background-color: var(--cream); 
+      font-family: 'DM Sans', sans-serif; 
+      color: var(--espresso); 
+      line-height: 1.6; 
+      padding-top: 135px; 
     }
 
-    h1, h2, h3, .font-display {
-      font-family: 'Playfair Display', Georgia, serif;
-    }
-
-    /* ── Affiliate Disclosure Bar ── */
-    .disclosure-bar {
-      background: #2C1810;
-      color: #FAF7F2;
-      font-size: 0.72rem;
-      letter-spacing: 0.03em;
-      text-align: center;
-      padding: 8px 16px;
+    /* ── Disclosure Bar ── */
+    .disclosure-bar { 
+      background: var(--espresso); 
+      color: var(--cream); 
+      font-size: 0.72rem; 
+      letter-spacing: 0.03em; 
+      text-align: center; 
+      padding: 8px 16px; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      z-index: 1100; 
       line-height: 1.5;
     }
 
-    /* ── Navigation ── */
-    .nav-link {
-      position: relative;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--espresso);
-      transition: color 0.2s;
+    /* ── Header & Navigation ── */
+    header { 
+      background: rgba(250,247,242,0.92); 
+      backdrop-filter: blur(8px); 
+      border-bottom: 1px solid rgba(44,24,16,0.06); 
+      position: fixed; 
+      top: 34px; 
+      left: 0; 
+      right: 0; 
+      z-index: 1050; 
+      height: 70px; 
+      display: flex; 
+      align-items: center; 
     }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 1.5px;
-      background: var(--terracotta);
-      transition: width 0.3s ease;
+
+    .header-container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      width: 100%; 
+      padding: 0 24px; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
     }
+
+    .logo { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 1.4rem; 
+      font-weight: 700; 
+      color: var(--espresso); 
+      text-decoration: none; 
+      letter-spacing: -0.01em; 
+    }
+
+    .logo span { color: var(--terracotta); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+
+    .nav-link { 
+      position: relative; 
+      font-size: 0.85rem; 
+      font-weight: 500; 
+      letter-spacing: 0.04em; 
+      text-transform: uppercase; 
+      color: var(--espresso); 
+      transition: color 0.2s; 
+      text-decoration: none;
+    }
+
+    .nav-link::after { 
+      content: ''; 
+      position: absolute; 
+      bottom: -3px; 
+      left: 0; 
+      width: 0; 
+      height: 1.5px; 
+      background: var(--terracotta); 
+      transition: width 0.3s ease; 
+    }
+
     .nav-link:hover { color: var(--terracotta); }
     .nav-link:hover::after { width: 100%; }
 
     /* ── Language Switcher ── */
-    .lang-switcher {
-      position: relative;
-      display: inline-block;
+    .lang-switcher { position: relative; display: inline-block; }
+    
+    .lang-btn { 
+      display: flex; 
+      align-items: center; 
+      gap: 5px; 
+      font-size: 0.82rem; 
+      font-weight: 500; 
+      letter-spacing: 0.04em; 
+      text-transform: uppercase; 
+      cursor: pointer; 
+      background: transparent; 
+      border: 1.5px solid rgba(44,24,16,0.25); 
+      border-radius: 4px; 
+      padding: 5px 10px; 
+      color: var(--espresso); 
+      transition: border-color 0.2s, background 0.2s; 
     }
-    .lang-btn {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.82rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      cursor: pointer;
-      background: transparent;
-      border: 1.5px solid rgba(44,24,16,0.25);
-      border-radius: 4px;
-      padding: 5px 10px;
-      color: var(--espresso);
-      transition: border-color 0.2s, background 0.2s;
+
+    .lang-btn:hover { 
+      border-color: var(--terracotta); 
+      background: rgba(196,113,74,0.06); 
     }
-    .lang-btn:hover {
-      border-color: var(--terracotta);
-      background: rgba(196,113,74,0.06);
+
+    .lang-dropdown { 
+      display: none; 
+      position: absolute; 
+      right: 0; 
+      top: calc(100% + 8px); 
+      background: #fff; 
+      border: 1.5px solid #e8e0d6; 
+      border-radius: 6px; 
+      min-width: 130px; 
+      box-shadow: 0 8px 24px rgba(44,24,16,0.10); 
+      z-index: 1000; 
+      overflow: hidden; 
     }
-    .lang-dropdown {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: calc(100% + 8px);
-      background: #fff;
-      border: 1.5px solid #e8e0d6;
-      border-radius: 6px;
-      min-width: 130px;
-      box-shadow: 0 8px 24px rgba(44,24,16,0.10);
-      z-index: 1000;
-      overflow: hidden;
+
+    .lang-switcher:hover .lang-dropdown, 
+    .lang-switcher:focus-within .lang-dropdown { 
+      display: block; 
     }
-    .lang-switcher:hover .lang-dropdown,
-    .lang-switcher:focus-within .lang-dropdown { display: block; }
-    .lang-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 14px;
-      font-size: 0.82rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.15s;
-      text-transform: none;
-      letter-spacing: 0;
-      color: var(--espresso);
-      border: none;
-      background: transparent;
-      width: 100%;
-      text-align: left;
+
+    .lang-option { 
+      display: flex; 
+      align-items: center; 
+      gap: 8px; 
+      padding: 9px 14px; 
+      font-size: 0.82rem; 
+      font-weight: 500; 
+      cursor: pointer; 
+      transition: background 0.15s; 
+      text-transform: none; 
+      letter-spacing: 0; 
+      color: var(--espresso); 
+      border: none; 
+      background: transparent; 
+      width: 100%; 
+      text-align: left; 
     }
+
     .lang-option:hover { background: var(--cream); }
     .lang-option.active { color: var(--terracotta); font-weight: 600; }
 
-    /* ── Hero ── */
-    .hero-section {
-      background: linear-gradient(135deg, #2C1810 0%, #4A2E20 50%, #3A3028 100%);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* ── Hero Секция ── */
+    .hero-section { 
+      background: linear-gradient(135deg, #2C1810 0%, #4A2E20 50%, #3A3028 100%); 
+      position: relative; 
+      overflow: hidden; 
+      padding: 80px 24px;
+      text-align: center;
+      color: #fff;
     }
 
-    /* ── Category Badge ── */
-    .badge-kitchen { background: rgba(196,113,74,0.15); color: #C4714A; }
+    .hero-section::before { 
+      content: ''; 
+      position: absolute; 
+      inset: 0; 
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+    }
+
+    .hero-content { position: relative; max-width: 800px; margin: 0 auto; z-index: 2; }
+    .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; }
+    .hero-content p { font-size: 1.1rem; color: rgba(250,247,242,0.85); margin-bottom: 30px; }
+
+    /* ── Сетка контента и категории ── */
+    .main-container { max-width: 1200px; margin: 60px auto; padding: 0 24px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; margin-bottom: 10px; }
+    .section-rule { width: 48px; height: 2px; background: var(--terracotta); margin: 0 auto 40px; }
+    
+    .categories-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 30px; 
+    }
+
+    /* ── Бэйджи (Включая Новые Категории) ── */
+    .badge-kitchen { background: rgba(196,113,74,0.15); color: #C4714A; } 
     .badge-office { background: rgba(122,140,110,0.15); color: #5a7a4e; }
+    .badge-luxury { background: rgba(212, 175, 55, 0.12); color: #d4af37; } 
+    .badge-automotive { background: rgba(94, 108, 119, 0.15); color: #4A5A6A; } 
 
-    /* ── Cards ── */
-    .article-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(44,24,16,0.07);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .article-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(44,24,16,0.13);
-    }
-
-    /* ── CTA Button ── */
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--terracotta);
-      color: #fff;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 12px 24px;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .btn-primary:hover {
-      background: #a85c3a;
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: transparent;
-      color: var(--terracotta);
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 11px 24px;
-      border-radius: 6px;
-      border: 1.5px solid var(--terracotta);
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .btn-outline:hover {
-      background: var(--terracotta);
-      color: #fff;
-    }
-
-    /* ── Section Divider ── */
-    .section-rule {
-      width: 48px;
-      height: 2px;
-      background: var(--terracotta);
-      margin: 0 auto 20px;
-    }
-
-    /* ── Feature image placeholder ── */
-    .img-placeholder {
-      width: 100%;
-      aspect-ratio: 4/3;
+    /* ── Карточки статей ── */
+    .article-card { 
+      background: #fff; 
+      border-radius: 12px; 
+      overflow: hidden; 
+      box-shadow: 0 2px 12px rgba(44,24,16,0.07); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
+      flex-direction: column;
     }
+
+    .article-card:hover { 
+      transform: translateY(-4px); 
+      box-shadow: 0 12px 32px rgba(44,24,16,0.13); 
+    }
+
+    .img-placeholder { 
+      width: 100%; 
+      aspect-ratio: 4/3; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-size: 2.5rem; 
+    }
+
+    /* ── Кнопки ── */
+    .btn-primary { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px; 
+      background: var(--terracotta); 
+      color: #fff; 
+      font-weight: 600; 
+      font-size: 0.85rem; 
+      letter-spacing: 0.04em; 
+      text-transform: uppercase; 
+      padding: 12px 24px; 
+      border-radius: 6px; 
+      border: none; 
+      cursor: pointer; 
+      text-decoration: none; 
+      transition: background 0.2s, transform 0.15s; 
+    }
+
+    .btn-primary:hover { background: #a85c3a; transform: translateY(-1px); }
+
+    .btn-outline { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px; 
+      background: transparent; 
+      color: var(--terracotta); 
+      font-weight: 600; 
+      font-size: 0.85rem; 
+      letter-spacing: 0.04em; 
+      text-transform: uppercase; 
+      padding: 11px 24px; 
+      border-radius: 6px; 
+      border: 1.5px solid var(--terracotta); 
+      cursor: pointer; 
+      text-decoration: none; 
+      transition: all 0.2s; 
+    }
+
+    .btn-outline:hover { background: var(--terracotta); color: #fff; }
 
     /* ── Newsletter ── */
-    .newsletter-section {
-      background: linear-gradient(135deg, #7A8C6E, #5a7a4e);
+    .newsletter-section { 
+      background: linear-gradient(135deg, #7A8C6E, #5a7a4e); 
+      padding: 60px 24px;
+      text-align: center;
+      color: #fff;
+      margin-top: 60px;
     }
 
-    /* ── Mobile nav ── */
-    #mobile-menu { display: none; }
+    /* ── Мобильная Навигация ── */
+    .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; background: none; border: none; color: var(--espresso); }
+    #mobile-menu { display: none; flex-direction: column; gap: 16px; padding: 24px; background: #fff; border-bottom: 1px solid rgba(44,24,16,0.06); position: fixed; top: 104px; left: 0; right: 0; z-index: 1040; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
     #mobile-menu.open { display: flex; }
 
-    /* ── Scroll reveal ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .menu-toggle { display: block; }
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+
+    /* ── Scroll Reveal ── */
+    .reveal { 
+      opacity: 0; 
+      transform: translateY(20px); 
+      transition: opacity 0.6s ease, transform 0.6s ease; 
+    }
+
+    .reveal.visible { 
+      opacity: 1; 
+      transform: translateY(0); 
     }
 
     /* ── Footer ── */
-    .footer-link {
-      color: rgba(250,247,242,0.65);
-      font-size: 0.82rem;
-      text-decoration: none;
-      transition: color 0.2s;
+    footer { background: var(--espresso); color: var(--cream); padding: 60px 24px; }
+    .footer-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+    @media(min-width: 768px) { .footer-container { flex-direction: row; justify-content: space-between; align-items: center; } }
+    
+    .footer-link { 
+      color: rgba(250,247,242,0.65); 
+      font-size: 0.82rem; 
+      text-decoration: none; 
+      transition: color 0.2s; 
     }
+    
     .footer-link:hover { color: var(--terracotta); }
+    .footer-nav { display: flex; gap: 20px; }
   </style>
 </head>
 <body>
 
-<!-- ════════════════════════════════════════════
-     MANDATORY AFFILIATE DISCLOSURE (above fold)
-     ════════════════════════════════════════════ -->
-<div class="disclosure-bar" role="note" aria-label="Affiliate Disclosure">
-  <span data-i18n="disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change. Check the product page for current details.</span>
-</div>
+  <div class="disclosure-bar" data-i18n="disclaimer">Amazon Associate Disclosure: As an Amazon Associate I earn from qualifying purchases.</div>
 
-<!-- ════════════════════════════════════════════
-     HEADER / NAVIGATION
-     ════════════════════════════════════════════ -->
-<header class="bg-white border-b border-stone-100 sticky top-0 z-50 shadow-sm">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="flex items-center justify-between h-16 md:h-20">
-
-      <!-- Logo -->
-      <a href="/index.html" class="flex items-center gap-2 no-underline">
-        <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
-        <span class="font-display font-bold text-xl text-espresso tracking-tight">NestWell <span class="text-terracotta">Finds</span></span>
-      </a>
-
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
-        <a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a>
-        <a href="/kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
-        <a href="/office.html" class="nav-link" data-i18n="nav_office">Home Office</a>
-        <a href="/about.html" class="nav-link" data-i18n="nav_about">About</a>
-        <a href="/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Cozy<span>Affiliate</span></a>
+      <nav class="nav-links">
+        <a href="kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="office.html" class="nav-link" data-i18n="nav_office">Office</a>
+        <a href="luxury.html" class="nav-link" data-i18n="nav_luxury">Luxury Beauty</a>
+        <a href="automotive.html" class="nav-link" data-i18n="nav_automotive">Automotive</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
       </nav>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="active-lang">🇺🇸 EN</button>
+          <div class="lang-dropdown">
+            <button class="lang-option" onclick="changeLanguage('en')">🇺🇸 EN</button>
+            <button class="lang-option" onclick="changeLanguage('fr')">🇫🇷 FR</button>
+            <button class="lang-option" onclick="changeLanguage('de')">🇩🇪 DE</button>
+            <button class="lang-option" onclick="changeLanguage('es')">🇪🇸 ES</button>
+          </div>
+        </div>
+        <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
 
-      <!-- Right: Lang Switcher + Mobile Toggle -->
-      <div class="flex items-center gap-3">
+  <div id="mobile-menu">
+    <a href="kitchen.html" class="nav-link" data-i18n="nav_kitchen" onclick="toggleMobileMenu()">Kitchen</a>
+    <a href="office.html" class="nav-link" data-i18n="nav_office" onclick="toggleMobileMenu()">Office</a>
+    <a href="luxury.html" class="nav-link" data-i18n="nav_luxury" onclick="toggleMobileMenu()">Luxury Beauty</a>
+    <a href="automotive.html" class="nav-link" data-i18n="nav_automotive" onclick="toggleMobileMenu()">Automotive</a>
+    <a href="about.html" class="nav-link" data-i18n="nav_about" onclick="toggleMobileMenu()">About</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav_contact" onclick="toggleMobileMenu()">Contact</a>
+  </div>
 
-        <!-- Language Switcher -->
-        <div class="lang-switcher" role="navigation" aria-label="Language selection">
-          <button class="lang-btn" aria-haspopup="listbox" aria-label="Select language">
-            <span id="current-lang-flag">🇬🇧</span>
-            <span id="current-lang-code">EN</span>
-            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </button>
-          <div class="lang-dropdown" role="listbox">
-            <button class="lang-option active" data-lang="en" onclick="setLanguage('en')" role="option">🇬🇧 English</button>
-            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')" role="option">🇫🇷 Français</button>
-            <button class="lang-option" data-lang="de" onclick="setLanguage('de')" role="option">🇩🇪 Deutsch</button>
-            <button class="lang-option" data-lang="es" onclick="setLanguage('es')" role="option">🇪🇸 Español</button>
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">Elevate Your Everyday Living Space</h1>
+        <p data-i18n="hero_desc">Expert guides and masterfully curated product selections to design a warm, smart, and beautifully cohesive modern life.</p>
+        <a href="#explore" class="btn-primary" data-i18n="hero_cta">Explore Guides</a>
+      </div>
+    </section>
+
+    <section id="explore" class="main-container">
+      <h2 class="section-title" data-i18n="sections_title">Curated Product Guides</h2>
+      <div class="section-rule"></div>
+
+      <div class="categories-grid">
+        <div class="article-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="img-placeholder" style="background: #F5EEE6; color: var(--terracotta);">🍳</div>
+          <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-kitchen" style="padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="nav_kitchen">Kitchen</span>
+              <h3 style="font-family:'Playfair Display',serif; font-size: 1.35rem; color: var(--espresso); margin: 12px 0 8px;" data-i18n="card_kitchen_title">Smart & Cozy Kitchen Gadgets</h3>
+              <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 20px;" data-i18n="card_kitchen_desc">Discover functional yet elegant essentials engineered to modernize your culinary workflows and aesthetic charm.</p>
+            </div>
+            <a href="kitchen.html" class="btn-outline" style="align-self: flex-start; padding: 8px 18px; font-size: 0.8rem;" data-i18n="read_guide">Read Guide</a>
           </div>
         </div>
 
-        <!-- Mobile hamburger -->
-        <button id="hamburger" class="md:hidden p-2 rounded-md hover:bg-stone-100 transition" aria-label="Open menu" onclick="toggleMobileMenu()">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/>
-          </svg>
-        </button>
+        <div class="article-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="img-placeholder" style="background: #EBF0E9; color: var(--sage);">💻</div>
+          <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-office" style="padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="nav_office">Office</span>
+              <h3 style="font-family:'Playfair Display',serif; font-size: 1.35rem; color: var(--espresso); margin: 12px 0 8px;" data-i18n="card_office_title">Minimalist Home Office Essentials</h3>
+              <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 20px;" data-i18n="card_office_desc">Streamline and aesthetic tools engineered to foster deep productivity and comfortable daily work-from-home experiences.</p>
+            </div>
+            <a href="office.html" class="btn-outline" style="align-self: flex-start; padding: 8px 18px; font-size: 0.8rem;" data-i18n="read_guide">Read Guide</a>
+          </div>
+        </div>
+
+        <div class="article-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="img-placeholder" style="background: #1a1a1a; color: #d4af37;">✨</div>
+          <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-luxury" style="padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="cat_luxury">Luxury Beauty</span>
+              <h3 style="font-family:'Playfair Display',serif; font-size: 1.35rem; color: var(--espresso); margin: 12px 0 8px;" data-i18n="card_luxury_title">Premium & Luxury Beauty Selection</h3>
+              <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 20px;" data-i18n="card_luxury_desc">Exclusive skincare, premium fragrances, and high-end cosmetics curated from Amazon Luxury Stores.</p>
+            </div>
+            <a href="luxury.html" class="btn-outline" style="align-self: flex-start; padding: 8px 18px; font-size: 0.8rem;" data-i18n="read_guide">Read Guide</a>
+          </div>
+        </div>
+
+        <div class="article-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="img-placeholder" style="background: #2b303a; color: #fff;">🚗</div>
+          <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-automotive" style="padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="cat_automotive">Automotive</span>
+              <h3 style="font-family:'Playfair Display',serif; font-size: 1.35rem; color: var(--espresso); margin: 12px 0 8px;" data-i18n="card_auto_title">Essential Automotive Gear & Gadgets</h3>
+              <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 20px;" data-i18n="card_auto_desc">Smart car gadgets, maintenance tools, and interior upgrades to elevate your daily driving experience.</p>
+            </div>
+            <a href="automotive.html" class="btn-outline" style="align-self: flex-start; padding: 8px 18px; font-size: 0.8rem;" data-i18n="read_guide">Read Guide</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="flex-col border-t border-stone-100 bg-white md:hidden px-4 pb-4 pt-2 gap-1">
-    <a href="/index.html" class="block py-2.5 text-sm font-medium uppercase tracking-wide text-espresso" data-i18n="nav_home">Home</a>
-    <a href="/kitchen.html" class="block py-2.5 text-sm font-medium uppercase tracking-wide text-espresso" data-i18n="nav_kitchen">Kitchen</a>
-    <a href="/office.html" class="block py-2.5 text-sm font-medium uppercase tracking-wide text-espresso" data-i18n="nav_office">Home Office</a>
-    <a href="/about.html" class="block py-2.5 text-sm font-medium uppercase tracking-wide text-espresso" data-i18n="nav_about">About</a>
-    <a href="/contact.html" class="block py-2.5 text-sm font-medium uppercase tracking-wide text-espresso" data-i18n="nav_contact">Contact</a>
-  </div>
-</header>
-
-
-<!-- ════════════════════════════════════════════
-     HERO SECTION
-     ════════════════════════════════════════════ -->
-<section class="hero-section py-20 md:py-32 px-4 text-white text-center relative" aria-labelledby="hero-h1">
-  <div class="max-w-3xl mx-auto relative z-10">
-    <p class="text-xs font-semibold tracking-widest uppercase mb-4 opacity-70" data-i18n="hero_eyebrow">Editor-Curated Picks</p>
-    <h1 id="hero-h1" class="font-display text-4xl md:text-6xl font-bold leading-tight mb-6" data-i18n="hero_h1">
-      A More Intentional Home, One Thoughtful Find at a Time.
-    </h1>
-    <p class="text-base md:text-lg opacity-80 max-w-xl mx-auto mb-10 leading-relaxed" data-i18n="hero_sub">
-      We test, curate, and review the best kitchen gadgets and home office essentials so you don't have to. Premium choices, honest opinions, zero fluff.
-    </p>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="/kitchen.html" class="btn-primary" data-i18n="hero_cta_kitchen">Explore Kitchen Picks →</a>
-      <a href="/office.html" class="btn-outline" style="border-color:rgba(255,255,255,0.5);color:white;" data-i18n="hero_cta_office">Home Office Guide →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════════
-     TRUST BADGES
-     ════════════════════════════════════════════ -->
-<section class="bg-white border-b border-stone-100 py-5 px-4">
-  <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 text-xs font-semibold uppercase tracking-widest text-stone-400">
-    <span>✦ <span data-i18n="trust_1">Honest Reviews</span></span>
-    <span>✦ <span data-i18n="trust_2">Tested &amp; Curated</span></span>
-    <span>✦ <span data-i18n="trust_3">No Sponsored Rankings</span></span>
-    <span>✦ <span data-i18n="trust_4">Updated Monthly</span></span>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════════
-     FEATURED CATEGORIES GRID
-     ════════════════════════════════════════════ -->
-<section class="py-20 px-4 bg-cream" aria-labelledby="section-featured">
-  <div class="max-w-6xl mx-auto">
-
-    <div class="text-center mb-14 reveal">
-      <div class="section-rule"></div>
-      <h2 id="section-featured" class="font-display text-3xl md:text-4xl font-bold mb-3" data-i18n="featured_title">Trending Collections</h2>
-      <p class="text-stone-500 max-w-lg mx-auto" data-i18n="featured_sub">Two curated universes. One obsession: the art of living well.</p>
-    </div>
-
-    <!-- Category Cards -->
-    <div class="grid md:grid-cols-2 gap-8 mb-16">
-
-      <!-- Kitchen Category Card -->
-      <a href="/kitchen.html" class="article-card group block no-underline" aria-label="Cozy Kitchen Gadgets category">
-        <div class="img-placeholder" style="background:linear-gradient(135deg,#F5E6D8,#E8C4A8);">
-          <span style="font-size:4rem;">🍳</span>
-        </div>
-        <div class="p-6">
-          <span class="badge-kitchen text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" data-i18n="badge_kitchen">Cozy Kitchen</span>
-          <h3 class="font-display text-2xl font-bold mt-3 mb-2 group-hover:text-terracotta transition-colors" data-i18n="cat_kitchen_title">Cozy Kitchen Gadgets</h3>
-          <p class="text-stone-500 text-sm leading-relaxed" data-i18n="cat_kitchen_desc">From silicone whisks to precision kitchen scales — the tools that make cooking a genuine pleasure, not a chore.</p>
-          <p class="mt-4 text-sm font-semibold text-terracotta" data-i18n="cat_browse">Browse Collection →</p>
-        </div>
-      </a>
-
-      <!-- Office Category Card -->
-      <a href="/office.html" class="article-card group block no-underline" aria-label="Minimalist Home Office category">
-        <div class="img-placeholder" style="background:linear-gradient(135deg,#E8EDE4,#C8D4C0);">
-          <span style="font-size:4rem;">🖥️</span>
-        </div>
-        <div class="p-6">
-          <span class="badge-office text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" data-i18n="badge_office">Home Office</span>
-          <h3 class="font-display text-2xl font-bold mt-3 mb-2 group-hover:text-sage transition-colors" data-i18n="cat_office_title">Minimalist Home Office Gear</h3>
-          <p class="text-stone-500 text-sm leading-relaxed" data-i18n="cat_office_desc">Clean desks, clear minds. The best monitors, keyboards, and desk accessories for a focused, distraction-free workspace.</p>
-          <p class="mt-4 text-sm font-semibold" style="color:var(--sage);" data-i18n="cat_browse">Browse Collection →</p>
-        </div>
-      </a>
-    </div>
-
-    <!-- ── Article Grid ── -->
-    <div class="text-center mb-10 reveal">
-      <h2 class="font-display text-2xl md:text-3xl font-bold" data-i18n="articles_title">Latest Guides &amp; Reviews</h2>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Article Card 1 -->
-      <article class="article-card reveal" itemscope itemtype="https://schema.org/Article">
-        <div class="img-placeholder" style="background:linear-gradient(135deg,#F9E8D8,#F0C9A0);">
-          <span style="font-size:2.8rem;">☕</span>
-        </div>
-        <div class="p-5">
-          <span class="badge-kitchen text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full" data-i18n="badge_kitchen">Cozy Kitchen</span>
-          <h3 class="font-display text-lg font-bold mt-3 mb-2 leading-snug" itemprop="headline" data-i18n="art1_title">Top 5 Cozy Kitchen Gadgets to Elevate Your Cooking</h3>
-          <p class="text-stone-500 text-sm leading-relaxed mb-4" itemprop="description" data-i18n="art1_excerpt">Our editors spent 3 months testing kitchen tools — here's what actually made cooking more enjoyable.</p>
-          <a href="/article-kitchen.html" class="text-sm font-semibold text-terracotta" data-i18n="read_more">Read Full Guide →</a>
-        </div>
-      </article>
-
-      <!-- Article Card 2 -->
-      <article class="article-card reveal" itemscope itemtype="https://schema.org/Article">
-        <div class="img-placeholder" style="background:linear-gradient(135deg,#E4EDE0,#C4D4BC);">
-          <span style="font-size:2.8rem;">💻</span>
-        </div>
-        <div class="p-5">
-          <span class="badge-office text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full" data-i18n="badge_office">Home Office</span>
-          <h3 class="font-display text-lg font-bold mt-3 mb-2 leading-snug" itemprop="headline" data-i18n="art2_title">The Ultimate Minimalist Home Office Setup Guide</h3>
-          <p class="text-stone-500 text-sm leading-relaxed mb-4" itemprop="description" data-i18n="art2_excerpt">Build a workspace that fuels deep work. Every piece of gear on this list was chosen for function, form, and long-term value.</p>
-          <a href="/article-office.html" class="text-sm font-semibold" style="color:var(--sage);" data-i18n="read_more">Read Full Guide →</a>
-        </div>
-      </article>
-
-      <!-- Article Card 3 -->
-      <article class="article-card reveal" itemscope itemtype="https://schema.org/Article">
-        <div class="img-placeholder" style="background:linear-gradient(135deg,#FEF0E6,#FCD9BE);">
-          <span style="font-size:2.8rem;">🥗</span>
-        </div>
-        <div class="p-5">
-          <span class="badge-kitchen text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full" data-i18n="badge_kitchen">Cozy Kitchen</span>
-          <h3 class="font-display text-lg font-bold mt-3 mb-2 leading-snug" itemprop="headline" data-i18n="art3_title">Best Meal Prep Containers for a Zero-Waste Kitchen</h3>
-          <p class="text-stone-500 text-sm leading-relaxed mb-4" itemprop="description" data-i18n="art3_excerpt">Glass, stainless steel, or silicone? We break down the best sustainable food storage solutions on the market.</p>
-          <a href="/kitchen.html" class="text-sm font-semibold text-terracotta" data-i18n="read_more">Read Full Guide →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════════
-     EDITORIAL HIGHLIGHT STRIP
-     ════════════════════════════════════════════ -->
-<section class="py-16 px-4 bg-white">
-  <div class="max-w-5xl mx-auto">
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="reveal">
-        <div class="text-4xl mb-3">🔍</div>
-        <h3 class="font-display text-lg font-bold mb-2" data-i18n="why1_title">Research-Backed</h3>
-        <p class="text-stone-500 text-sm leading-relaxed" data-i18n="why1_desc">Every product is researched against thousands of user reviews, expert opinions, and hands-on testing.</p>
+    <section class="newsletter-section">
+      <h2 style="font-family:'Playfair Display',serif; font-size: 1.8rem; margin-bottom: 12px;" data-i18n="news_title">Join Our Safe Space</h2>
+      <p style="max-width: 500px; margin: 0 auto 24px; font-size: 0.95rem; opacity: 0.9;" data-i18n="news_desc">Get monthly updates on life upgrades, interior tricks, and premium product selections directly to your inbox.</p>
+      <div style="display:flex; justify-content:center; gap:10px; max-width:400px; margin:0 auto; width:100%;">
+        <input type="email" placeholder="Your email address" style="padding:12px; border:none; border-radius:6px; width:70%; font-family:inherit;" data-i18n-placeholder="news_holder">
+        <button class="btn-primary" style="background: var(--espresso);" data-i18n="news_btn">Subscribe</button>
       </div>
-      <div class="reveal">
-        <div class="text-4xl mb-3">💬</div>
-        <h3 class="font-display text-lg font-bold mb-2" data-i18n="why2_title">Honest Opinion</h3>
-        <p class="text-stone-500 text-sm leading-relaxed" data-i18n="why2_desc">We share real pros and cons. If a product isn't worth it, we say so — even if it's popular.</p>
-      </div>
-      <div class="reveal">
-        <div class="text-4xl mb-3">🌿</div>
-        <h3 class="font-display text-lg font-bold mb-2" data-i18n="why3_title">Curated for Life</h3>
-        <p class="text-stone-500 text-sm leading-relaxed" data-i18n="why3_desc">We favor quality-over-quantity buys: things that last, age well, and genuinely improve your daily life.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-
-<!-- ════════════════════════════════════════════
-     NEWSLETTER SECTION
-     ════════════════════════════════════════════ -->
-<section class="newsletter-section py-16 px-4 text-white text-center" aria-labelledby="newsletter-heading">
-  <div class="max-w-xl mx-auto reveal">
-    <p class="text-xs font-bold tracking-widest uppercase mb-3 opacity-70" data-i18n="nl_eyebrow">Stay in the loop</p>
-    <h2 id="newsletter-heading" class="font-display text-2xl md:text-3xl font-bold mb-3" data-i18n="nl_title">Get Our Weekly Picks</h2>
-    <p class="opacity-80 text-sm mb-8 leading-relaxed" data-i18n="nl_sub">No spam. Just the best new gadgets and gear finds, delivered every Tuesday.</p>
-    <form class="flex flex-col sm:flex-row gap-3 justify-center" onsubmit="handleNewsletter(event)" aria-label="Newsletter signup">
-      <input type="email" required placeholder="your@email.com" data-i18n-placeholder="nl_placeholder"
-        class="flex-1 px-4 py-3 rounded-md text-espresso text-sm outline-none border-none max-w-xs mx-auto sm:mx-0 w-full sm:w-auto"
-        aria-label="Email address" style="background:rgba(255,255,255,0.95);" />
-      <button type="submit" class="btn-primary whitespace-nowrap" style="background:var(--espresso);" data-i18n="nl_btn">Subscribe →</button>
-    </form>
-    <p class="text-xs opacity-50 mt-4" data-i18n="nl_privacy">We respect your privacy. Unsubscribe anytime.</p>
-    <div id="nl-success" class="hidden mt-4 text-sm font-semibold opacity-90" data-i18n="nl_success">🎉 You're in! Check your inbox for a welcome email.</div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════════
-     FOOTER
-     ════════════════════════════════════════════ -->
-<footer style="background:var(--espresso);" class="text-white px-4 py-14" role="contentinfo">
-  <div class="max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-4 gap-10 mb-10">
-
-      <!-- Brand -->
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--terracotta);">N</div>
-          <span class="font-display font-bold text-lg">NestWell Finds</span>
-        </div>
-        <p class="text-xs leading-relaxed opacity-60 max-w-xs" data-i18n="footer_brand_desc">
-          A passionate editorial team curating the finest kitchen gadgets and home office essentials. We believe every home can be better with the right tools.
-        </p>
-        <p class="text-xs mt-5 opacity-50 leading-relaxed border-l-2 pl-3" style="border-color:var(--terracotta);" data-i18n="disclosure_footer">
-          As an Amazon Associate I earn from qualifying purchases. All prices are subject to change and are provided for informational purposes only.
-        </p>
-      </div>
-
-      <!-- Quick Links -->
+  <footer>
+    <div class="footer-container">
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-widest opacity-50 mb-4" data-i18n="footer_explore">Explore</h4>
-        <ul class="space-y-2">
-          <li><a href="/kitchen.html" class="footer-link" data-i18n="nav_kitchen">Kitchen Gadgets</a></li>
-          <li><a href="/office.html" class="footer-link" data-i18n="nav_office">Home Office</a></li>
-          <li><a href="/about.html" class="footer-link" data-i18n="nav_about">About Us</a></li>
-          <li><a href="/contact.html" class="footer-link" data-i18n="nav_contact">Contact</a></li>
-        </ul>
+        <h4 style="font-family:'Playfair Display',serif; font-size: 1.2rem; margin-bottom: 8px;">CozyAffiliate</h4>
+        <p style="font-size: 0.8rem; color: rgba(250,247,242,0.5);" data-i18n="footer_copy">© 2026 CozyAffiliate. All rights reserved.</p>
       </div>
-
-      <!-- Legal -->
-      <div>
-        <h4 class="text-xs font-bold uppercase tracking-widest opacity-50 mb-4" data-i18n="footer_legal">Legal</h4>
-        <ul class="space-y-2">
-          <li><a href="/privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a></li>
-          <li><a href="/terms.html" class="footer-link" data-i18n="footer_terms">Terms of Service</a></li>
-          <li><a href="/privacy.html#cookies" class="footer-link" data-i18n="footer_cookies">Cookie Policy</a></li>
-          <li><a href="/privacy.html#affiliate" class="footer-link" data-i18n="footer_affiliate">Affiliate Disclosure</a></li>
-        </ul>
-      </div>
+      <nav class="footer-nav">
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms of Service</a>
+      </nav>
     </div>
+  </footer>
 
-    <div class="border-t border-white border-opacity-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-xs opacity-40" data-i18n="footer_copy">&copy; 2025 NestWell Finds. All rights reserved.</p>
-      <!-- Social -->
-      <div class="flex items-center gap-5">
-        <a href="https://pinterest.com/nestwellfinds" target="_blank" rel="noopener" class="footer-link opacity-60 hover:opacity-100" aria-label="Pinterest">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-        </a>
-        <a href="https://instagram.com/nestwellfinds" target="_blank" rel="noopener" class="footer-link opacity-60 hover:opacity-100" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<!-- ════════════════════════════════════════════
-     i18n TRANSLATIONS + JS ENGINE
-     ════════════════════════════════════════════ -->
-<script>
-// ── Translations object (EN / FR / DE / ES) ──
-const translations = {
-  en: {
-    // Meta
-    meta_title: "NestWell Finds | Cozy Kitchen Gadgets & Minimalist Home Office Gear",
-    meta_description: "Discover editor-curated kitchen gadgets and minimalist home office gear. Honest reviews, smart picks, and thoughtful guides for a better-designed life.",
-
-    // Disclosure
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Prices and availability are subject to change. Check the product page for current details.",
-    disclosure_footer: "As an Amazon Associate I earn from qualifying purchases. All prices are subject to change and are provided for informational purposes only.",
-
-    // Navigation
-    nav_home: "Home",
-    nav_kitchen: "Kitchen",
-    nav_office: "Home Office",
-    nav_about: "About",
-    nav_contact: "Contact",
-
-    // Hero
-    hero_eyebrow: "Editor-Curated Picks",
-    hero_h1: "A More Intentional Home, One Thoughtful Find at a Time.",
-    hero_sub: "We test, curate, and review the best kitchen gadgets and home office essentials so you don't have to. Premium choices, honest opinions, zero fluff.",
-    hero_cta_kitchen: "Explore Kitchen Picks →",
-    hero_cta_office: "Home Office Guide →",
-
-    // Trust
-    trust_1: "Honest Reviews",
-    trust_2: "Tested & Curated",
-    trust_3: "No Sponsored Rankings",
-    trust_4: "Updated Monthly",
-
-    // Featured
-    featured_title: "Trending Collections",
-    featured_sub: "Two curated universes. One obsession: the art of living well.",
-
-    // Category cards
-    badge_kitchen: "Cozy Kitchen",
-    badge_office: "Home Office",
-    cat_kitchen_title: "Cozy Kitchen Gadgets",
-    cat_kitchen_desc: "From silicone whisks to precision kitchen scales — the tools that make cooking a genuine pleasure, not a chore.",
-    cat_office_title: "Minimalist Home Office Gear",
-    cat_office_desc: "Clean desks, clear minds. The best monitors, keyboards, and desk accessories for a focused, distraction-free workspace.",
-    cat_browse: "Browse Collection →",
-
-    // Articles
-    articles_title: "Latest Guides & Reviews",
-    art1_title: "Top 5 Cozy Kitchen Gadgets to Elevate Your Cooking",
-    art1_excerpt: "Our editors spent 3 months testing kitchen tools — here's what actually made cooking more enjoyable.",
-    art2_title: "The Ultimate Minimalist Home Office Setup Guide",
-    art2_excerpt: "Build a workspace that fuels deep work. Every piece of gear on this list was chosen for function, form, and long-term value.",
-    art3_title: "Best Meal Prep Containers for a Zero-Waste Kitchen",
-    art3_excerpt: "Glass, stainless steel, or silicone? We break down the best sustainable food storage solutions on the market.",
-    read_more: "Read Full Guide →",
-
-    // Why
-    why1_title: "Research-Backed",
-    why1_desc: "Every product is researched against thousands of user reviews, expert opinions, and hands-on testing.",
-    why2_title: "Honest Opinion",
-    why2_desc: "We share real pros and cons. If a product isn't worth it, we say so — even if it's popular.",
-    why3_title: "Curated for Life",
-    why3_desc: "We favor quality-over-quantity buys: things that last, age well, and genuinely improve your daily life.",
-
-    // Newsletter
-    nl_eyebrow: "Stay in the loop",
-    nl_title: "Get Our Weekly Picks",
-    nl_sub: "No spam. Just the best new gadgets and gear finds, delivered every Tuesday.",
-    nl_placeholder: "your@email.com",
-    nl_btn: "Subscribe →",
-    nl_privacy: "We respect your privacy. Unsubscribe anytime.",
-    nl_success: "🎉 You're in! Check your inbox for a welcome email.",
-
-    // Footer
-    footer_brand_desc: "A passionate editorial team curating the finest kitchen gadgets and home office essentials. We believe every home can be better with the right tools.",
-    footer_explore: "Explore",
-    footer_legal: "Legal",
-    footer_privacy: "Privacy Policy",
-    footer_terms: "Terms of Service",
-    footer_cookies: "Cookie Policy",
-    footer_affiliate: "Affiliate Disclosure",
-    footer_copy: "© 2025 NestWell Finds. All rights reserved.",
-  },
-
-  fr: {
-    meta_title: "NestWell Finds | Gadgets de Cuisine & Équipement Bureau Minimaliste",
-    meta_description: "Découvrez notre sélection éditoriale de gadgets cuisine et d'équipements pour bureau minimaliste. Avis honnêtes et guides approfondis.",
-
-    disclosure: "En tant que membre du programme Amazon Associates, je touche une commission sur les achats éligibles. Les prix et la disponibilité peuvent varier.",
-    disclosure_footer: "En tant que membre du programme Amazon Associates, je touche une commission sur les achats éligibles. Tous les prix sont susceptibles de changer.",
-
-    nav_home: "Accueil",
-    nav_kitchen: "Cuisine",
-    nav_office: "Bureau",
-    nav_about: "À propos",
-    nav_contact: "Contact",
-
-    hero_eyebrow: "Sélections éditoriales",
-    hero_h1: "Un intérieur plus intentionnel, une trouvaille à la fois.",
-    hero_sub: "Nous testons, sélectionnons et évaluons les meilleurs gadgets cuisine et équipements de bureau à domicile. Des choix premium, des avis honnêtes, sans superflu.",
-    hero_cta_kitchen: "Explorer la cuisine →",
-    hero_cta_office: "Guide bureau →",
-
-    trust_1: "Avis honnêtes",
-    trust_2: "Testés & sélectionnés",
-    trust_3: "Sans classements sponsorisés",
-    trust_4: "Mis à jour chaque mois",
-
-    featured_title: "Collections tendance",
-    featured_sub: "Deux univers curatés. Une obsession : l'art de bien vivre.",
-
-    badge_kitchen: "Cuisine cosy",
-    badge_office: "Bureau à domicile",
-    cat_kitchen_title: "Gadgets de cuisine cosy",
-    cat_kitchen_desc: "Des fouets en silicone aux balances de précision — des outils qui transforment la cuisine en vrai plaisir.",
-    cat_office_title: "Équipement bureau minimaliste",
-    cat_office_desc: "Bureau épuré, esprit clair. Les meilleurs écrans, claviers et accessoires pour un espace de travail concentré.",
-    cat_browse: "Voir la collection →",
-
-    articles_title: "Derniers guides & avis",
-    art1_title: "Top 5 des gadgets cuisine cosy pour sublimer votre cuisine",
-    art1_excerpt: "Nos éditeurs ont passé 3 mois à tester des ustensiles de cuisine — voici ce qui a vraiment fait la différence.",
-    art2_title: "Le guide ultime pour un bureau minimaliste à domicile",
-    art2_excerpt: "Construisez un espace de travail qui favorise la concentration. Chaque équipement a été choisi pour sa fonction, son design et sa durabilité.",
-    art3_title: "Meilleurs contenants pour la préparation zéro déchet",
-    art3_excerpt: "Verre, inox ou silicone ? Nous passons en revue les meilleures solutions de conservation alimentaire durables.",
-    read_more: "Lire le guide →",
-
-    why1_title: "Basé sur la recherche",
-    why1_desc: "Chaque produit est étudié à partir de milliers d'avis clients, d'experts et de tests pratiques.",
-    why2_title: "Avis honnête",
-    why2_desc: "Nous partageons les vrais avantages et inconvénients. Si un produit n'en vaut pas la peine, nous le disons.",
-    why3_title: "Sélectionné pour la vie",
-    why3_desc: "Nous privilégions la qualité plutôt que la quantité : des objets durables qui améliorent vraiment votre quotidien.",
-
-    nl_eyebrow: "Restez informé",
-    nl_title: "Recevez nos sélections hebdomadaires",
-    nl_sub: "Aucun spam. Juste les meilleures trouvailles, livrées chaque mardi.",
-    nl_placeholder: "votre@email.com",
-    nl_btn: "S'abonner →",
-    nl_privacy: "Nous respectons votre vie privée. Désinscription à tout moment.",
-    nl_success: "🎉 C'est bon ! Consultez votre boîte de réception.",
-
-    footer_brand_desc: "Une équipe éditoriale passionnée qui sélectionne les meilleurs gadgets cuisine et équipements bureau. Nous croyons que chaque maison peut être meilleure avec les bons outils.",
-    footer_explore: "Explorer",
-    footer_legal: "Légal",
-    footer_privacy: "Politique de confidentialité",
-    footer_terms: "Conditions d'utilisation",
-    footer_cookies: "Politique cookies",
-    footer_affiliate: "Divulgation d'affiliation",
-    footer_copy: "© 2025 NestWell Finds. Tous droits réservés.",
-  },
-
-  de: {
-    meta_title: "NestWell Finds | Gemütliche Küchengadgets & Minimalistisches Homeoffice",
-    meta_description: "Entdecken Sie redaktionell kuratierte Küchengadgets und minimalistisches Homeoffice-Equipment. Ehrliche Bewertungen und tiefgehende Ratgeber.",
-
-    disclosure: "Als Amazon Associate verdiene ich an qualifizierten Einkäufen. Preise und Verfügbarkeit können sich ändern.",
-    disclosure_footer: "Als Amazon Associate verdiene ich an qualifizierten Einkäufen. Alle Preise dienen nur zu Informationszwecken und können sich ändern.",
-
-    nav_home: "Startseite",
-    nav_kitchen: "Küche",
-    nav_office: "Homeoffice",
-    nav_about: "Über uns",
-    nav_contact: "Kontakt",
-
-    hero_eyebrow: "Redaktionell kuratierte Auswahl",
-    hero_h1: "Ein bewussteres Zuhause — ein durchdachter Fund nach dem anderen.",
-    hero_sub: "Wir testen, kuratieren und bewerten die besten Küchengadgets und Homeoffice-Ausstattungen. Premium-Auswahl, ehrliche Meinungen, kein Schnickschnack.",
-    hero_cta_kitchen: "Küchen-Picks entdecken →",
-    hero_cta_office: "Homeoffice-Guide →",
-
-    trust_1: "Ehrliche Bewertungen",
-    trust_2: "Getestet & kuratiert",
-    trust_3: "Keine gesponserten Rankings",
-    trust_4: "Monatlich aktualisiert",
-
-    featured_title: "Trendige Kollektionen",
-    featured_sub: "Zwei kuratierte Welten. Eine Leidenschaft: die Kunst, gut zu leben.",
-
-    badge_kitchen: "Gemütliche Küche",
-    badge_office: "Homeoffice",
-    cat_kitchen_title: "Gemütliche Küchengadgets",
-    cat_kitchen_desc: "Von Silikonbesen bis zur Präzisionswaage — Werkzeuge, die Kochen zu einem echten Vergnügen machen.",
-    cat_office_title: "Minimalistisches Homeoffice-Equipment",
-    cat_office_desc: "Aufgeräumter Schreibtisch, klarer Kopf. Die besten Monitore, Tastaturen und Zubehör für fokussiertes Arbeiten.",
-    cat_browse: "Kollektion ansehen →",
-
-    articles_title: "Aktuelle Ratgeber & Bewertungen",
-    art1_title: "Top 5 gemütliche Küchengadgets für ein besseres Kocherlebnis",
-    art1_excerpt: "Unsere Redaktion hat 3 Monate lang Küchengeräte getestet — das hat das Kochen wirklich angenehmer gemacht.",
-    art2_title: "Der ultimative Guide zum minimalistischen Homeoffice-Setup",
-    art2_excerpt: "Schaffen Sie einen Arbeitsplatz, der Tiefarbeit fördert. Jedes Gerät wurde nach Funktion, Ästhetik und Langlebigkeit ausgewählt.",
-    art3_title: "Beste Meal-Prep-Behälter für eine abfallfreie Küche",
-    art3_excerpt: "Glas, Edelstahl oder Silikon? Wir vergleichen die besten nachhaltigen Lebensmittelbehälter auf dem Markt.",
-    read_more: "Vollständigen Guide lesen →",
-
-    why1_title: "Forschungsbasiert",
-    why1_desc: "Jedes Produkt wird anhand Tausender Bewertungen, Expertenmeinungen und praktischer Tests untersucht.",
-    why2_title: "Ehrliche Meinung",
-    why2_desc: "Wir teilen echte Vor- und Nachteile. Wenn ein Produkt es nicht wert ist, sagen wir es — auch wenn es beliebt ist.",
-    why3_title: "Kuratiert fürs Leben",
-    why3_desc: "Wir bevorzugen Qualität statt Quantität: Dinge, die halten, gut altern und Ihr Leben wirklich verbessern.",
-
-    nl_eyebrow: "Bleiben Sie informiert",
-    nl_title: "Unsere wöchentlichen Picks erhalten",
-    nl_sub: "Kein Spam. Nur die besten neuen Gadgets und Gear-Funde, jeden Dienstag.",
-    nl_placeholder: "ihre@email.com",
-    nl_btn: "Abonnieren →",
-    nl_privacy: "Wir respektieren Ihre Privatsphäre. Jederzeit abmeldbar.",
-    nl_success: "🎉 Sie sind dabei! Prüfen Sie Ihren Posteingang.",
-
-    footer_brand_desc: "Ein leidenschaftliches Redaktionsteam, das die besten Küchengadgets und Homeoffice-Ausstattungen kuratiert. Wir glauben: jedes Zuhause kann besser sein.",
-    footer_explore: "Entdecken",
-    footer_legal: "Rechtliches",
-    footer_privacy: "Datenschutzrichtlinie",
-    footer_terms: "Nutzungsbedingungen",
-    footer_cookies: "Cookie-Richtlinie",
-    footer_affiliate: "Affiliate-Offenlegung",
-    footer_copy: "© 2025 NestWell Finds. Alle Rechte vorbehalten.",
-  },
-
-  es: {
-    meta_title: "NestWell Finds | Gadgets de Cocina Acogedores & Equipamiento Oficina Minimalista",
-    meta_description: "Descubre gadgets de cocina y equipamiento para oficina en casa curados editorialmente. Reseñas honestas y guías profundas para una vida mejor diseñada.",
-
-    disclosure: "Como Asociado de Amazon, gano comisiones de las compras calificadas. Los precios y disponibilidad están sujetos a cambios.",
-    disclosure_footer: "Como Asociado de Amazon, gano comisiones de las compras calificadas. Todos los precios son orientativos y pueden cambiar.",
-
-    nav_home: "Inicio",
-    nav_kitchen: "Cocina",
-    nav_office: "Oficina en Casa",
-    nav_about: "Sobre Nosotros",
-    nav_contact: "Contacto",
-
-    hero_eyebrow: "Selecciones editoriales",
-    hero_h1: "Un hogar más intencional, un hallazgo reflexivo a la vez.",
-    hero_sub: "Probamos, curadamos y evaluamos los mejores gadgets de cocina y esenciales de oficina en casa. Elecciones premium, opiniones honestas, sin relleno.",
-    hero_cta_kitchen: "Explorar cocina →",
-    hero_cta_office: "Guía de oficina →",
-
-    trust_1: "Reseñas honestas",
-    trust_2: "Probados & curados",
-    trust_3: "Sin rankings patrocinados",
-    trust_4: "Actualizado mensualmente",
-
-    featured_title: "Colecciones de tendencia",
-    featured_sub: "Dos universos curados. Una obsesión: el arte de vivir bien.",
-
-    badge_kitchen: "Cocina acogedora",
-    badge_office: "Oficina en casa",
-    cat_kitchen_title: "Gadgets de cocina acogedores",
-    cat_kitchen_desc: "Desde espátulas de silicona hasta básculas de precisión — los utensilios que hacen que cocinar sea un placer.",
-    cat_office_title: "Equipamiento de oficina minimalista",
-    cat_office_desc: "Escritorio limpio, mente clara. Los mejores monitores, teclados y accesorios para un espacio de trabajo enfocado.",
-    cat_browse: "Ver colección →",
-
-    articles_title: "Últimas guías & reseñas",
-    art1_title: "Top 5 gadgets de cocina acogedores para elevar tu cocina",
-    art1_excerpt: "Nuestros editores pasaron 3 meses probando utensilios de cocina — esto es lo que realmente hizo la experiencia más agradable.",
-    art2_title: "La guía definitiva para una oficina en casa minimalista",
-    art2_excerpt: "Construye un espacio que potencie el trabajo profundo. Cada producto fue elegido por su función, diseño y durabilidad.",
-    art3_title: "Mejores recipientes para preparación de comidas sin residuos",
-    art3_excerpt: "¿Vidrio, acero inoxidable o silicona? Analizamos las mejores soluciones de almacenamiento de alimentos sostenibles.",
-    read_more: "Leer guía completa →",
-
-    why1_title: "Basado en investigación",
-    why1_desc: "Cada producto se investiga a partir de miles de reseñas de usuarios, expertos y pruebas prácticas.",
-    why2_title: "Opinión honesta",
-    why2_desc: "Compartimos pros y contras reales. Si un producto no vale la pena, lo decimos — aunque sea popular.",
-    why3_title: "Curado para la vida",
-    why3_desc: "Priorizamos calidad sobre cantidad: cosas que duran, envejecen bien y realmente mejoran tu día a día.",
-
-    nl_eyebrow: "Mantente informado",
-    nl_title: "Recibe nuestras selecciones semanales",
-    nl_sub: "Sin spam. Solo los mejores gadgets y hallazgos, cada martes.",
-    nl_placeholder: "tu@email.com",
-    nl_btn: "Suscribirse →",
-    nl_privacy: "Respetamos tu privacidad. Cancela cuando quieras.",
-    nl_success: "🎉 ¡Ya estás dentro! Revisa tu bandeja de entrada.",
-
-    footer_brand_desc: "Un apasionado equipo editorial que cura los mejores gadgets de cocina y equipamiento de oficina. Creemos que todo hogar puede ser mejor con las herramientas adecuadas.",
-    footer_explore: "Explorar",
-    footer_legal: "Legal",
-    footer_privacy: "Política de privacidad",
-    footer_terms: "Términos de servicio",
-    footer_cookies: "Política de cookies",
-    footer_affiliate: "Divulgación de afiliados",
-    footer_copy: "© 2025 NestWell Finds. Todos los derechos reservados.",
-  }
-};
-
-// Language flag/code map
-const langMeta = {
-  en: { flag: '🇬🇧', code: 'EN' },
-  fr: { flag: '🇫🇷', code: 'FR' },
-  de: { flag: '🇩🇪', code: 'DE' },
-  es: { flag: '🇪🇸', code: 'ES' },
-};
-
-// ── Core i18n engine ──
-function setLanguage(lang) {
-  const t = translations[lang];
-  if (!t) return;
-
-  // Store preference
-  localStorage.setItem('nw_lang', lang);
-
-  // Update <html lang>
-  document.documentElement.lang = lang;
-
-  // Update meta tags
-  document.getElementById('meta-title').textContent = t.meta_title;
-  document.getElementById('meta-description').setAttribute('content', t.meta_description);
-  document.title = t.meta_title;
-
-  // Translate all [data-i18n] elements
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.innerHTML = t[key];
-  });
-
-  // Translate placeholders
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    if (t[key] !== undefined) el.placeholder = t[key];
-  });
-
-  // Update switcher UI
-  document.getElementById('current-lang-flag').textContent = langMeta[lang].flag;
-  document.getElementById('current-lang-code').textContent = langMeta[lang].code;
-
-  // Update active state in dropdown
-  document.querySelectorAll('.lang-option').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-  });
-}
-
-// ── Mobile menu toggle ──
-function toggleMobileMenu() {
-  const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('open');
-}
-
-// ── Newsletter form ──
-function handleNewsletter(e) {
-  e.preventDefault();
-  document.getElementById('nl-success').classList.remove('hidden');
-  e.target.reset();
-}
-
-// ── Scroll Reveal ──
-function initReveal() {
-  const els = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+  <script>
+    /* ── Мультиязычная база переводов (Полный комплект под 2026 год) ── */
+    const translations = {
+      en: {
+        disclaimer: "Amazon Associate Disclosure: As an Amazon Associate I earn from qualifying purchases.",
+        nav_kitchen: "Kitchen", nav_office: "Office", nav_luxury: "Luxury Stores", nav_automotive: "Automotive", nav_about: "About", nav_contact: "Contact",
+        cat_luxury: "Luxury Beauty", cat_automotive: "Automotive",
+        hero_title: "Elevate Your Everyday Living Space",
+        hero_desc: "Expert guides and masterfully curated product selections to design a warm, smart, and beautifully cohesive modern life.",
+        hero_cta: "Explore Guides",
+        sections_title: "Curated Product Guides",
+        card_kitchen_title: "Smart & Cozy Kitchen Gadgets",
+        card_kitchen_desc: "Discover functional yet elegant essentials engineered to modernize your culinary workflows and aesthetic charm.",
+        card_office_title: "Minimalist Home Office Essentials",
+        card_office_desc: "Streamline and aesthetic tools engineered to foster deep productivity and comfortable daily work-from-home experiences.",
+        card_luxury_title: "Premium & Luxury Beauty Selection",
+        card_luxury_desc: "Exclusive skincare, premium fragrances, and high-end cosmetics curated from Amazon Luxury Stores.",
+        card_auto_title: "Essential Automotive Gear & Gadgets",
+        card_auto_desc: "Smart car gadgets, maintenance tools, and interior upgrades to elevate your daily driving experience.",
+        read_guide: "Read Guide",
+        news_title: "Join Our Safe Space",
+        news_desc: "Get monthly updates on life upgrades, interior tricks, and premium product selections directly to your inbox.",
+        news_btn: "Subscribe",
+        news_holder: "Your email address",
+        footer_copy: "© 2026 CozyAffiliate. All rights reserved."
+      },
+      fr: {
+        disclaimer: "En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.",
+        nav_kitchen: "Cuisine", nav_office: "Bureau", nav_luxury: "Boutiques de Luxe", nav_automotive: "Automobile", nav_about: "À Propos", nav_contact: "Contact",
+        cat_luxury: "Beauté de Luxe", cat_automotive: "Automobile",
+        hero_title: "Sublimez Votre Espace de Vie Quotidien",
+        hero_desc: "Guides d'experts et sélections de produits magistralement organisées pour concevoir une vie moderne chaleureuse et intelligente.",
+        hero_cta: "Explorer les Guides",
+        sections_title: "Guides de Produits Sélectionnés",
+        card_kitchen_title: "Gadgets de Cuisine Intelligents & Coquets",
+        card_kitchen_desc: "Découvrez des essentiels fonctionnels et élégants conçus pour moderniser vos flux de travail culinaires.",
+        card_office_title: "Essentiels de Bureau à Domicile Minimalistes",
+        card_office_desc: "Des outils rationalisés et esthétiques conçus pour favoriser une productivité profonde au quotidien.",
+        card_luxury_title: "Sélection Beauté Premium & Luxe",
+        card_luxury_desc: "Soins exclusifs, parfums haut de gamme et cosmétiques de luxe sélectionnés dans les boutiques Amazon.",
+        card_auto_title: "Équipements et Gadgets Auto Essentiels",
+        card_auto_desc: "Gadgets de voiture intelligents, outils d'entretien et améliorations intérieures pour votre conduite.",
+        read_guide: "Lire le Guide",
+        news_title: "Rejoignez Notre Espace Sécurisé",
+        news_desc: "Recevez des mises à jour mensuelles sur les améliorations de vie, les astuces d'intérieur et les produits premium.",
+        news_btn: "S'abonner",
+        news_holder: "Votre adresse e-mail",
+        footer_copy: "© 2026 CozyAffiliate. Tous droits réservés."
+      },
+      de: {
+        disclaimer: "Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
+        nav_kitchen: "Küche", nav_office: "Büro", nav_luxury: "Luxus-Shops", nav_automotive: "Autozubehör", nav_about: "Über Uns", nav_contact: "Kontakt",
+        cat_luxury: "Luxus-Beauty", cat_automotive: "Autozubehör",
+        hero_title: "Werten Sie Ihren Alltäglichen Wohnraum Auf",
+        hero_desc: "Expertenhandbücher und meisterhaft kuratierte Produktauswahlen für ein warmes, smartes und modernes Leben.",
+        hero_cta: "Leitfäden Erkunden",
+        sections_title: "Kuratierte Produktleitfäden",
+        card_kitchen_title: "Smarte & Gemütliche Küchenhelfer",
+        card_kitchen_desc: "Entdecken Sie funktionale und elegante Essentials, die Ihre kulinarischen Arbeitsabläufe modernisieren.",
+        card_office_title: "Minimalistische Home-Office-Essentials",
+        card_office_desc: "Effiziente und ästhetische Werkzeuge für tiefe Produktivität und komfortables Arbeiten von zu Hause.",
+        card_luxury_title: "Premium- & Luxus-Beauty-Auswahl",
+        card_luxury_desc: "Exklusive Hautpflege, Premium-Düfte und High-End-Kosmetik aus den Amazon Luxus-Shops.",
+        card_auto_title: "Essentielles Autozubehör & Gadgets",
+        card_auto_desc: "Intelligente Auto-Gadgets, Wartungswerkzeuge und Innenraum-Upgrades für Ihr tägliches Fahrerlebnis.",
+        read_guide: "Leitfaden Lesen",
+        news_title: "Treten Sie Unserem Sicheren Raum Bei",
+        news_desc: "Erhalten Sie monatliche Updates zu Upgrades, Inneneinrichtungstricks und Premium-Produktauswahlen.",
+        news_btn: "Abonnieren",
+        news_holder: "Ihre E-Mail-Adresse",
+        footer_copy: "© 2026 CozyAffiliate. Alle Rechte vorbehalten."
+      },
+      es: {
+        disclaimer: "Como Afiliado de Amazon, recibo ingresos por compras adscritas que cumplen los requisitos aplicables.",
+        nav_kitchen: "Cocina", nav_office: "Oficina", nav_luxury: "Tiendas de Lujo", nav_automotive: "Automoción", nav_about: "Nosotros", nav_contact: "Contacto",
+        cat_luxury: "Belleza de Lujo", cat_automotive: "Automoción",
+        hero_title: "Eleve su Espacio de Vida Cotidiano",
+        hero_desc: "Guías de expertos y selecciones de productos magistralmente seleccionadas para diseñar una vida moderna, cálida e inteligente.",
+        hero_cta: "Explorar Guías",
+        sections_title: "Guías de Productos Seleccionados",
+        card_kitchen_title: "Gadgets de Cocina Inteligentes y acogedores",
+        card_kitchen_desc: "Descubra elementos esenciales, funcionales y elegantes diseñados para modernizar sus flujos de trabajo culinarios.",
+        card_office_title: "Esenciales para una Oficina en Casa Minimalista",
+        card_office_desc: "Herramientas optimizadas y estéticas diseñadas para fomentar una profunda productividad en el trabajo diario.",
+        card_luxury_title: "Selección de Belleza Premium y Lujo",
+        card_luxury_desc: "Cuidado de la piel exclusivo, fragancias premium y cosméticos de alta gama de las tiendas de lujo de Amazon.",
+        card_auto_title: "Equipamiento y Gadgets para el Automóvil",
+        card_auto_desc: "Gadgets inteligentes para el coche, herramientas de mantenimiento y mejoras interiores para el día a día.",
+        read_guide: "Leer Guía",
+        news_title: "Únete a Nuestro Espacio Seguro",
+        news_desc: "Reciba actualizaciones mensuales sobre mejoras de estilo de vida, trucos de interior y selecciones de productos premium.",
+        news_btn: "Suscribirse",
+        news_holder: "Dirección de correo electrónico",
+        footer_copy: "© 2026 CozyAffiliate. Todos los derechos reservados."
       }
+    };
+
+    /* ── Функция переключения языков (i18n) ── */
+    function changeLanguage(lang) {
+      localStorage.setItem('preferredLang', lang);
+      updateContent(lang);
+    }
+
+    function updateContent(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+          el.setAttribute('placeholder', translations[lang][key]);
+        }
+      });
+
+      const langMeta = { en: "🇺🇸 EN", fr: "🇫🇷 FR", de: "🇩🇪 DE", es: "🇪🇸 ES" };
+      document.getElementById('active-lang').textContent = langMeta[lang] || "🇺🇸 EN";
+      document.documentElement.lang = lang;
+    }
+
+    /* ── Управление мобильным меню ── */
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('open');
+    }
+
+    /* ── Инициализация страницы ── */
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLang') || 'en';
+      updateContent(savedLang);
+
+      // Анимация проявления при скролле (Scroll Reveal)
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { 
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); 
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
-  }, { threshold: 0.12 });
-  els.forEach(el => observer.observe(el));
-}
-
-// ── Init ──
-document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('nw_lang');
-  const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
-  const supported = ['en', 'fr', 'de', 'es'];
-  const lang = supported.includes(saved) ? saved
-             : supported.includes(browserLang) ? browserLang
-             : 'en';
-  setLanguage(lang);
-  initReveal();
-});
-</script>
-
+  </script>
 </body>
 </html>

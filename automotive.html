@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title_auto">Automotive Gear & Gadgets - Amazon Affiliate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <style>
+    :root { --cream: #FAF7F2; --espresso: #2C1810; --terracotta: #C4714A; --automotive-steel: #4A5A6A; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: var(--cream); font-family: 'DM Sans', sans-serif; color: var(--espresso); line-height: 1.6; padding-top: 135px; }
+    .disclosure-bar { background: var(--espresso); color: var(--cream); font-size: 0.72rem; letter-spacing: 0.03em; text-align: center; padding: 8px 16px; position: fixed; top: 0; left: 0; right: 0; z-index: 1100; }
+    header { background: rgba(250,247,242,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(44,24,16,0.06); position: fixed; top: 34px; left: 0; right: 0; z-index: 1050; height: 70px; display: flex; align-items: center; }
+    .header-container { max-width: 1200px; margin: 0 auto; width: 100%; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--espresso); text-decoration: none; letter-spacing: -0.01em; }
+    .logo span { color: var(--terracotta); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-link { position: relative; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: var(--espresso); transition: color 0.2s; text-decoration: none; }
+    .nav-link::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1.5px; background: var(--terracotta); transition: width 0.3s ease; }
+    .nav-link:hover { color: var(--terracotta); }
+    .nav-link:hover::after { width: 100%; }
+    .lang-switcher { position: relative; display: inline-block; }
+    .lang-btn { display: flex; align-items: center; gap: 5px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; background: transparent; border: 1.5px solid rgba(44,24,16,0.25); border-radius: 4px; padding: 5px 10px; color: var(--espresso); transition: border-color 0.2s, background 0.2s; }
+    .lang-btn:hover { border-color: var(--terracotta); background: rgba(196,113,74,0.06); }
+    .lang-dropdown { display: none; position: absolute; right: 0; top: calc(100% + 8px); background: #fff; border: 1.5px solid #e8e0d6; border-radius: 6px; min-width: 130px; box-shadow: 0 8px 24px rgba(44,24,16,0.10); z-index: 1000; overflow: hidden; }
+    .lang-switcher:hover .lang-dropdown, .lang-switcher:focus-within .lang-dropdown { display: block; }
+    .lang-option { display: flex; align-items: center; gap: 8px; padding: 9px 14px; font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: background 0.15s; border: none; background: transparent; width: 100%; text-align: left; color: var(--espresso); }
+    .lang-option:hover { background: var(--cream); }
+    .lang-option.active { color: var(--terracotta); font-weight: 600; }
+    .hero-category { text-align: center; padding: 60px 24px 40px; max-width: 800px; margin: 0 auto; }
+    .badge-automotive { background: rgba(94, 108, 119, 0.15); color: #4A5A6A; padding: 6px 14px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; margin-bottom: 16px; }
+    .hero-category h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--espresso); margin-bottom: 16px; }
+    .hero-category p { font-size: 1.1rem; color: #5a4a42; }
+    .products-grid { max-width: 1100px; margin: 40px auto 80px; padding: 0 24px; display: grid; grid-template-columns: 1fr; gap: 40px; }
+    .product-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(44,24,16,0.05); display: flex; flex-direction: column; border: 1px solid #f2ece4; }
+    @media (min-width: 768px) { .product-card { flex-direction: row; height: 320px; } .product-img { width: 40%; max-width: 350px; } .product-info { width: 60%; } }
+    .product-img { background: #2b303a; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; position: relative; min-height: 220px; }
+    .product-info { padding: 32px; display: flex; flex-direction: column; justify-content: space-between; }
+    .product-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--espresso); margin-bottom: 10px; }
+    .product-desc { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 20px; }
+    .cta-wrapper { display: flex; align-items: center; justify-content: space-between; margin-top: auto; border-top: 1px solid #f5eee6; padding-top: 20px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--terracotta); color: #fff; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; padding: 12px 24px; border-radius: 6px; border: none; cursor: pointer; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: #a85c3a; transform: translateY(-1px); }
+    footer { background: var(--espresso); color: var(--cream); padding: 60px 24px 30px; margin-top: auto; }
+    .footer-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+    @media (min-width: 768px) { .footer-container { flex-direction: row; justify-content: space-between; } }
+    .footer-brand h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-link { color: rgba(250,247,242,0.65); font-size: 0.82rem; text-decoration: none; transition: color 0.2s; }
+    .footer-link:hover { color: var(--terracotta); }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <div class="disclosure-bar" data-i18n="disclaimer">Amazon Associate Disclosure: As an Amazon Associate I earn from qualifying purchases.</div>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Cozy<span>Affiliate</span></a>
+      <nav class="nav-links">
+        <a href="kitchen.html" class="nav-link" data-i18n="nav_kitchen">Kitchen</a>
+        <a href="office.html" class="nav-link" data-i18n="nav_office">Office</a>
+        <a href="luxury.html" class="nav-link" data-i18n="nav_luxury">Luxury Beauty</a>
+        <a href="automotive.html" class="nav-link" data-i18n="nav_automotive" style="color: var(--terracotta);">Automotive</a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="active-lang">🇺🇸 EN</button>
+        <div class="lang-dropdown">
+          <button class="lang-option" onclick="changeLanguage('en')">🇺🇸 EN</button>
+          <button class="lang-option" onclick="changeLanguage('fr')">🇫🇷 FR</button>
+          <button class="lang-option" onclick="changeLanguage('de')">🇩🇪 DE</button>
+          <button class="lang-option" onclick="changeLanguage('es')">🇪🇸 ES</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-category">
+      <span class="badge-automotive" data-i18n="cat_automotive">Automotive</span>
+      <h1 data-i18n="auto_hero_title">Next-Gen Automotive Upgrades</h1>
+      <p data-i18n="auto_hero_desc">Explore top-tier car smart assistants, essential maintenance electronics, and interior comforts vetted by experts.</p>
+    </section>
+
+    <section class="products-grid">
+      <div class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+        <div class="product-img">🎥</div>
+        <div class="product-info">
+          <div>
+            <h2 class="product-title" itemprop="name" data-i18n="prod_auto1_title">4K Ultra HD Dash Cam</h2>
+            <p class="product-desc" itemprop="description" data-i18n="prod_auto1_desc">Front and rear dash camera system with built-in GPS, night vision, and continuous loop recording for safety.</p>
+          </div>
+          <div class="cta-wrapper">
+            <span style="font-weight: 700; font-size: 1.2rem; color: var(--espresso);">$129.99</span>
+            <a href="https://www.amazon.com/s?k=4k+dash+cam" target="_blank" rel="noopener nofollow" class="btn-primary" data-i18n="buy_amazon">View on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+        <div class="product-img">💨</div>
+        <div class="product-info">
+          <div>
+            <h2 class="product-title" itemprop="name" data-i18n="prod_auto2_title">Portable Tire Inflator</h2>
+            <p class="product-desc" itemprop="description" data-i18n="prod_auto2_desc">A heavy-duty cordless air compressor that fits in your glovebox, featuring automatic shutoff and emergency LED.</p>
+          </div>
+          <div class="cta-wrapper">
+            <span style="font-weight: 700; font-size: 1.2rem; color: var(--espresso);">$45.00</span>
+            <a href="https://www.amazon.com/s?k=portable+tire+inflator" target="_blank" rel="noopener nofollow" class="btn-primary" data-i18n="buy_amazon">View on Amazon</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>CozyAffiliate</h4>
+        <p style="font-size: 0.8rem; color: rgba(250,247,242,0.5);" data-i18n="footer_copy">© 2026 CozyAffiliate. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        disclaimer: "Amazon Associate Disclosure: As an Amazon Associate I earn from qualifying purchases.",
+        buy_amazon: "View on Amazon",
+        nav_kitchen: "Kitchen", nav_office: "Office", nav_luxury: "Luxury Stores", nav_automotive: "Automotive",
+        cat_automotive: "Automotive",
+        auto_hero_title: "Next-Gen Automotive Upgrades",
+        auto_hero_desc: "Explore top-tier car smart assistants, essential maintenance electronics, and interior comforts vetted by experts.",
+        prod_auto1_title: "4K Ultra HD Dash Cam",
+        prod_auto1_desc: "Front and rear dash camera system with built-in GPS, night vision, and continuous loop recording for safety.",
+        prod_auto2_title: "Portable Tire Inflator",
+        prod_auto2_desc: "A heavy-duty cordless air compressor that fits in your glovebox, featuring automatic shutoff and emergency LED.",
+        footer_copy: "© 2026 CozyAffiliate. All rights reserved."
+      },
+      fr: {
+        disclaimer: "En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.",
+        buy_amazon: "Voir sur Amazon",
+        nav_kitchen: "Cuisine", nav_office: "Bureau", nav_luxury: "Boutiques de Luxe", nav_automotive: "Automobile",
+        cat_automotive: "Automobile",
+        auto_hero_title: "Mises à Niveau Auto Next-Gen",
+        auto_hero_desc: "Explorez les meilleurs assistants intelligents pour voiture, l'électronique de maintenance et le confort intérieur.",
+        prod_auto1_title: "Caméra de Recul 4K Ultra HD",
+        prod_auto1_desc: "Système de caméra avant et arrière avec GPS intégré, vision nocturne et enregistrement en boucle.",
+        prod_auto2_title: "Gonfleur de Pneu Portable",
+        prod_auto2_desc: "Compresseur d'air sans fil robuste qui tient dans la boîte à gants, avec arrêt automatique.",
+        footer_copy: "© 2026 CozyAffiliate. Tous droits réservés."
+      },
+      de: {
+        disclaimer: "Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
+        buy_amazon: "Bei Amazon ansehen",
+        nav_kitchen: "Küche", nav_office: "Büro", nav_luxury: "Luxus-Shops", nav_automotive: "Autozubehör",
+        cat_automotive: "Autozubehör",
+        auto_hero_title: "Fahrzeug-Upgrades der nächsten Generation",
+        auto_hero_desc: "Entdecken Sie erstklassige smarte Assistenten, essentielle Elektronik und Innenraumkomfort für Ihr Auto.",
+        prod_auto1_title: "4K Ultra HD Dashcam",
+        prod_auto1_desc: "Kamerasystem für vorne und hinten mit integriertem GPS, Nachtsicht und kontinuierlicher Schleifenaufnahme.",
+        prod_auto2_title: "Tragbarer Reifenfüller",
+        prod_auto2_desc: "Ein kabelloser Hochleistungs-Kompressor für das Handschuhfach mit automatischer Abschaltung.",
+        footer_copy: "© 2026 CozyAffiliate. Alle Rechte vorbehalten."
+      },
+      es: {
+        disclaimer: "Como Afiliado de Amazon, recibo ingresos por compras adscritas que cumplen los requisitos aplicables.",
+        buy_amazon: "Ver en Amazon",
+        nav_kitchen: "Cocina", nav_office: "Oficina", nav_luxury: "Tiendas de Lujo", nav_automotive: "Automoción",
+        cat_automotive: "Automoción",
+        auto_hero_title: "Actualizaciones Automotrices de Próxima Generación",
+        auto_hero_desc: "Explore asistentes inteligentes para el coche, electrónica de mantenimiento esencial y confort de alta gama.",
+        prod_auto1_title: "Cámara de Salpicadero 4K Ultra HD",
+        prod_auto1_desc: "Sistema de cámara frontal y trasera con GPS integrado, visión nocturna y grabación en bucle.",
+        prod_auto2_title: "Inflador de Neumáticos Portátil",
+        prod_auto2_desc: "Compresor de aire inalámbrico de alta resistencia para la guantera, con apagado automático.",
+        footer_copy: "© 2026 CozyAffiliate. Todos los derechos reservados."
+      }
+    };
+
+    function changeLanguage(lang) {
+      localStorage.setItem('preferredLang', lang);
+      updateContent(lang);
+    }
+
+    function updateContent(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      const langMeta = { en: "🇺🇸 EN", fr: "🇫🇷 FR", de: "🇩🇪 DE", es: "🇪🇸 ES" };
+      document.getElementById('active-lang').textContent = langMeta[lang] || "🇺🇸 EN";
+      document.documentElement.lang = lang;
+    }
+
+    // Init
+    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    updateContent(savedLang);
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
